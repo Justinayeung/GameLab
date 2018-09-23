@@ -6,32 +6,36 @@ using UnityEngine.UI; //Must have this if you want to have text
 public class PlayerController : MonoBehaviour
 {
     //Defining variables
-    private float speed = 5f;
+    private float speed = 4f;
+    private float maxSpeed = 10f;
+    public float accelerationTime = 60;
+    private float minSpeed;
+    private float time;
+
     private CharacterController controller;
     private Vector3 moveVector;
     private float verticalVelocity = 0.0f;
     private float gravity = 12.0f;
 
-    private Rigidbody rb;
+    //private Rigidbody rb;
 
     public Text gameoverText;
     public Text countText;
-    private int count;
+    public int count;
+
+    public DeathMenu deathMenu;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        //rb = GetComponent<Rigidbody>();
         controller = GetComponent<CharacterController>();
         count = 0;
         SetCountText();
         gameoverText.text = " ";
-
+        minSpeed = speed;
+        time = 0;
     }
 
-    private void FixedUpdate()
-    {
-        rb.AddForce(new Vector3(0f, 0f, speed) * Time.deltaTime * speed, ForceMode.Acceleration);
-    }
 
     void Update()
     {
@@ -56,6 +60,9 @@ public class PlayerController : MonoBehaviour
         moveVector.z = speed;
 
         controller.Move((moveVector * speed) * Time.deltaTime);
+
+        speed = Mathf.SmoothStep(minSpeed, maxSpeed, time / accelerationTime);
+        time += Time.deltaTime;
     }
 
     void OnTriggerEnter(Collider other)
@@ -67,11 +74,19 @@ public class PlayerController : MonoBehaviour
             count = count + 1;  //Value of pick up objects
             SetCountText();     //Allows for pick up objects to be counted
         }
+
+        //When it hits pick up objects
+        if (other.gameObject.CompareTag("Pick Up"))
+        {
+            other.gameObject.SetActive(false);
+            count = count + 4;  //Value of pick up objects
+            SetCountText();     //Allows for pick up objects to be counted
+        }
     }
 
     void SetCountText ()
     {
-        countText.text = "Count:" + count.ToString() + PlayerPrefs.GetFloat("Count");
+        countText.text = "Score: " + count.ToString();
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
@@ -80,7 +95,7 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(gameObject);
             gameoverText.text = "Game Over";
-            PlayerPrefs.SetFloat("Count", count);
+            deathMenu.ToggleEndMenu();
         }
 
     }

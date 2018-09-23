@@ -9,7 +9,7 @@ public class PathwayManager : MonoBehaviour
     private Transform playerTransform;
     private float spawnZ = 0.0f;
     private float pathLength = 30;
-    private int amnTileOnScreen = 5;
+    private int amnTileOnScreen = 4;
 
     //Needed so paths that spawn aren't the same twice
     private int lastPrefabIndex = 0;

@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObstacleSpawner : MonoBehaviour
+public class ObstacleSpawner2 : MonoBehaviour
 {
     public GameObject[] obstaclesPrefabs;
     
     private Transform playerTransform;
-    private float spawnZ = 0.0f;
-    private float obstacleSize = 17;
+    private float spawnZ = 0.4f;
+    private float obstacleSize = 6;
     private int amnTileOnScreen = 8;
 
     //Needed so obstacles that spawn aren't the same twice
@@ -29,7 +29,7 @@ public class ObstacleSpawner : MonoBehaviour
         playerTransform = GameObject.FindWithTag("Player").transform;
 
         //Calling function SpawnObstacle when int i is < amnTileOnScreen
-        for (int i = -10; i < amnTileOnScreen; i++)
+        for (int i = -5; i < amnTileOnScreen; i++)
         {
             if (i < 2)
                 SpawnObstacle(0);

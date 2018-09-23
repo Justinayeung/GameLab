@@ -2,39 +2,69 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObstacleSpawner : MonoBehaviour
+public class PickupManager : MonoBehaviour
+//{
+
+
+//    public Vector3 center;
+//    public Vector3 size;
+
+//	// Use this for initialization
+//	void Start ()
+//    {
+
+//	}
+
+//	// Update is called once per frame
+//	void Update ()
+//    {
+//		Vector3 pos = center = new Vecotr (Random. Range(size.x/2))
+//	}
+
+//    void OnDrawGizmosSelected()
+//    {
+//        Gizmos.color = new Color(1, 0, 0, 0.5f);
+//        Gizmos.DrawCube(center, size);
+//    }
+//}
+
 {
-    public GameObject[] obstaclesPrefabs;
-    
+    public GameObject[] pickupPrefabs;
+
     private Transform playerTransform;
     private float spawnZ = 0.0f;
-    private float obstacleSize = 17;
-    private int amnTileOnScreen = 8;
+    private float pickupSize = 10;
+    private int amnTileOnScreen = 6;
 
     //Needed so obstacles that spawn aren't the same twice
-    private int lastObstacleIndex = 0;
+    private int lastPickupIndex = 0;
 
     //safeZone is needed or else the obstacle that gets destroyed is right under player
     private float safeZone = 20.0f;
-    private List<GameObject> activeObstacles;
+    private List<GameObject> activePickups;
 
+   
 
     // Use this for initialization
     void Start()
     {
         //Creating list for obstacles so that system know which to delete
-        activeObstacles = new List<GameObject>();
+        activePickups = new List<GameObject>();
 
         //Finding player gameobject
         playerTransform = GameObject.FindWithTag("Player").transform;
 
         //Calling function SpawnObstacle when int i is < amnTileOnScreen
-        for (int i = -10; i < amnTileOnScreen; i++)
+        for (int i = -5; i < amnTileOnScreen; i++)
         {
             if (i < 2)
-                SpawnObstacle(0);
+            {
+                SpawnPickup(0);
+            }
             else
-                SpawnObstacle();
+            { 
+                SpawnPickup();
+            }
         }
     }
 
@@ -42,16 +72,16 @@ public class ObstacleSpawner : MonoBehaviour
     void Update()
     {
         //Spawning and deleting obstacles based on player position - safeZone
-        if (playerTransform.position.z - safeZone > (spawnZ - amnTileOnScreen * obstacleSize))
+        if (playerTransform.position.z - safeZone > (spawnZ - amnTileOnScreen * pickupSize))
         {
-            SpawnObstacle();
+            SpawnPickup();
             DeletePath();
         }
 
     }
 
     //Creating own function
-    private void SpawnObstacle(int prefabIndex = -1)
+    private void SpawnPickup(int prefabIndex = -1)
     {
         //Grabbing a reference to prefab
         //Allowing prefab to spawn after prefab
@@ -59,41 +89,41 @@ public class ObstacleSpawner : MonoBehaviour
 
         //Spawning normal obstacles
         if (prefabIndex == -1)
-            go = Instantiate(obstaclesPrefabs[RandomObstacleIndex()]) as GameObject;
+            go = Instantiate(pickupPrefabs[RandomPickupIndex()]) as GameObject;
         else
-            go = Instantiate(obstaclesPrefabs[prefabIndex]) as GameObject;
+            go = Instantiate(pickupPrefabs[prefabIndex]) as GameObject;
 
         go.transform.SetParent(transform);
         go.transform.position = Vector3.forward * spawnZ;
-        spawnZ += obstacleSize;
+        spawnZ += pickupSize;
 
         //Whenever obstacles are added put it in the list
-        activeObstacles.Add(go);
+        activePickups.Add(go);
     }
 
     private void DeletePath()
     {
         //Delete all objects at the top of the list
-        Destroy(activeObstacles[0]);
+        Destroy(activePickups[0]);
         //Remove at the index 0
-        activeObstacles.RemoveAt(0);
+        activePickups.RemoveAt(0);
     }
 
     //random obstacles (this needed when you have more then one prefab
-    private int RandomObstacleIndex()
+    private int RandomPickupIndex()
     {
-        if (obstaclesPrefabs.Length <= 1)
+        if (pickupPrefabs.Length <= 1)
         {
             return 0;
         }
 
-        int randomIndex = lastObstacleIndex;
-        while (randomIndex == lastObstacleIndex)
+        int randomIndex = lastPickupIndex;
+        while (randomIndex == lastPickupIndex)
         {
-            randomIndex = Random.Range(0, obstaclesPrefabs.Length);
+            randomIndex = Random.Range(0, pickupPrefabs.Length);
         }
 
-        lastObstacleIndex = randomIndex;
+        lastPickupIndex = randomIndex;
         return randomIndex;
     }
 }
