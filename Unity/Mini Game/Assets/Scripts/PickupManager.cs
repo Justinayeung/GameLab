@@ -40,7 +40,7 @@ public class PickupManager : MonoBehaviour
     private int lastPickupIndex = 0;
 
     //safeZone is needed or else the obstacle that gets destroyed is right under player
-    private float safeZone = 20.0f;
+    private float safeZone = 30.0f;
     private List<GameObject> activePickups;
 
    
@@ -72,7 +72,7 @@ public class PickupManager : MonoBehaviour
     void Update()
     {
         //Spawning and deleting obstacles based on player position - safeZone
-        if (playerTransform.position.z - safeZone > (spawnZ - amnTileOnScreen * pickupSize))
+        if (playerTransform.position.z - safeZone > (spawnZ - (amnTileOnScreen * pickupSize)))
         {
             SpawnPickup();
             DeletePath();

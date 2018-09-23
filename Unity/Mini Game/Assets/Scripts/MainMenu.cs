@@ -9,4 +9,10 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("MiniGame");
     }
+
+    public void ToHelpMenu()
+    {
+        SceneManager.LoadScene("HelpMenu");
+    }
 }
+

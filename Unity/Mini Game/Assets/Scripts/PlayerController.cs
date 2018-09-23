@@ -14,20 +14,20 @@ public class PlayerController : MonoBehaviour
 
     private CharacterController controller;
     private Vector3 moveVector;
-    private float verticalVelocity = 0.0f;
-    private float gravity = 12.0f;
-
-    //private Rigidbody rb;
+    private float gravity = 25.0f;
 
     public Text gameoverText;
     public Text countText;
     public int count;
 
+    public float threshold;
+
+    public float jumpSpeed = 8.0f;
+
     public DeathMenu deathMenu;
 
     void Start()
     {
-        //rb = GetComponent<Rigidbody>();
         controller = GetComponent<CharacterController>();
         count = 0;
         SetCountText();
@@ -43,18 +43,21 @@ public class PlayerController : MonoBehaviour
 
         if (controller.isGrounded)
         {
-            verticalVelocity = -0.5f;
+            moveVector = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
+            moveVector *= speed;
+
+            if (Input.GetButton("Jump"))
+            {
+                moveVector.y = jumpSpeed * speed;
+            }
         }
         else
         {
-            verticalVelocity -= gravity * Time.deltaTime;
+            moveVector.y -= gravity * speed * Time.deltaTime;
         }
 
         //X = left and right
         moveVector.x = Input.GetAxis("Horizontal") * speed;
-
-        //Y = up and down
-        moveVector.y = verticalVelocity;
 
         //Z = forward and backwards
         moveVector.z = speed;
@@ -63,6 +66,12 @@ public class PlayerController : MonoBehaviour
 
         speed = Mathf.SmoothStep(minSpeed, maxSpeed, time / accelerationTime);
         time += Time.deltaTime;
+
+        if (transform.position.y < threshold)
+        {
+            Destroy(gameObject);
+            deathMenu.ToggleEndMenu();
+        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -97,6 +106,5 @@ public class PlayerController : MonoBehaviour
             gameoverText.text = "Game Over";
             deathMenu.ToggleEndMenu();
         }
-
     }
 }

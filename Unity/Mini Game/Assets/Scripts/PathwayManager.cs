@@ -43,7 +43,7 @@ public class PathwayManager : MonoBehaviour
     void Update()
     {
         //Spawning and deleting paths based on player position - safeZone
-        if (playerTransform.position.z - safeZone > (spawnZ - amnTileOnScreen * pathLength))
+        if (playerTransform.position.z - safeZone > (spawnZ - (amnTileOnScreen * pathLength)))
         {
             SpawnPath();
             DeletePath();
