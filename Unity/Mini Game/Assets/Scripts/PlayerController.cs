@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
 
     private CharacterController controller;
     private Vector3 moveVector;
-    private float gravity = 25.0f;
+    private float gravity = 30.0f;
 
     public Text gameoverText;
     public Text countText;
