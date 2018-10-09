@@ -1,6 +1,8 @@
 ﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI; //Must have this if you want to have text
 
 public class PlayerController : MonoBehaviour
@@ -25,6 +27,8 @@ public class PlayerController : MonoBehaviour
     public float jumpSpeed = 8.0f;
 
     public DeathMenu deathMenu;
+
+    public int sceneNum;
 
     void Start()
     {
@@ -70,6 +74,7 @@ public class PlayerController : MonoBehaviour
         if (transform.position.y < threshold)
         {
             Destroy(gameObject);
+            gameoverText.text = "Game Over";
             deathMenu.ToggleEndMenu();
         }
     }
@@ -88,7 +93,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Pick Up"))
         {
             other.gameObject.SetActive(false);
-            count = count + 4;  //Value of pick up objects
+            count = count + 5;  //Value of pick up objects
             SetCountText();     //Allows for pick up objects to be counted
         }
     }
@@ -96,6 +101,10 @@ public class PlayerController : MonoBehaviour
     void SetCountText ()
     {
         countText.text = "Score: " + count.ToString();
+        if (count >= 30)
+        {
+            SceneManager.LoadScene(sceneNum);
+        }
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit)

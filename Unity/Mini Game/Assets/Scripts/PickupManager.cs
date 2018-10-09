@@ -3,31 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PickupManager : MonoBehaviour
-//{
-
-
-//    public Vector3 center;
-//    public Vector3 size;
-
-//	// Use this for initialization
-//	void Start ()
-//    {
-
-//	}
-
-//	// Update is called once per frame
-//	void Update ()
-//    {
-//		Vector3 pos = center = new Vecotr (Random. Range(size.x/2))
-//	}
-
-//    void OnDrawGizmosSelected()
-//    {
-//        Gizmos.color = new Color(1, 0, 0, 0.5f);
-//        Gizmos.DrawCube(center, size);
-//    }
-//}
-
 {
     public GameObject[] pickupPrefabs;
 
@@ -40,10 +15,8 @@ public class PickupManager : MonoBehaviour
     private int lastPickupIndex = 0;
 
     //safeZone is needed or else the obstacle that gets destroyed is right under player
-    private float safeZone = 30.0f;
+    private float safeZone = 25.0f;
     private List<GameObject> activePickups;
-
-   
 
     // Use this for initialization
     void Start()

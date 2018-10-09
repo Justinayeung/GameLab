@@ -15,7 +15,7 @@ public class ObstacleSpawner : MonoBehaviour
     private int lastObstacleIndex = 0;
 
     //safeZone is needed or else the obstacle that gets destroyed is right under player
-    private float safeZone = 20.0f;
+    private float safeZone = 15.0f;
     private List<GameObject> activeObstacles;
 
 

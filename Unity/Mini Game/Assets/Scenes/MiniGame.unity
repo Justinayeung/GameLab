@@ -142,7 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupPrefabs:
   - {fileID: 1608122853022514, guid: 14fb76c9b9cd5634bbdf7c299c971cdb, type: 2}
-  - {fileID: 1065099515013318, guid: 8792082ee5e31764bbbe995eca3c42f0, type: 2}
+  - {fileID: 1482780793602898, guid: 9aa4ae5709b925c4cbe73c83f6b51e64, type: 2}
   - {fileID: 1325216298823964, guid: 0e3389a094556d741801362697d17996, type: 2}
   - {fileID: 1325216298823964, guid: 0e3389a094556d741801362697d17996, type: 2}
 --- !u!4 &133065776
@@ -188,10 +188,10 @@ MonoBehaviour:
   pathwayPrefabs:
   - {fileID: 1429057585456834, guid: 8574a7ed3f9e22548a53258bed50141f, type: 2}
   - {fileID: 1472004737764664, guid: 2c375b429e36bf64c9835d67421fa5ee, type: 2}
-  - {fileID: 1944665232625810, guid: 9028eaf423dfa3747b0bda6dd552c644, type: 2}
-  - {fileID: 1921135384349094, guid: 1a0f39642af596f48a940b9b674092dc, type: 2}
-  - {fileID: 1474613083736910, guid: 19a338683bc572146bc9d8080af7758d, type: 2}
-  - {fileID: 1156443876115142, guid: 08d332a6f16ccca49819153671b24d8e, type: 2}
+  - {fileID: 1944665232625810, guid: 2be04120807eb1e48b6cd144adfbb12a, type: 2}
+  - {fileID: 1921135384349094, guid: c5347fde17934c244a10557b4396830f, type: 2}
+  - {fileID: 1474613083736910, guid: f1d2a84f58409cf42b501e581ecf3431, type: 2}
+  - {fileID: 1156443876115142, guid: 55ad95beef9decf43b219a3345f2c074, type: 2}
 --- !u!4 &142496551
 Transform:
   m_ObjectHideFlags: 0
@@ -923,13 +923,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fde303eaac5828e498930a141955b388, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  accelerationTime: 100
+  accelerationTime: 400
   gameoverText: {fileID: 599285863}
   countText: {fileID: 517913305}
   count: 0
   threshold: -10
-  jumpSpeed: 12
+  jumpSpeed: 11
   deathMenu: {fileID: 1828986897}
+  sceneNum: 3
 --- !u!135 &1530575358
 SphereCollider:
   m_ObjectHideFlags: 0
