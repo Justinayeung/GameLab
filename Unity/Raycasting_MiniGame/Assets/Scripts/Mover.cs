@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class Mover : MonoBehaviour
@@ -8,6 +9,7 @@ public class Mover : MonoBehaviour
     public Transform target;
 
     private Vector3 normalizeDirection;
+    private float timeLeft = 15.0f;
 
     void Start()
     {
@@ -17,5 +19,10 @@ public class Mover : MonoBehaviour
     void Update()
     {
         transform.position += normalizeDirection * speed * Time.deltaTime;
+        timeLeft -= Time.deltaTime;
+        if (timeLeft <= 0)
+        {
+            speed = 0f;
+        }
     }
 }

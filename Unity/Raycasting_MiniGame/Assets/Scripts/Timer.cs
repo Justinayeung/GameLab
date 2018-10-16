@@ -5,22 +5,45 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    public Text timer;
-    public float timeLeft;
+    public float timeLeft = 15.0f;
+    public Text countDown;
+    public Text savePanda;
+    public Text scoreText;
+
+    public RestartMenu restartMenu;
+    private int score;
+
+    void Start()
+    {
+        score = 11;
+        savePanda.text = "";
+        SetScoreText();
+    }
 
     void Update()
     {
         timeLeft -= Time.deltaTime;
-        timer.text = "Time Left: " + Mathf.Round(timeLeft);
-
-        if (timeLeft <= 0.0f)
+        countDown.text = "Time Left: " + Mathf.Round(timeLeft);
+        if (timeLeft <= 0)
         {
-            timerEnded();
+            savePanda.text = "Saved pandas: " + score;
+            countDown.text = "";
+            restartMenu.ToggleRestartMenu();
         }
     }
 
-    void timerEnded()
+    void OnCollisionEnter(Collision other)
     {
+        if (other.gameObject.CompareTag("Panda"))
+        {
+            other.gameObject.SetActive(false);
+            score = score - 1;
+            SetScoreText();
+        }
+    }
 
+    void SetScoreText()
+    {
+        scoreText.text = "Pandas: " + score.ToString();
     }
 }

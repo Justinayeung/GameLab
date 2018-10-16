@@ -19,7 +19,7 @@ public class RaycasterMover : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.collider.gameObject.tag == "Fish")
+                if (hit.collider.gameObject.tag == "Panda")
                 {
                     hitObject = hit.collider.gameObject;
                 }
