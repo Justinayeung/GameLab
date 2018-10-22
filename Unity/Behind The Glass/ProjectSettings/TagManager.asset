@@ -5,8 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - Tank
-  - p1
-  - p2
   layers:
   - Default
   - TransparentFX
