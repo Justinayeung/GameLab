@@ -4,7 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Tank
+  - Asteroid
+  - Projectile
   layers:
   - Default
   - TransparentFX
@@ -14,7 +15,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - PostProcessing
   - 
   - 
   - 
@@ -41,16 +42,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Background
-    uniqueID: 46255937
-    locked: 0
-  - name: Tanks
-    uniqueID: 2807637489
-    locked: 0
-  - name: Animals
-    uniqueID: 2875067141
-    locked: 0
-  - name: Player
-    uniqueID: 716013129
     locked: 0

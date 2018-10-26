@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PatrolAI : MonoBehaviour
 {
+    SpriteRenderer sr;
+    public Sprite left;
+    public Sprite right;
+
     public float speed;
     public Transform[] moveSpots;
     public float startWaitTime;
@@ -12,15 +16,18 @@ public class PatrolAI : MonoBehaviour
 
     public float speedChase;
     public float awareDistance;
+    public float distanceToTarget;
     private Transform target;
 
     public float distance;
     public LineRenderer lineOfSight;
+    public Gradient blueColor;
     public Gradient redColor;
-    public Gradient greenColor;
 
     void Start()
     {
+        sr = GetComponent<SpriteRenderer>();
+
         waitTime = startWaitTime;
         randomSpot = Random.Range(0, moveSpots.Length);
 
@@ -31,39 +38,45 @@ public class PatrolAI : MonoBehaviour
 
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, moveSpots[randomSpot].position, speed * Time.deltaTime);
-        if (Vector2.Distance(transform.position, moveSpots[randomSpot].position) < 0.2f)
+        distanceToTarget = Vector3.Distance(transform.position, target.position);
+
+        if (distanceToTarget > awareDistance)
         {
-            if (waitTime <= 0)
+            transform.position = Vector2.MoveTowards(transform.position, moveSpots[randomSpot].position, speed * Time.deltaTime);
+            if (Vector2.Distance(transform.position, moveSpots[0].position) < 0.2f)
             {
-                randomSpot = Random.Range(0, moveSpots.Length);
-                waitTime = startWaitTime;
+                sr.sprite = left;
+                if (waitTime <= 0)
+                {
+                    randomSpot = Random.Range(0, moveSpots.Length);
+                    waitTime = startWaitTime;
+                }
+                else
+                {
+                    waitTime -= Time.deltaTime;
+                }
             }
-            else
+            if (Vector2.Distance(transform.position, moveSpots[1].position) < 0.2f)
             {
-                waitTime -= Time.deltaTime;
+                sr.sprite = right;
+                if (waitTime <= 0)
+                {
+                    randomSpot = Random.Range(0, moveSpots.Length);
+                    waitTime = startWaitTime;
+                }
+                else
+                {
+                    waitTime -= Time.deltaTime;
+                }
             }
         }
 
-        RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.right, distance);
-
-        if (hitInfo.collider != null)
+        if (distanceToTarget < awareDistance)
         {
-
-            Debug.DrawLine(transform.position, hitInfo.point, Color.red);
-            lineOfSight.SetPosition(1, hitInfo.point);
-            lineOfSight.colorGradient = redColor;
-
-            if (hitInfo.collider.CompareTag("Player"))
+            if (Vector2.Distance(transform.position, target.position) < awareDistance)
             {
                 transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
             }
-        }
-        else
-        {
-            Debug.DrawLine(transform.position, transform.position + transform.right * distance, Color.green);
-            lineOfSight.SetPosition(1, transform.position + transform.right * distance);
-            lineOfSight.colorGradient = greenColor;
         }
     }
 }
