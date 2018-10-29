@@ -776,7 +776,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &1895504186
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -873,6 +873,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  left: {fileID: 0}
+  right: {fileID: 0}
+  up: {fileID: 0}
+  down: {fileID: 0}
+  countText: {fileID: 0}
+  photo: {fileID: 0}
+  SetPhoto: {fileID: 0}
 --- !u!50 &1895504190
 Rigidbody2D:
   serializedVersion: 4

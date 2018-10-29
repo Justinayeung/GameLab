@@ -5,6 +5,15 @@ TagManager:
   serializedVersion: 2
   tags:
   - Tank
+  - Boundary
+  - Dialogue
+  - Audio
+  - Penguin
+  - Shark
+  - Turtle
+  - StingRay
+  - Seal
+  - Pick Up
   layers:
   - Default
   - TransparentFX

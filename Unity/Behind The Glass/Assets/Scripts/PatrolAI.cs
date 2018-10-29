@@ -17,12 +17,10 @@ public class PatrolAI : MonoBehaviour
     public float speedChase;
     public float awareDistance;
     public float distanceToTarget;
-    private Transform target;
+    public Transform target;
 
-    public float distance;
-    public LineRenderer lineOfSight;
-    public Gradient blueColor;
-    public Gradient redColor;
+    public Restart restart;
+    public AudioManager1 Audio;
 
     void Start()
     {
@@ -75,8 +73,17 @@ public class PatrolAI : MonoBehaviour
         {
             if (Vector2.Distance(transform.position, target.position) < awareDistance)
             {
-                transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+                transform.position = Vector2.MoveTowards(transform.position, target.position, speedChase * Time.deltaTime);
             }
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            restart.ToggleRestartMenu();
+            Audio.stopAudio();
         }
     }
 }
