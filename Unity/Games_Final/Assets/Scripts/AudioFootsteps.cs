@@ -2,15 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Audio : MonoBehaviour
+public class AudioFootsteps : MonoBehaviour
 {
     public AudioSource Footsteps;
-    public AudioSource Spikes;
-
-    void MetalSpikes()
-    {
-        Spikes.Play();
-    }
 
     void Walking()
     {

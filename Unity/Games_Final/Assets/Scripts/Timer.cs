@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    LightTrigger lightTrigger;
+    public LightTrigger lightTrigger;
 
-    public Image timerBar;
+    Image timerBar;
     public float maxTime = 15f;
     float timeLeft;
 
@@ -15,18 +15,14 @@ public class Timer : MonoBehaviour
     {
         timerBar = GetComponent<Image>();
         timeLeft = maxTime;
-        lightTrigger = GetComponent<LightTrigger>();
     }
 
     void Update()
     {
-        if (timeLeft > 0)
+        if (timeLeft > 0 && lightTrigger.myLightOn)
         {
-            if (lightTrigger.myLightOn == true)
-            {
-                timeLeft -= Time.deltaTime;
-                timerBar.fillAmount = timeLeft / maxTime;
-            }
+            timeLeft -= Time.deltaTime;
+            timerBar.fillAmount = timeLeft/maxTime;
         }
 
         if (timeLeft == 0)

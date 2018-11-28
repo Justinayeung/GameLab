@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class LightTrigger : MonoBehaviour
@@ -13,11 +14,13 @@ public class LightTrigger : MonoBehaviour
     void Start ()
     {
         myLight = GetComponent<Light>();
+        myLight.enabled = false;
+        myLightOn = false;
     }
 	
 	void Update ()
     {
-        if (Input.GetKey(KeyCode.L))
+        if (Input.GetKeyDown(KeyCode.L))
         {
             myLight.enabled = !myLight.enabled;
         }

@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class CharController : MonoBehaviour
 {
+    public Animator anim;
+    bool PlayerWalk;
     public bool onHit;
+    public bool hitWall;
 
     public float moveSpeed = 10f;
     public float turnSpeed = 200f;
@@ -14,9 +17,14 @@ public class CharController : MonoBehaviour
 
     public AudioSource WallHit;
 
+    public Transform respawnPoint;
+
     void Start()
     {
+        anim = GetComponent<Animator>();
         onHit = false;
+        PlayerWalk = false;
+        hitWall = false;
     }
 
     void Update()
@@ -41,7 +49,13 @@ public class CharController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Wall"))
         {
+            hitWall = true;
             WallHit.Play();
+        }
+
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            transform.position = respawnPoint.transform.position;
         }
     }
 
@@ -50,27 +64,51 @@ public class CharController : MonoBehaviour
         prevLoc = curLoc;
         curLoc = transform.position;
 
-
-        if (Input.GetKey(KeyCode.W))
+        if (!hitWall)
         {
-            curLoc.z += 1 * Time.fixedDeltaTime * moveSpeed;
+            if (Input.GetKey(KeyCode.W))
+            {
+                curLoc.z += 1 * Time.fixedDeltaTime * moveSpeed;
+                PlayerWalk = true;
+            }
+            else if (Input.GetKey(KeyCode.A))
+            {
+                curLoc.x -= 1 * Time.fixedDeltaTime * moveSpeed;
+                PlayerWalk = true;
+            }
+            else if (Input.GetKey(KeyCode.S))
+            {
+                curLoc.z -= 1 * Time.fixedDeltaTime * moveSpeed;
+                PlayerWalk = true;
+            }
+            else if (Input.GetKey(KeyCode.D))
+            {
+                curLoc.x += 1 * Time.fixedDeltaTime * moveSpeed;
+                PlayerWalk = true;
+            }
+            else
+            {
+                PlayerWalk = false;
+            }
+
+            transform.position = curLoc;
+            anim.SetBool("PlayerWalk", PlayerWalk);
         }
 
-        if (Input.GetKey(KeyCode.A))
+        if (hitWall)
         {
-            curLoc.x -= 1 * Time.fixedDeltaTime * moveSpeed;
+            moveSpeed = 0;
+            StartCoroutine("wallIsHit");
         }
+    }
 
-        if (Input.GetKey(KeyCode.S))
+    IEnumerator wallIsHit()
+    {
+        while (hitWall)
         {
-            curLoc.z -= 1 * Time.fixedDeltaTime * moveSpeed;
+            yield return new WaitForSeconds(1);
+            hitWall = false;
+            yield return null;
         }
-
-        if (Input.GetKey(KeyCode.D))
-        {
-            curLoc.x += 1 * Time.fixedDeltaTime * moveSpeed;
-        }
-
-        transform.position = curLoc;
     }
 }
