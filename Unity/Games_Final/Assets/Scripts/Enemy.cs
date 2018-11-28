@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
     float switchProbability = 0.2f;
 
     //The list of all patrol nodes to visit
-    List<Waypoints> patrolPoints;
+    public List<Waypoints> patrolPoints;
 
 
     //Private variables
@@ -61,6 +61,8 @@ public class Enemy : MonoBehaviour
         //Instead if we're waiting
         if (waiting)
         {
+            patrolWaiting = true;
+
             waitTimer += Time.deltaTime;
             if (waitTimer >= totalWaitTime)
             {
