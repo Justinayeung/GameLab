@@ -2,15 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Instantiate : MonoBehaviour {
+public class Instantiate : MonoBehaviour
+{
+    public GameObject crumbs;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.K))
+        {
+            Instantiate(crumbs, transform.position + transform.forward, transform.rotation);
+            StartCoroutine("waitTime");
+        }
+    }
+
+    IEnumerator waitTime()
+    {
+        yield return new WaitForSeconds(2);
+        yield return null;
+    }
 }

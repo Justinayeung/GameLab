@@ -11,6 +11,8 @@ public class LightTrigger : MonoBehaviour
     public Light myLight;
     public bool myLightOn;
 
+    public Timer time;
+
     void Start ()
     {
         myLight = GetComponent<Light>();
@@ -20,7 +22,7 @@ public class LightTrigger : MonoBehaviour
 	
 	void Update ()
     {
-        if (Input.GetKeyDown(KeyCode.L))
+        if (Input.GetKeyDown(KeyCode.L) && time.timeLeft > 0)
         {
             myLight.enabled = !myLight.enabled;
         }

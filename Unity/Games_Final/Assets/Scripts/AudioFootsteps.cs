@@ -9,5 +9,6 @@ public class AudioFootsteps : MonoBehaviour
     void Walking()
     {
         Footsteps.Play();
+        Footsteps.volume = Random.Range(0.3f, 0.5f);
     }
 }

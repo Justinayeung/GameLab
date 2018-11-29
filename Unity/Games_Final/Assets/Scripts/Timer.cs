@@ -9,7 +9,7 @@ public class Timer : MonoBehaviour
 
     Image timerBar;
     public float maxTime = 15f;
-    float timeLeft;
+    public float timeLeft;
 
     void Start()
     {
@@ -25,10 +25,11 @@ public class Timer : MonoBehaviour
             timerBar.fillAmount = timeLeft/maxTime;
         }
 
-        if (timeLeft == 0)
+        if (timeLeft <= 0)
         {
             Time.timeScale = 0;
-            lightTrigger.myLightOn = false;
+            lightTrigger.myLight.enabled = false;
+            lightTrigger.orbLight.material = lightTrigger.orbLightOff;
         }
     }
 }
