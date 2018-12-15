@@ -5,19 +5,31 @@ using UnityEngine;
 public class Instantiate : MonoBehaviour
 {
     public GameObject crumbs;
+    public bool wait;
+
+    public LoadCrumb loading;
+
+    void Start()
+    {
+        wait = true;
+    }
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.K))
+        if(Input.GetKeyDown(KeyCode.L) && wait)
         {
-            Instantiate(crumbs, transform.position + transform.forward, transform.rotation);
+            wait = false;
             StartCoroutine("waitTime");
+            Instantiate(crumbs, transform.position + transform.forward, transform.rotation);
         }
     }
 
     IEnumerator waitTime()
     {
-        yield return new WaitForSeconds(2);
+        wait = false;
+        loading.currentAmount = 0;
+        yield return new WaitForSeconds(5);
+        wait = true;
         yield return null;
     }
 }
