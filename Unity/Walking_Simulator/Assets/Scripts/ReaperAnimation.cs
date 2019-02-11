@@ -15,16 +15,7 @@ public class ReaperAnimation : MonoBehaviour
 
     void Update()
     {
-        if (PlayerWalk)
-        {
-            anim.SetBool("PlayerWalk", true);
-        }
-        else
-        {
-            anim.SetBool("PlayerWalk", false);
-        }
-
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
         {
             PlayerWalk = true;
         }
@@ -33,5 +24,13 @@ public class ReaperAnimation : MonoBehaviour
             PlayerWalk = false;
         }
 
+        if (PlayerWalk)
+        {
+            anim.SetBool("PlayerWalk", true);
+        }
+        else
+        {
+            anim.SetBool("PlayerWalk", false);
+        }
     }
 }
