@@ -12,12 +12,18 @@ EditorBuildSettings:
     path: Assets/ALL_SCENES/MainMenu.unity
     guid: cd5527f5147563440b67f83b55cb077e
   - enabled: 1
-    path: Assets/ALL_SCENES/Start.unity
-    guid: ac87ddd0676164c998ffcd8ee737be74
-  - enabled: 1
     path: Assets/ALL_SCENES/Walking.unity
     guid: 78357cc6e570e4413bb0e2bb4827cf52
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/ALL_SCENES/helpMenu.unity
     guid: a18f48dc05499604b92f97e4ac147258
+  - enabled: 1
+    path: Assets/ALL_SCENES/ExitGame.unity
+    guid: e7f0d51ee85ace34c975b3e332bb9e1c
+  - enabled: 1
+    path: Assets/ALL_SCENES/Headphones.unity
+    guid: f32a2c39b7180df4e863e3b046d55408
   m_configObjects: {}

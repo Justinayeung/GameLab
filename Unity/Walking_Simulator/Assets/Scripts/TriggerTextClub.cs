@@ -6,34 +6,55 @@ using UnityEngine;
 public class TriggerTextClub : MonoBehaviour
 {
     public Text Club;
+    public Text underClub;
+    public Text underClub1;
+    public Text underClub2;
+    public Text underClub3;
     public AudioSource club;
     public Light toMotel;
-    public bool clubOver;
+    public TriggerTextIntro1 intro;
+    bool triggered = false;
+    public GameObject motelParticles;
 
     void Awake()
     {
+        underClub3.canvasRenderer.SetAlpha(0);
+        underClub2.canvasRenderer.SetAlpha(0);
+        underClub1.canvasRenderer.SetAlpha(0);
+        underClub.canvasRenderer.SetAlpha(0);
         Club.canvasRenderer.SetAlpha(0);
         toMotel.enabled = false;
-        clubOver = false;
+        motelParticles.SetActive(false);
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") && !triggered)
         {
-            StartCoroutine("fadeClub");
-            club.Play();
+            if (intro.introOver)
+            {
+                StartCoroutine("fadeClub");
+                club.Play();
+            }
+            triggered = true;
         }
     }
 
     IEnumerator fadeClub()
     {
-        yield return new WaitForSeconds(1);
         Club.CrossFadeAlpha(1, 0.5f, true);   //To Solid
-        yield return new WaitForSeconds(5);
+        underClub.CrossFadeAlpha(1, 0.5f, true);
+        underClub1.CrossFadeAlpha(1, 0.5f, true);
+        underClub2.CrossFadeAlpha(1, 0.5f, true);
+        underClub3.CrossFadeAlpha(1, 0.5f, true);
+        yield return new WaitForSeconds(10);
+        motelParticles.SetActive(true);
         toMotel.enabled = true;
-        yield return new WaitForSeconds(17);
+        yield return new WaitForSeconds(2);
         Club.CrossFadeAlpha(0, 0.5f, true);   //To Alpha
-        clubOver = true;
+        underClub.CrossFadeAlpha(0, 0.5f, true);
+        underClub1.CrossFadeAlpha(0, 0.5f, true);
+        underClub2.CrossFadeAlpha(0, 0.5f, true);
+        underClub3.CrossFadeAlpha(0, 0.5f, true);
     }
 }

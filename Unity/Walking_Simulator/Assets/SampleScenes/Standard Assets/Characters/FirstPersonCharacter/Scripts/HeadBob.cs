@@ -26,7 +26,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         }
 
 
-        private void Update()
+        private void LateUpdate()
         {
             m_CameraRefocus.GetFocusPoint();
             Vector3 newCameraPosition;

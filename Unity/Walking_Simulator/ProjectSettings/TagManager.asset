@@ -14,8 +14,8 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
-  - 
+  - Particle System
+  - Image
   - 
   - 
   - 
@@ -40,4 +40,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Particle System
+    uniqueID: 164686243
+    locked: 0
+  - name: Image
+    uniqueID: 4112542983
     locked: 0
