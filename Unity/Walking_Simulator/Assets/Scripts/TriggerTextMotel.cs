@@ -63,7 +63,7 @@ public class TriggerTextMotel : MonoBehaviour
         underMotel2.CrossFadeAlpha(0, 0.5f, true);
         underMotel3.CrossFadeAlpha(0, 0.5f, true);
         motelOver = true;
-        yield return new WaitForSeconds(.1f);
+        yield return new WaitForSeconds(.03f);
         threeShots.Play();
     }
 }

@@ -11,9 +11,16 @@ public class TriggerTextOasis : MonoBehaviour
     public Text underOasis1;
     public Text underOasis2;
     public Text underOasis3;
+    public Text esc;
+    public Text esc1;
+    public Text esc2;
+    public Text esc3;
+    public Text esc4;
     public Text Forgive;
     public Text Reap;
     public AudioSource oasis;
+    public AudioSource forgive;
+    public AudioSource reap;
     public Image black;
     public TriggerTextMotel motel;
     public GameObject forgiveB; 
@@ -25,6 +32,8 @@ public class TriggerTextOasis : MonoBehaviour
     float duration = 2f;
     public Light toOasis;
     CursorLockMode wantedMode;
+    bool PlayerReap = false;
+    public Animator anim;
 
     void Awake()
     {
@@ -34,6 +43,11 @@ public class TriggerTextOasis : MonoBehaviour
         underOasis.canvasRenderer.SetAlpha(0);
         Oasis.canvasRenderer.SetAlpha(0);
         Forgive.canvasRenderer.SetAlpha(0);
+        esc.canvasRenderer.SetAlpha(0);
+        esc1.canvasRenderer.SetAlpha(0);
+        esc2.canvasRenderer.SetAlpha(0);
+        esc3.canvasRenderer.SetAlpha(0);
+        esc4.canvasRenderer.SetAlpha(0);
         Reap.canvasRenderer.SetAlpha(0);
         black.canvasRenderer.SetAlpha(0);
         forgiveB.SetActive(false);
@@ -56,11 +70,21 @@ public class TriggerTextOasis : MonoBehaviour
 
     public void forgiveButton()
     {
+        esc.CrossFadeAlpha(0, 0.5f, true);
+        esc1.CrossFadeAlpha(0, 0.5f, true);
+        esc2.CrossFadeAlpha(0, 0.5f, true);
+        esc3.CrossFadeAlpha(0, 0.5f, true);
+        esc4.CrossFadeAlpha(0, 0.5f, true);
         StartCoroutine("fadeForgive");
     }
 
     public void reapButton()
     {
+        esc.CrossFadeAlpha(0, 0.5f, true);
+        esc1.CrossFadeAlpha(0, 0.5f, true);
+        esc2.CrossFadeAlpha(0, 0.5f, true);
+        esc3.CrossFadeAlpha(0, 0.5f, true);
+        esc4.CrossFadeAlpha(0, 0.5f, true);
         StartCoroutine("fadeReap");
     }
 
@@ -86,6 +110,11 @@ public class TriggerTextOasis : MonoBehaviour
         yield return new WaitForSeconds(2);
         Cursor.visible = true;
         Cursor.lockState = wantedMode = CursorLockMode.None;
+        esc.CrossFadeAlpha(1, 0.5f, true);
+        esc1.CrossFadeAlpha(1, 0.5f, true);
+        esc2.CrossFadeAlpha(1, 0.5f, true);
+        esc3.CrossFadeAlpha(1, 0.5f, true);
+        esc4.CrossFadeAlpha(1, 0.5f, true);
         reapB.SetActive(true);
         forgiveB.SetActive(true);
     }
@@ -94,10 +123,13 @@ public class TriggerTextOasis : MonoBehaviour
     {
         reapB.SetActive(false);
         forgiveB.SetActive(false);
+        PlayerReap = true;
+        yield return new WaitForSeconds(3);
         black.CrossFadeAlpha(1, 2f, true);
         yield return new WaitForSeconds(3);
         Reap.CrossFadeAlpha(1, 0.5f, true);
-        yield return new WaitForSeconds(18);
+        reap.Play();
+        yield return new WaitForSeconds(11.5f);
         Reap.CrossFadeAlpha(0, 0.5f, true);
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene("ExitGame");
@@ -110,9 +142,22 @@ public class TriggerTextOasis : MonoBehaviour
         black.CrossFadeAlpha(1, 2f, true);
         yield return new WaitForSeconds(3);
         Forgive.CrossFadeAlpha(1, 0.5f, true);
-        yield return new WaitForSeconds(18);
+        forgive.Play();
+        yield return new WaitForSeconds(12.5f);
         Forgive.CrossFadeAlpha(0, 0.5f, true);
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene("ExitGame");
+    }
+
+    void Update()
+    {
+        if (PlayerReap)
+        {
+            anim.SetBool("PlayerReap", true);
+        }
+        else
+        {
+            anim.SetBool("PlayerReap", false);
+        }
     }
 }
