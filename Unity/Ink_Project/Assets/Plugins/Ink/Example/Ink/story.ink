@@ -1,4 +1,4 @@
-- I looked at Monsieur Fogg 
+- I looked at Monsieur Fogg <>
 *   ... and I could contain myself no longer.
     'What is the purpose of our journey, Monsieur?'
     'A wager,' he replied.
@@ -15,5 +15,5 @@
     * *     'Ah[.'],' I replied, uncertain what I thought.
     - -     After that, <>
 *   ... but I said nothing[] and <>
-- we passed the day in silence.
-- -> END
+- we passed rest of the day in silence.
+- - -> END
