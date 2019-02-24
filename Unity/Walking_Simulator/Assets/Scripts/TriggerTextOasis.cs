@@ -33,7 +33,6 @@ public class TriggerTextOasis : MonoBehaviour
     public Light toOasis;
     CursorLockMode wantedMode;
     bool PlayerReap = false;
-    public Animator anim;
 
     void Awake()
     {
@@ -147,17 +146,5 @@ public class TriggerTextOasis : MonoBehaviour
         Forgive.CrossFadeAlpha(0, 0.5f, true);
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene("ExitGame");
-    }
-
-    void Update()
-    {
-        if (PlayerReap)
-        {
-            anim.SetBool("PlayerReap", true);
-        }
-        else
-        {
-            anim.SetBool("PlayerReap", false);
-        }
     }
 }
