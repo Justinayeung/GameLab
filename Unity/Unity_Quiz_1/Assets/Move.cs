@@ -8,11 +8,19 @@ public class Move : MonoBehaviour
     private Rigidbody rb;
     public float speed;
     public Trigger trig;
+    //public float speed = 10;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
     }
+
+    //void Update()
+    //{
+    //    float xPos = Input.GetAxis("Horizontal") * speed;
+    //    float zPos = Input.GetAxis("Vertical") * speed;
+    //    rb.velocity = new Vector3(xPos, 0, zPos);
+    //}
 
     void FixedUpdate()
     {
