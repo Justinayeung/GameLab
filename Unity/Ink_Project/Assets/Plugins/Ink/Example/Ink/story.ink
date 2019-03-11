@@ -58,11 +58,11 @@ New York News Alert: A woman and man in their 30's have been found dead in their
 	-> lookitUp
 * [Oh]
 	You get nervous and wonder if you should go out today. You jump as your phone buzzes again.
-		** Open notification -> secondAlert
+		** [Open notification] -> secondAlert
 
 === lookitUp ===
 You start searching the web for more information. You find that a woman next door had called the police saying there was a strange smell coming from the apartment. The bodies were a day old and both were found in front of their full-length mirror. Your phone buzzes again. 
-* Open notification -> secondAlert
+* [Open notification] -> secondAlert
 
 === secondAlert ===
 You look at your phone and see that it's another Alert:
@@ -469,9 +469,9 @@ Breathing heavily, you finally arrive at the stairs to your apartment.
 
 === apartment ===
 You stand in front of your apartment door. #305. You fumble for the key that's in your pocket and unlock the door. 
-* Go inside
+* [Go inside]
 	Placing the key in your pocket, you walk into your apartment. You look at the shoe rack. "His shoes are still here."
-	** Kitchen
+	** [Kitchen]
 		You walk into the kitchen. 
 		{cleanKitchen} The mess you made this morning has been cleaned. 
 			*** [Worry]
@@ -483,7 +483,7 @@ You stand in front of your apartment door. #305. You fumble for the key that's i
 		{leaveKitchen} The mess you made this morning hasn't been cleaned. 
 			*** [Hope]
 				After seeing the mess, you begin to think he's still in bed. -> livingRoom
-	** Living Room -> livingRoom
+	** [Living Room] -> livingRoom
 * [Walk away]
 	You can't do it, you can't go inside. You turn around.
 	** Walk away 
@@ -682,7 +682,7 @@ You wake up in an unknown room. It's pitch black aside from the crack of light t
 		You watch someone brings in an object covered by a cloth. "You don't deserve the authority the demons have given us, it's truly a pity that you can't see the true justice of this world!" He pulls the cloth. 
 		*** [Turn away]
 			You turn away, you don't want to watch the deaths of all those people. 
-			**** [Glimpse of light]
+			**** [Shiny object]
 				You see something shiny on the ground. 
 					***** [Take it]
 						You're drawn to it. Your hands feel the sharp edges and the flat surface of the object, you know what it is.
@@ -701,7 +701,7 @@ You wake up in an unknown room. It's pitch black aside from the crack of light t
 		You hear people whimpering and crying, others yell back cursing the worship of the demons in the mirrors. "You don't deserve the authority the demons have given us, it's truly a pity that you can't see the true justice of this world!" You hear the screams.
 			*** [Don't listen]
 				You don't want to listen to the cries of the people, you cover your ears. 
-					**** [Glimpse of light]
+					**** [Shiny object]
 						You see something shiny on the ground. 
 							***** [Take it]
 								You're drawn to it. Your hands feel the sharp edges and the flat surface of the object, you know what it is.
