@@ -30,7 +30,6 @@ public class OnLevelLoad : MonoBehaviour
 
     public IEnumerator fadeIn()
     {
-        black.canvasRenderer.SetAlpha(1);
         yield return new WaitForSeconds(1f);
         black.CrossFadeAlpha(0, 1f, true);
         black.canvasRenderer.SetAlpha(0);

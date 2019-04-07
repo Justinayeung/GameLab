@@ -8,8 +8,7 @@ public class PlayerMove : MonoBehaviour
 {
     Rigidbody2D rb;
     public int speed = 10;
-    public int jumpForce1 = 500;
-    public int jumpForce2 = 500;
+    public int jumpForce = 500;
     public LayerMask groundLayer;
     public Transform feet;
     public bool canJump;
@@ -30,34 +29,32 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
         canJump = Physics2D.OverlapCircle(feet.position, 0.5f, groundLayer);
-        Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
-        pos.x = Mathf.Clamp01(pos.x);
-        transform.position = Camera.main.ViewportToWorldPoint(pos);
+        //Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
+        //pos.x = Mathf.Clamp01(pos.x);
+        //transform.position = Camera.main.ViewportToWorldPoint(pos);
         if (dead)
         {
             StartCoroutine(fadeIN());
         }
     }
 
+    void camStay()
+    {
+        Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
+        pos.x = Mathf.Clamp01(pos.x);
+        transform.position = Camera.main.ViewportToWorldPoint(pos);
+    }
+
     void FixedUpdate()
     {
-        float xSpeed = Input.GetAxis("Horizontal" + playerNum) * speed;
+        float xSpeed = Input.GetAxis("Horizontal"+playerNum) * speed;
         rb.velocity = new Vector2(xSpeed, rb.velocity.y);
 
-        if (Input.GetButtonDown("Jump" + playerNum) && canJump)
+        if (Input.GetButtonDown("Jump"+playerNum) && canJump)
         {
             rb.velocity = new Vector2(rb.velocity.x, 0);
             //With add force you adding something, when in velocity you set something which is why x = 0 instead of rb.velocity.x
-            rb.AddForce(new Vector2(0, jumpForce2));
-            Debug.Log("Jump");
-        }
-
-        if (Input.GetButtonDown("Jump" + playerNum) && canJump)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, 0);
-            //With add force you adding something, when in velocity you set something which is why x = 0 instead of rb.velocity.x
-            rb.AddForce(new Vector2(0, jumpForce1));
-            Debug.Log("Jump");
+            rb.AddForce(new Vector2(0, jumpForce));
         }
     }
 
@@ -75,6 +72,7 @@ public class PlayerMove : MonoBehaviour
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         black.canvasRenderer.SetAlpha(1);
+        dead = false;
     }
 
     /*
