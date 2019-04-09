@@ -6,6 +6,9 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
+    //Playernum 1 = Clunk
+    //Playernum 2 = Click
+
     Rigidbody2D rb;
     public int speed = 10;
     public int jumpForce = 500;
@@ -16,6 +19,7 @@ public class PlayerMove : MonoBehaviour
     public bool died;
     private GameMaster gm;
     public Image black;
+   
 
     void Start()
     {

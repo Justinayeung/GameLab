@@ -11,7 +11,12 @@ public class Grabbing : MonoBehaviour
     public float throwForce;
     public LayerMask notGrabbed;
     public GameObject Player;
-    public GameObject rockGrab;
+    GameObject rockGrab;
+
+    void Start()
+    {
+        rockGrab = GameObject.FindGameObjectWithTag("canGrab");
+    }
 
     void Update()
     {
@@ -28,7 +33,6 @@ public class Grabbing : MonoBehaviour
                     grabbed = true;
                 }
             }
-
             else if (!Physics2D.OverlapPoint(holdpoint.position, notGrabbed))
             {
                 //throw
@@ -40,13 +44,15 @@ public class Grabbing : MonoBehaviour
                 }
             }
         }
-
+        
         if (grabbed)
         {
             //Make a holdpoint
             hit.collider.gameObject.transform.position = holdpoint.position;
             hit.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
         }
+
+
     }
 
     void OnDrawGizmos()

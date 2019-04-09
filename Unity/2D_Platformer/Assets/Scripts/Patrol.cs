@@ -9,11 +9,6 @@ public class Patrol : MonoBehaviour
     private bool movingRight = true;
     public Transform groundDetection;
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         transform.Translate(Vector2.right * speed * Time.deltaTime);
