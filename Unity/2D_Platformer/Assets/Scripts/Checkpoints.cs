@@ -5,7 +5,6 @@ using UnityEngine;
 public class Checkpoints : MonoBehaviour
 {
     public GameObject saveParticles;
-    public GameObject hex;
     private GameMaster gm;
     public GameObject cp;
     bool pActivated;
@@ -30,7 +29,6 @@ public class Checkpoints : MonoBehaviour
     {
         if (pActivated)
         {
-            hex.SetActive(false);
             saveParticles.SetActive(true);
             yield return new WaitForSeconds(4f);
             saveParticles.SetActive(false);

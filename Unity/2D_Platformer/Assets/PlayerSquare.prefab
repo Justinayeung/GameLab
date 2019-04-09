@@ -149,6 +149,8 @@ MonoBehaviour:
     m_Bits: 55
   feet: {fileID: 1271709388623412526}
   canJump: 0
+  playerNum: 0
+  black: {fileID: 0}
 --- !u!1 &1271709388623412513
 GameObject:
   m_ObjectHideFlags: 0
@@ -161,7 +163,7 @@ GameObject:
   m_Layer: 8
   m_Name: Feet
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

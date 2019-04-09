@@ -13,17 +13,15 @@ public class PlayerMove : MonoBehaviour
     public Transform feet;
     public bool canJump;
     public int playerNum;
-
+    public bool died;
     private GameMaster gm;
-    bool dead;
     public Image black;
 
     void Start()
     {
-        dead = false;
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
         rb = GetComponent<Rigidbody2D>();
-        transform.position = gm.lastCheckPointPos;
+        StartCoroutine(players());
     }
 
     void Update()
@@ -32,10 +30,6 @@ public class PlayerMove : MonoBehaviour
         //Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
         //pos.x = Mathf.Clamp01(pos.x);
         //transform.position = Camera.main.ViewportToWorldPoint(pos);
-        if (dead)
-        {
-            StartCoroutine(fadeIN());
-        }
     }
 
     void camStay()
@@ -47,10 +41,10 @@ public class PlayerMove : MonoBehaviour
 
     void FixedUpdate()
     {
-        float xSpeed = Input.GetAxis("Horizontal"+playerNum) * speed;
+        float xSpeed = Input.GetAxis("Horizontal" + playerNum) * speed;
         rb.velocity = new Vector2(xSpeed, rb.velocity.y);
 
-        if (Input.GetButtonDown("Jump"+playerNum) && canJump)
+        if (Input.GetButtonDown("Jump" + playerNum) && canJump)
         {
             rb.velocity = new Vector2(rb.velocity.x, 0);
             //With add force you adding something, when in velocity you set something which is why x = 0 instead of rb.velocity.x
@@ -62,7 +56,20 @@ public class PlayerMove : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            dead = true;
+            StartCoroutine(fadeIN());
+        }
+    }
+
+    IEnumerator players()
+    {
+        if (playerNum == 1)
+        {
+            transform.position = gm.lastCheckPointPos;
+        }
+        yield return new WaitForSeconds(0.5f);
+        if (playerNum == 2)
+        {
+            transform.position = gm.lastCheckPointPos;
         }
     }
 
@@ -72,7 +79,6 @@ public class PlayerMove : MonoBehaviour
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         black.canvasRenderer.SetAlpha(1);
-        dead = false;
     }
 
     /*
