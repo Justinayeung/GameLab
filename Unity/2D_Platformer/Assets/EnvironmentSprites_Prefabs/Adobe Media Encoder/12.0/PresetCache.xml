@@ -1,0 +1,2205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PremiereData Version="3">
+	<Key Version="1" Index="0">
+		<DirectoryPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\3F3F3F3F_41494646</DirectoryPath>
+		<Key Version="3" Index="0">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Audio Only</FolderDisplayPath>
+			<PresetID>3119ffd5-e786-4cea-a135-fa5bd9aa114f</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/3119ffd5-e786-4cea-a135-fa5bd9aa114f/PresetName=AIFF 48 kHz)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\3F3F3F3F_41494646\AIFF 48kHz.epr</PresetPath>
+			<PresetModifiedTime>20180628T030434</PresetModifiedTime>
+			<PresetFileType>1095321158</PresetFileType>
+			<PresetClassID>1061109567</PresetClassID>
+		</Key>
+	</Key>
+	<Key Version="1" Index="1">
+		<DirectoryPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\3F3F3F3F_41564956</DirectoryPath>
+		<Key Version="3" Index="0">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Camera/DV</FolderDisplayPath>
+			<PresetID>c7f63fab-faec-432d-927b-95d5302ae188</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/c7f63fab-faec-432d-927b-95d5302ae188/PresetName=NTSC DV 24p)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\3F3F3F3F_41564956\NTSC DV 24p.epr</PresetPath>
+			<PresetModifiedTime>20180628T030434</PresetModifiedTime>
+			<PresetFileType>1096173910</PresetFileType>
+			<PresetClassID>1061109567</PresetClassID>
+		</Key>
+		<Key Version="3" Index="1">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Camera/DV</FolderDisplayPath>
+			<PresetID>7d59854c-cd37-4301-a6e3-0445ad13619a</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/7d59854c-cd37-4301-a6e3-0445ad13619a/PresetName=NTSC DV Widescreen 24p)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\3F3F3F3F_41564956\NTSC DV Widescreen 24p.epr</PresetPath>
+			<PresetModifiedTime>20180628T030434</PresetModifiedTime>
+			<PresetFileType>1096173910</PresetFileType>
+			<PresetClassID>1061109567</PresetClassID>
+		</Key>
+		<Key Version="3" Index="2">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Camera/DV</FolderDisplayPath>
+			<PresetID>703d1576-e248-4e4f-8186-18ddb4330b4b</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/703d1576-e248-4e4f-8186-18ddb4330b4b/PresetName=NTSC DV Widescreen)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\3F3F3F3F_41564956\NTSC DV Widescreen.epr</PresetPath>
+			<PresetModifiedTime>20180628T030434</PresetModifiedTime>
+			<PresetFileType>1096173910</PresetFileType>
+			<PresetClassID>1061109567</PresetClassID>
+		</Key>
+		<Key Version="3" Index="3">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Camera/DV</FolderDisplayPath>
+			<PresetID>2ccc89d9-4e7a-4e54-88b4-887b67ad2b4b</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/2ccc89d9-4e7a-4e54-88b4-887b67ad2b4b/PresetName=NTSC DV)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\3F3F3F3F_41564956\NTSC DV.epr</PresetPath>
+			<PresetModifiedTime>20180628T030434</PresetModifiedTime>
+			<PresetFileType>1096173910</PresetFileType>
+			<PresetClassID>1061109567</PresetClassID>
+		</Key>
+		<Key Version="3" Index="4">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Camera/DV</FolderDisplayPath>
+			<PresetID>a46df7b9-654e-4a06-930b-34d225b49c10</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/a46df7b9-654e-4a06-930b-34d225b49c10/PresetName=PAL DV Widescreen)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\3F3F3F3F_41564956\PAL DV Widescreen.epr</PresetPath>
+			<PresetModifiedTime>20180628T030434</PresetModifiedTime>
+			<PresetFileType>1096173910</PresetFileType>
+			<PresetClassID>1061109567</PresetClassID>
+		</Key>
+		<Key Version="3" Index="5">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Camera/DV</FolderDisplayPath>
+			<PresetID>7de22d5d-44c4-4c56-ac2c-677f5ffe6558</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/7de22d5d-44c4-4c56-ac2c-677f5ffe6558/PresetName=PAL DV)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\3F3F3F3F_41564956\PAL DV.epr</PresetPath>
+			<PresetModifiedTime>20180628T030434</PresetModifiedTime>
+			<PresetFileType>1096173910</PresetFileType>
+			<PresetClassID>1061109567</PresetClassID>
+		</Key>
+	</Key>
+	<Key Version="1" Index="2">
+		<DirectoryPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\3F3F3F3F_44494242</DirectoryPath>
+		<Key Version="3" Index="0">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Image Sequence/BMP</FolderDisplayPath>
+			<PresetID>29111163-6cde-4c06-825e-226b6d24998b</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/29111163-6cde-4c06-825e-226b6d24998b/PresetName=BMP Sequence (Match Source))</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\3F3F3F3F_44494242\BMP Sequence (Match Source).epr</PresetPath>
+			<PresetModifiedTime>20180628T030434</PresetModifiedTime>
+			<PresetFileType>1145651778</PresetFileType>
+			<PresetClassID>1061109567</PresetClassID>
+		</Key>
+	</Key>
+	<Key Version="1" Index="3">
+		<DirectoryPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\3F3F3F3F_44505820</DirectoryPath>
+		<Key Version="3" Index="0">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Image Sequence/DPX</FolderDisplayPath>
+			<PresetID>d9e2ca6f-2611-45df-a865-df9f3b5f54d1</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/d9e2ca6f-2611-45df-a865-df9f3b5f54d1/PresetName=DPX Sequence - Full Range (Match Source))</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\3F3F3F3F_44505820\DPX Sequence - Full Range (Match Source).epr</PresetPath>
+			<PresetModifiedTime>20180628T030434</PresetModifiedTime>
+			<PresetFileType>1146116128</PresetFileType>
+			<PresetClassID>1061109567</PresetClassID>
+		</Key>
+		<Key Version="3" Index="1">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Image Sequence/DPX</FolderDisplayPath>
+			<PresetID>93cfb005-b0b1-4996-bb8c-7a6442e55e5f</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/93cfb005-b0b1-4996-bb8c-7a6442e55e5f/PresetName=DPX Sequence - Over Range (Match Source))</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\3F3F3F3F_44505820\DPX Sequence - Over Range (Match Source).epr</PresetPath>
+			<PresetModifiedTime>20180628T030434</PresetModifiedTime>
+			<PresetFileType>1146116128</PresetFileType>
+			<PresetClassID>1061109567</PresetClassID>
+		</Key>
+		<Key Version="3" Index="2">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Image Sequence/DPX</FolderDisplayPath>
+			<PresetID>630c3b1d-e8df-43e9-a560-223d1ba15131</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/630c3b1d-e8df-43e9-a560-223d1ba15131/PresetName=DPX Sequence - Standard (Match Source))</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\3F3F3F3F_44505820\DPX Sequence - Standard (Match Source).epr</PresetPath>
+			<PresetModifiedTime>20180628T030434</PresetModifiedTime>
+			<PresetFileType>1146116128</PresetFileType>
+			<PresetClassID>1061109567</PresetClassID>
+		</Key>
+		<Key Version="3" Index="3">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Image Sequence/DPX</FolderDisplayPath>
+			<PresetID>998256e5-a817-44be-90dc-13126d5a21e7</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/998256e5-a817-44be-90dc-13126d5a21e7/PresetName=DPX Sequence - Video (Match Source))</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\3F3F3F3F_44505820\DPX Sequence - Video (Match Source).epr</PresetPath>
+			<PresetModifiedTime>20180628T030434</PresetModifiedTime>
+			<PresetFileType>1146116128</PresetFileType>
+			<PresetClassID>1061109567</PresetClassID>
+		</Key>
+	</Key>
+	<Key Version="1" Index="4">
+		<DirectoryPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\3F3F3F3F_4D503320</DirectoryPath>
+		<Key Version="3" Index="0">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Audio Only</FolderDisplayPath>
+			<PresetID>4a9e3df1-86bf-4dd7-97e8-b7eb7d003454</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/4a9e3df1-86bf-4dd7-97e8-b7eb7d003454/PresetName=MP3 128 kbps)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\3F3F3F3F_4D503320\MP3 128kbps.epr</PresetPath>
+			<PresetModifiedTime>20180628T030434</PresetModifiedTime>
+			<PresetFileType>1297101600</PresetFileType>
+			<PresetClassID>1061109567</PresetClassID>
+		</Key>
+		<Key Version="3" Index="1">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Audio Only</FolderDisplayPath>
+			<PresetID>2885ce3b-46da-497a-8884-e0dc8796c831</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/2885ce3b-46da-497a-8884-e0dc8796c831/PresetName=MP3 192 kbps High Quality)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\3F3F3F3F_4D503320\MP3 192kbps High Quality.epr</PresetPath>
+			<PresetModifiedTime>20180628T030434</PresetModifiedTime>
+			<PresetFileType>1297101600</PresetFileType>
+			<PresetClassID>1061109567</PresetClassID>
+		</Key>
+		<Key Version="3" Index="2">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Audio Only</FolderDisplayPath>
+			<PresetID>3334ce9d-e611-4b5e-8b1d-2d382af37863</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/3334ce9d-e611-4b5e-8b1d-2d382af37863/PresetName=MP3 256 kbps High Quality)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\3F3F3F3F_4D503320\MP3 256kbps High Quality.epr</PresetPath>
+			<PresetModifiedTime>20180628T030434</PresetModifiedTime>
+			<PresetFileType>1297101600</PresetFileType>
+			<PresetClassID>1061109567</PresetClassID>
+		</Key>
+	</Key>
+	<Key Version="1" Index="5">
+		<DirectoryPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\41533130_4D583130</DirectoryPath>
+		<Key Version="3" Index="0">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/AS-10</FolderDisplayPath>
+			<PresetID>d045aacd-3153-4871-9ba7-41aa204bc8ca</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/d045aacd-3153-4871-9ba7-41aa204bc8ca/PresetName=AS-10 CANAL Shim Specification 50i)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\41533130_4D583130\AS-10 CANAL Shim Specification 50i.epr</PresetPath>
+			<PresetModifiedTime>20180628T030434</PresetModifiedTime>
+			<PresetFileType>1297625392</PresetFileType>
+			<PresetClassID>1095971120</PresetClassID>
+		</Key>
+	</Key>
+	<Key Version="1" Index="6">
+		<DirectoryPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\41533131_4D583131</DirectoryPath>
+		<Key Version="3" Index="0">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/AS-11</FolderDisplayPath>
+			<PresetID>80cc2486-8e50-4d93-800d-28cc16a699b8</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/80cc2486-8e50-4d93-800d-28cc16a699b8/PresetName=DPP AS-11 HD)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\41533131_4D583131\DPP AS-11 HD.epr</PresetPath>
+			<PresetModifiedTime>20180628T030434</PresetModifiedTime>
+			<PresetFileType>1297625393</PresetFileType>
+			<PresetClassID>1095971121</PresetClassID>
+		</Key>
+		<Key Version="3" Index="1">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/AS-11</FolderDisplayPath>
+			<PresetID>495e56f5-dca9-4fea-a442-6b33308fbd56</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/495e56f5-dca9-4fea-a442-6b33308fbd56/PresetName=DPP AS-11 SD)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\41533131_4D583131\DPP AS-11 SD.epr</PresetPath>
+			<PresetModifiedTime>20180628T030434</PresetModifiedTime>
+			<PresetFileType>1297625393</PresetFileType>
+			<PresetClassID>1095971121</PresetClassID>
+		</Key>
+	</Key>
+	<Key Version="1" Index="7">
+		<DirectoryPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\47494653_47494666</DirectoryPath>
+		<Key Version="3" Index="0">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Image Sequence/GIF</FolderDisplayPath>
+			<PresetID>868fe674-49d5-46c0-99be-481890a2379a</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/868fe674-49d5-46c0-99be-481890a2379a/PresetName=GIF Sequence (Match Source))</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\47494653_47494666\GIF Sequence (Match Source).epr</PresetPath>
+			<PresetModifiedTime>20180628T030434</PresetModifiedTime>
+			<PresetFileType>1195984486</PresetFileType>
+			<PresetClassID>1195984467</PresetClassID>
+		</Key>
+	</Key>
+	<Key Version="1" Index="8">
+		<DirectoryPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\47494666_47494666</DirectoryPath>
+		<Key Version="3" Index="0">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Image Sequence/GIF</FolderDisplayPath>
+			<PresetID>b2a365a6-b6b1-4ea4-bc8a-b7c7dde29bd9</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/b2a365a6-b6b1-4ea4-bc8a-b7c7dde29bd9/PresetName=Animated GIF (Match Source))</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\47494666_47494666\Animated GIF (Match Source).epr</PresetPath>
+			<PresetModifiedTime>20180628T030434</PresetModifiedTime>
+			<PresetFileType>1195984486</PresetFileType>
+			<PresetClassID>1195984486</PresetClassID>
+		</Key>
+	</Key>
+	<Key Version="1" Index="9">
+		<DirectoryPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846</DirectoryPath>
+		<Key Version="3" Index="0">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a</FolderDisplayPath>
+			<PresetID>05edb8d8-6ff5-4602-bff1-8b670060518f</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/05EDB8D8-6FF5-4602-BFF1-8B670060518F/PresetName=Match Source (Rewrap))</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\01 - Match Source.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="1">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/720p 23.976</FolderDisplayPath>
+			<PresetID>3f6a60e6-6588-4a23-a822-e5bad668402d</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/3f6a60e6-6588-4a23-a822-e5bad668402d/PresetName=DNX HQ 720p 23.976)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX HQ 720p 23.976.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="2">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/720p 25</FolderDisplayPath>
+			<PresetID>21dfac77-8162-433f-9f7a-c35c3bb7e574</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/21dfac77-8162-433f-9f7a-c35c3bb7e574/PresetName=DNX HQ 720p 25)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX HQ 720p 25.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="3">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/720p 29.97</FolderDisplayPath>
+			<PresetID>4752e42c-61e5-4670-a622-9fc2b649977a</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/4752e42c-61e5-4670-a622-9fc2b649977a/PresetName=DNX HQ 720p 29.97)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX HQ 720p 29.97.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="4">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/720p 50</FolderDisplayPath>
+			<PresetID>7bafd7c5-02e3-4fc9-9868-0120d4f1c58f</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/7bafd7c5-02e3-4fc9-9868-0120d4f1c58f/PresetName=DNX HQ 720p 50)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX HQ 720p 50.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="5">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/720p 59.94</FolderDisplayPath>
+			<PresetID>d72f6276-014e-4536-a353-9fa2661f9641</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/d72f6276-014e-4536-a353-9fa2661f9641/PresetName=DNX HQ 720p 59.94)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX HQ 720p 59.94.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="6">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080i 50</FolderDisplayPath>
+			<PresetID>a2c4a8bd-7a77-405c-a662-436749126110</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/a2c4a8bd-7a77-405c-a662-436749126110/PresetName=DNX HQ 1080i 50)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX HQ 1080i 50.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="7">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080i 59.94</FolderDisplayPath>
+			<PresetID>aa1e47fb-8f39-42e5-871c-34c6512ebb1c</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/aa1e47fb-8f39-42e5-871c-34c6512ebb1c/PresetName=DNX HQ 1080i 59.94)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX HQ 1080i 59.94.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="8">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 23.976</FolderDisplayPath>
+			<PresetID>3e5e4020-4b93-4b91-91ad-07c5854eb440</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/3e5e4020-4b93-4b91-91ad-07c5854eb440/PresetName=DNX HQ 1080p 23.976)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX HQ 1080p 23.976.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="9">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 24</FolderDisplayPath>
+			<PresetID>633333d7-8420-43e3-bf11-c361ada31053</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/633333d7-8420-43e3-bf11-c361ada31053/PresetName=DNX HQ 1080p 24)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX HQ 1080p 24.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="10">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 25</FolderDisplayPath>
+			<PresetID>02760753-ed57-4ba2-8d9d-dc9973c5987c</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/02760753-ed57-4ba2-8d9d-dc9973c5987c/PresetName=DNX HQ 1080p 25)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX HQ 1080p 25.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="11">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 29.97</FolderDisplayPath>
+			<PresetID>5c364c8d-6460-42eb-be59-d278dd857b32</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/5c364c8d-6460-42eb-be59-d278dd857b32/PresetName=DNX HQ 1080p 29.97)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX HQ 1080p 29.97.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="12">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 50</FolderDisplayPath>
+			<PresetID>a86d54c1-945e-4567-98b6-9ecbdbd79b80</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/a86d54c1-945e-4567-98b6-9ecbdbd79b80/PresetName=DNX HQ 1080p 50)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX HQ 1080p 50.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="13">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 59.94</FolderDisplayPath>
+			<PresetID>bb5570fc-739d-43ec-85ff-657babc25ce7</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/bb5570fc-739d-43ec-85ff-657babc25ce7/PresetName=DNX HQ 1080p 59.94)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX HQ 1080p 59.94.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="14">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 60</FolderDisplayPath>
+			<PresetID>c060749d-208c-45b7-b8dd-e9bd9b5118d4</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/c060749d-208c-45b7-b8dd-e9bd9b5118d4/PresetName=DNX HQ 1080p 60)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX HQ 1080p 60.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="15">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/720p 23.976</FolderDisplayPath>
+			<PresetID>b0976b72-d63e-487f-8efa-3685abc2c25b</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/b0976b72-d63e-487f-8efa-3685abc2c25b/PresetName=DNX HQX 720p 23.976)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX HQX 720p 23.976.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="16">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/720p 25</FolderDisplayPath>
+			<PresetID>720687eb-9743-4975-be0b-b3794f0603ac</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/720687eb-9743-4975-be0b-b3794f0603ac/PresetName=DNX HQX 720p 25)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX HQX 720p 25.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="17">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/720p 29.97</FolderDisplayPath>
+			<PresetID>8bdc5e24-f990-46a9-a56e-8ba05a709cd4</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/8bdc5e24-f990-46a9-a56e-8ba05a709cd4/PresetName=DNX HQX 720p 29.97)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX HQX 720p 29.97.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="18">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/720p 50</FolderDisplayPath>
+			<PresetID>da037b27-42b0-4393-981d-dbc3790d7843</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/da037b27-42b0-4393-981d-dbc3790d7843/PresetName=DNX HQX 720p 50)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX HQX 720p 50.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="19">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/720p 59.94</FolderDisplayPath>
+			<PresetID>e3bfe98e-b4a1-476d-8df1-3e3a1938c145</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/e3bfe98e-b4a1-476d-8df1-3e3a1938c145/PresetName=DNX HQX 720p 59.94)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX HQX 720p 59.94.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="20">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080i 50</FolderDisplayPath>
+			<PresetID>d54b7622-a71e-49f6-b718-e2c59c063d50</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/d54b7622-a71e-49f6-b718-e2c59c063d50/PresetName=DNX HQX 1080i 50)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX HQX 1080i 50.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="21">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080i 59.94</FolderDisplayPath>
+			<PresetID>d32ea704-3179-4b5b-9791-043d5659f104</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/d32ea704-3179-4b5b-9791-043d5659f104/PresetName=DNX HQX 1080i 59.94)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX HQX 1080i 59.94.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="22">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 23.976</FolderDisplayPath>
+			<PresetID>c68b9893-0e9c-431a-adc3-38e83204b906</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/c68b9893-0e9c-431a-adc3-38e83204b906/PresetName=DNX HQX 1080p 23.976)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX HQX 1080p 23.976.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="23">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 24</FolderDisplayPath>
+			<PresetID>49279341-80bf-4177-b539-e249a8e51441</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/49279341-80bf-4177-b539-e249a8e51441/PresetName=DNX HQX 1080p 24)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX HQX 1080p 24.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="24">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 25</FolderDisplayPath>
+			<PresetID>7ac09ba1-6996-4b51-8751-a8edccc8264c</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/7ac09ba1-6996-4b51-8751-a8edccc8264c/PresetName=DNX HQX 1080p 25)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX HQX 1080p 25.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="25">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 29.97</FolderDisplayPath>
+			<PresetID>fd142ced-aae3-4688-88b3-820827319b0b</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/fd142ced-aae3-4688-88b3-820827319b0b/PresetName=DNX HQX 1080p 29.97)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX HQX 1080p 29.97.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="26">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 50</FolderDisplayPath>
+			<PresetID>d7840c6e-08ea-4880-979e-e741e9e15a5e</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/d7840c6e-08ea-4880-979e-e741e9e15a5e/PresetName=DNX HQX 1080p 50)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX HQX 1080p 50.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="27">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 59.94</FolderDisplayPath>
+			<PresetID>0f03c37b-fdee-4c09-b03e-b17c7a2825df</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/0f03c37b-fdee-4c09-b03e-b17c7a2825df/PresetName=DNX HQX 1080p 59.94)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX HQX 1080p 59.94.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="28">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 60</FolderDisplayPath>
+			<PresetID>9a19058c-3a3e-404c-a816-a429b8aabdf3</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/9a19058c-3a3e-404c-a816-a429b8aabdf3/PresetName=DNX HQX 1080p 60)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX HQX 1080p 60.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="29">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 23.976</FolderDisplayPath>
+			<PresetID>1c289a4e-4740-45c6-8c88-37cc42c037eb</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/1c289a4e-4740-45c6-8c88-37cc42c037eb/PresetName=DNX LB 1080p 23.976)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX LB 1080p 23.976.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="30">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 24</FolderDisplayPath>
+			<PresetID>ef3a2f04-331a-4939-885e-6646237102d5</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/ef3a2f04-331a-4939-885e-6646237102d5/PresetName=DNX LB 1080p 24)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX LB 1080p 24.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="31">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 25</FolderDisplayPath>
+			<PresetID>3cb6e37d-ecd7-4bfb-a2e3-d8623ed4f8db</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/3cb6e37d-ecd7-4bfb-a2e3-d8623ed4f8db/PresetName=DNX LB 1080p 25)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX LB 1080p 25.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="32">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 29.97</FolderDisplayPath>
+			<PresetID>c3ef6580-425e-4ae1-9eea-11fb6828e126</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/c3ef6580-425e-4ae1-9eea-11fb6828e126/PresetName=DNX LB 1080p 29.97)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX LB 1080p 29.97.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="33">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 50</FolderDisplayPath>
+			<PresetID>76e2fd7c-6d30-41d9-9711-7d80c41c84da</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/76e2fd7c-6d30-41d9-9711-7d80c41c84da/PresetName=DNX LB 1080p 50)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX LB 1080p 50.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="34">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 23.976</FolderDisplayPath>
+			<PresetID>0ffc14df-5ea3-4120-bc62-fdb4d48b6460</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/0ffc14df-5ea3-4120-bc62-fdb4d48b6460/PresetName=DNX RGB 444 1080p 23.976)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX RGB 444 1080p 23.976.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="35">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 24</FolderDisplayPath>
+			<PresetID>a3faad29-fc2f-4f66-98eb-00c27ead46d1</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/a3faad29-fc2f-4f66-98eb-00c27ead46d1/PresetName=DNX RGB 444 1080p 24)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX RGB 444 1080p 24.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="36">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 25</FolderDisplayPath>
+			<PresetID>21ab0339-f837-4b1d-b525-6cfcce7f5132</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/21ab0339-f837-4b1d-b525-6cfcce7f5132/PresetName=DNX RGB 444 1080p 25)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX RGB 444 1080p 25.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="37">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 29.97</FolderDisplayPath>
+			<PresetID>3eebc583-f848-425b-b496-1b7fa3c803a2</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/3eebc583-f848-425b-b496-1b7fa3c803a2/PresetName=DNX RGB 444 1080p 29.97)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX RGB 444 1080p 29.97.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="38">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/720p 23.976</FolderDisplayPath>
+			<PresetID>b5c35f6b-5414-4aa5-8e82-5beb228efbe7</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/b5c35f6b-5414-4aa5-8e82-5beb228efbe7/PresetName=DNX SQ 720p 23.976)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX SQ 720p 23.976.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="39">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/720p 25</FolderDisplayPath>
+			<PresetID>73853302-7db7-4459-acf9-bc7513019034</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/73853302-7db7-4459-acf9-bc7513019034/PresetName=DNX SQ 720p 25)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX SQ 720p 25.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="40">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/720p 29.97</FolderDisplayPath>
+			<PresetID>2ee4564c-971f-4eae-9a2f-e5866f8a7172</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/2ee4564c-971f-4eae-9a2f-e5866f8a7172/PresetName=DNX SQ 720p 29.97)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX SQ 720p 29.97.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="41">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/720p 50</FolderDisplayPath>
+			<PresetID>80d072f5-17a2-4e2d-907a-8b97023e237c</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/80d072f5-17a2-4e2d-907a-8b97023e237c/PresetName=DNX SQ 720p 50)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX SQ 720p 50.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="42">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/720p 59.94</FolderDisplayPath>
+			<PresetID>942179cc-afa2-4b3a-8877-5accadcc51fd</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/942179cc-afa2-4b3a-8877-5accadcc51fd/PresetName=DNX SQ 720p 59.94)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX SQ 720p 59.94.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="43">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080i 50</FolderDisplayPath>
+			<PresetID>490ab9c3-9865-45f5-b507-3a0e31740300</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/490ab9c3-9865-45f5-b507-3a0e31740300/PresetName=DNX SQ 1080i 50)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX SQ 1080i 50.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="44">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080i 59.94</FolderDisplayPath>
+			<PresetID>62acb4dd-8a2b-4810-bc3b-d7ded7256b41</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/62acb4dd-8a2b-4810-bc3b-d7ded7256b41/PresetName=DNX SQ 1080i 59.94)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX SQ 1080i 59.94.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="45">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 23.976</FolderDisplayPath>
+			<PresetID>4374849c-c01e-478d-ad4a-b4e5d6fe8b78</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/4374849c-c01e-478d-ad4a-b4e5d6fe8b78/PresetName=DNX SQ 1080p 23.976)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX SQ 1080p 23.976.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="46">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 24</FolderDisplayPath>
+			<PresetID>ad39b367-2ffd-41ce-ab74-9292634b8840</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/ad39b367-2ffd-41ce-ab74-9292634b8840/PresetName=DNX SQ 1080p 24)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX SQ 1080p 24.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="47">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 25</FolderDisplayPath>
+			<PresetID>3cdd05b5-f521-44dc-af41-bde448814017</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/3cdd05b5-f521-44dc-af41-bde448814017/PresetName=DNX SQ 1080p 25)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX SQ 1080p 25.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="48">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 29.97</FolderDisplayPath>
+			<PresetID>87786982-4711-4edc-85b3-b222c324d47e</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/87786982-4711-4edc-85b3-b222c324d47e/PresetName=DNX SQ 1080p 29.97)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX SQ 1080p 29.97.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="49">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 50</FolderDisplayPath>
+			<PresetID>54d1b435-8170-445d-8de8-74d447c4719d</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/54d1b435-8170-445d-8de8-74d447c4719d/PresetName=DNX SQ 1080p 50)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX SQ 1080p 50.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="50">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 59.94</FolderDisplayPath>
+			<PresetID>e4e6b043-60b8-4123-bb7d-1d2bac5c6812</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/e4e6b043-60b8-4123-bb7d-1d2bac5c6812/PresetName=DNX SQ 1080p 59.94)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX SQ 1080p 59.94.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="51">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHD MXF OP1a/1080p 60</FolderDisplayPath>
+			<PresetID>3d255d12-e9ef-4a6a-ad7d-26c6dadc883b</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/3d255d12-e9ef-4a6a-ad7d-26c6dadc883b/PresetName=DNX SQ 1080p 60)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNX SQ 1080p 60.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="52">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 23.976</FolderDisplayPath>
+			<PresetID>aa95c6b3-42dd-4945-8207-07078d87d6dc</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/aa95c6b3-42dd-4945-8207-07078d87d6dc/PresetName=DNxHR HQ 2K 23.976)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQ 2K 23.976.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="53">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 24</FolderDisplayPath>
+			<PresetID>11b73d1e-a74d-4c98-b420-7e564df554f5</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/11B73D1E-A74D-4C98-B420-7E564DF554F5/PresetName=DNxHR HQ 2K 24)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQ 2K 24.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="54">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 25</FolderDisplayPath>
+			<PresetID>59abbb6a-0b5a-456c-87d9-256a752a0f85</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/59abbb6a-0b5a-456c-87d9-256a752a0f85/PresetName=DNxHR HQ 2K 25)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQ 2K 25.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="55">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 29.97</FolderDisplayPath>
+			<PresetID>cda983a6-aac9-478d-b925-2a837f5205d1</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/cda983a6-aac9-478d-b925-2a837f5205d1/PresetName=DNxHR HQ 2K 29.97)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQ 2K 29.97.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="56">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 48</FolderDisplayPath>
+			<PresetID>2d28d413-c3e5-491e-9f4d-3a56d8c37ca7</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/2d28d413-c3e5-491e-9f4d-3a56d8c37ca7/PresetName=DNxHR HQ 2K 48)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQ 2K 48.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="57">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 50</FolderDisplayPath>
+			<PresetID>a70f3665-fb7b-466c-b4c2-d591269dd37b</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/a70f3665-fb7b-466c-b4c2-d591269dd37b/PresetName=DNxHR HQ 2K 50)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQ 2K 50.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="58">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 59.94</FolderDisplayPath>
+			<PresetID>70daef11-4fd0-4a9a-9680-db3bd7080d10</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/70daef11-4fd0-4a9a-9680-db3bd7080d10/PresetName=DNxHR HQ 2K 59.94)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQ 2K 59.94.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="59">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 23.976</FolderDisplayPath>
+			<PresetID>5704aef0-516b-44fb-b78e-ab80f9d410ee</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/5704aef0-516b-44fb-b78e-ab80f9d410ee/PresetName=DNxHR HQ 4K 23.976)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQ 4K 23.976.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="60">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 24</FolderDisplayPath>
+			<PresetID>26b4863b-401e-4ba9-93db-92569cab361d</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/26B4863B-401E-4BA9-93DB-92569CAB361D/PresetName=DNxHR HQ 4K 24)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQ 4K 24.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="61">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 25</FolderDisplayPath>
+			<PresetID>36f8b732-5d92-40c9-83fb-649c132c67b2</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/36f8b732-5d92-40c9-83fb-649c132c67b2/PresetName=DNxHR HQ 4K 25)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQ 4K 25.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="62">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 29.97</FolderDisplayPath>
+			<PresetID>21e60b81-2e39-4fc0-be6d-cc4c94837916</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/21e60b81-2e39-4fc0-be6d-cc4c94837916/PresetName=DNxHR HQ 4K 29.97)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQ 4K 29.97.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="63">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 50</FolderDisplayPath>
+			<PresetID>c05269b9-a19e-4393-b9a8-1200cc359fe0</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/c05269b9-a19e-4393-b9a8-1200cc359fe0/PresetName=DNxHR HQ 4K 50)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQ 4K 50.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="64">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 59.94</FolderDisplayPath>
+			<PresetID>19e7d613-9891-46d6-97d9-b68a50573552</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/19e7d613-9891-46d6-97d9-b68a50573552/PresetName=DNxHR HQ 4K 59.94)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQ 4K 59.94.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="65">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 23.976</FolderDisplayPath>
+			<PresetID>e9bcf3e7-f2e7-4957-8d31-a0aea4128779</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/e9bcf3e7-f2e7-4957-8d31-a0aea4128779/PresetName=DNxHR HQ UHD 23.976)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQ UHD 23.976.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="66">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 24</FolderDisplayPath>
+			<PresetID>a87b8404-1ebc-4669-abc5-be7d2bf8de6f</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/A87B8404-1EBC-4669-ABC5-BE7D2BF8DE6F/PresetName=DNxHR HQ UHD 24)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQ UHD 24.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="67">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 25</FolderDisplayPath>
+			<PresetID>bafcde1f-1e5d-4543-b39e-94c2d80b7ba7</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/BAFCDE1F-1E5D-4543-B39E-94C2D80B7BA7/PresetName=DNxHR HQ UHD 25)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQ UHD 25.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="68">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 29.97</FolderDisplayPath>
+			<PresetID>07fb03bc-7605-4b8f-8f51-6d4cbc655a8c</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/07fb03bc-7605-4b8f-8f51-6d4cbc655a8c/PresetName=DNxHR HQ UHD 29.97)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQ UHD 29.97.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="69">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 50</FolderDisplayPath>
+			<PresetID>fcc28b98-f8ea-49f2-aaf1-2063393a590d</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/fcc28b98-f8ea-49f2-aaf1-2063393a590d/PresetName=DNxHR HQ UHD 50)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQ UHD 50.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="70">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 59.94</FolderDisplayPath>
+			<PresetID>b09237f9-46b9-4115-b8d1-08f0bbaf1b66</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/b09237f9-46b9-4115-b8d1-08f0bbaf1b66/PresetName=DNxHR HQ UHD 59.94)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQ UHD 59.94.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="71">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 60</FolderDisplayPath>
+			<PresetID>89995ac7-9090-4e2e-9bc2-762d70987bf2</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/89995ac7-9090-4e2e-9bc2-762d70987bf2/PresetName=DNxHR HQ UHD 60)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQ UHD 60.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="72">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 23.976</FolderDisplayPath>
+			<PresetID>9c3fc277-4954-44af-9313-047256dfe444</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/9c3fc277-4954-44af-9313-047256dfe444/PresetName=DNxHR HQX 2K 23.976)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQX 2K 23.976.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="73">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 24</FolderDisplayPath>
+			<PresetID>2f00760c-443a-49e4-b3b3-cae19e84e576</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/2F00760C-443A-49E4-B3B3-CAE19E84E576/PresetName=DNxHR HQX 2K 24)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQX 2K 24.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="74">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 25</FolderDisplayPath>
+			<PresetID>bfef294c-cee0-4b73-aa32-794da75c0a7f</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/bfef294c-cee0-4b73-aa32-794da75c0a7f/PresetName=DNxHR HQX 2K 25)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQX 2K 25.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="75">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 29.97</FolderDisplayPath>
+			<PresetID>8d732d51-8f06-4f10-b480-718aeff1b677</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/8d732d51-8f06-4f10-b480-718aeff1b677/PresetName=DNxHR HQX 2K 29.97)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQX 2K 29.97.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="76">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 48</FolderDisplayPath>
+			<PresetID>a2af5afa-17b7-4605-bc22-5e2bf1bdfb3c</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/a2af5afa-17b7-4605-bc22-5e2bf1bdfb3c/PresetName=DNxHR HQX 2K 48)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQX 2K 48.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="77">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 50</FolderDisplayPath>
+			<PresetID>400ffa89-9c5b-4f0d-8453-be961d1a926c</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/400ffa89-9c5b-4f0d-8453-be961d1a926c/PresetName=DNxHR HQX 2K 50)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQX 2K 50.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="78">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 59.94</FolderDisplayPath>
+			<PresetID>6c5731c9-89f8-41ab-bf36-78ce5174e2c5</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/6c5731c9-89f8-41ab-bf36-78ce5174e2c5/PresetName=DNxHR HQX 2K 59.94)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQX 2K 59.94.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="79">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 23.976</FolderDisplayPath>
+			<PresetID>8d551d4d-64f3-480a-af2f-b677e53b3a8b</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/8d551d4d-64f3-480a-af2f-b677e53b3a8b/PresetName=DNxHR HQX 4K 23.976)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQX 4K 23.976.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="80">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 24</FolderDisplayPath>
+			<PresetID>f37f0a61-a0a5-4255-9624-3ead7c23ead9</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/F37F0A61-A0A5-4255-9624-3EAD7C23EAD9/PresetName=DNxHR HQX 4K 24)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQX 4K 24.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="81">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 25</FolderDisplayPath>
+			<PresetID>a6e4d632-85b4-4c59-9a1e-618951ee9c0e</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/a6e4d632-85b4-4c59-9a1e-618951ee9c0e/PresetName=DNxHR HQX 4K 25)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQX 4K 25.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="82">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 29.97</FolderDisplayPath>
+			<PresetID>22b7b956-6574-4e0c-ab48-ebdbb0747f1c</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/22b7b956-6574-4e0c-ab48-ebdbb0747f1c/PresetName=DNxHR HQX 4K 29.97)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQX 4K 29.97.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="83">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 50</FolderDisplayPath>
+			<PresetID>835274e7-b327-47cb-b9f1-47309865c0a1</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/835274e7-b327-47cb-b9f1-47309865c0a1/PresetName=DNxHR HQX 4K 50)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQX 4K 50.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="84">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 59.94</FolderDisplayPath>
+			<PresetID>323bbd00-db6e-4686-bb46-c25e89f91864</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/323bbd00-db6e-4686-bb46-c25e89f91864/PresetName=DNxHR HQX 4K 59.94)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQX 4K 59.94.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="85">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 23.976</FolderDisplayPath>
+			<PresetID>e9cd417e-dd00-41b8-abb2-6bd9d30b235f</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/e9cd417e-dd00-41b8-abb2-6bd9d30b235f/PresetName=DNxHR HQX UHD 23.976)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQX UHD 23.976.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="86">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 24</FolderDisplayPath>
+			<PresetID>07faecdc-8e24-4053-9301-05d2782ff2be</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/07FAECDC-8E24-4053-9301-05D2782FF2BE/PresetName=DNxHR HQX UHD 24)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQX UHD 24.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="87">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 25</FolderDisplayPath>
+			<PresetID>3a8255b1-eb2b-4498-bb33-c5c6219afc4e</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/3A8255B1-EB2B-4498-BB33-C5C6219AFC4E/PresetName=DNxHR HQX UHD 25)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQX UHD 25.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="88">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 29.97</FolderDisplayPath>
+			<PresetID>b8323fa5-86c3-4bab-b3af-2c64d49f2f9d</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/b8323fa5-86c3-4bab-b3af-2c64d49f2f9d/PresetName=DNxHR HQX UHD 29.97)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQX UHD 29.97.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="89">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 50</FolderDisplayPath>
+			<PresetID>220481b3-a0ed-4d42-834e-20e941e90715</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/220481b3-a0ed-4d42-834e-20e941e90715/PresetName=DNxHR HQX UHD 50)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQX UHD 50.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="90">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 59.94</FolderDisplayPath>
+			<PresetID>34d1d740-15f2-4220-9f46-3dcc886197ca</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/34d1d740-15f2-4220-9f46-3dcc886197ca/PresetName=DNxHR HQX UHD 59.94)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQX UHD 59.94.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="91">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 60</FolderDisplayPath>
+			<PresetID>ee8a2ea5-7f5d-45df-b024-a6539437dafe</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/ee8a2ea5-7f5d-45df-b024-a6539437dafeE/PresetName=DNxHR HQX UHD 60)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR HQX UHD 60.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="92">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 23.976</FolderDisplayPath>
+			<PresetID>4a95903f-7414-46ac-8e26-886e23a2142c</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/4a95903f-7414-46ac-8e26-886e23a2142c/PresetName=DNxHR LB 2K 23.976)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR LB 2K 23.976.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="93">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 24</FolderDisplayPath>
+			<PresetID>8e3c15b6-3499-456e-81cd-e561ab1bb9d7</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/8E3C15B6-3499-456E-81CD-E561AB1BB9D7/PresetName=DNxHR LB 2K 24)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR LB 2K 24.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="94">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 25</FolderDisplayPath>
+			<PresetID>27a7295c-8e66-4f0b-9421-b6423e53bbe6</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/27a7295c-8e66-4f0b-9421-b6423e53bbe6/PresetName=DNxHR LB 2K 25)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR LB 2K 25.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="95">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 29.97</FolderDisplayPath>
+			<PresetID>23e3c7e1-233a-4058-913e-14838e2dc661</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/23e3c7e1-233a-4058-913e-14838e2dc661/PresetName=DNxHR LB 2K 29.97)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR LB 2K 29.97.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="96">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 48</FolderDisplayPath>
+			<PresetID>2d346dc2-6270-4ce1-be49-ac119d639c71</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/2d346dc2-6270-4ce1-be49-ac119d639c71/PresetName=DNxHR LB 2K 48)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR LB 2K 48.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="97">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 50</FolderDisplayPath>
+			<PresetID>823da152-17f3-44df-9e80-441db4a88237</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/823da152-17f3-44df-9e80-441db4a88237/PresetName=DNxHR LB 2K 50)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR LB 2K 50.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="98">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 59.94</FolderDisplayPath>
+			<PresetID>2700d907-b7d8-4737-b04a-6a5556780428</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/2700d907-b7d8-4737-b04a-6a5556780428/PresetName=DNxHR LB 2K 59.94)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR LB 2K 59.94.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="99">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 23.976</FolderDisplayPath>
+			<PresetID>cbae58f1-d861-4bcb-8afe-f717f723a4f5</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/cbae58f1-d861-4bcb-8afe-f717f723a4f5/PresetName=DNxHR LB 4K 23.976)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR LB 4K 23.976.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="100">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 24</FolderDisplayPath>
+			<PresetID>680e9eb4-c7ba-4b70-81bc-ce093508651c</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/680E9EB4-C7BA-4B70-81BC-CE093508651C/PresetName=DNxHR LB 4K 24)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR LB 4K 24.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="101">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 25</FolderDisplayPath>
+			<PresetID>9a40bea6-9a22-42c6-b5e9-ad6c7d5e35d6</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/9a40bea6-9a22-42c6-b5e9-ad6c7d5e35d6/PresetName=DNxHR LB 4K 25)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR LB 4K 25.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="102">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 29.97</FolderDisplayPath>
+			<PresetID>e1eebaff-44c2-41e0-bb99-4e6b217e15a5</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/e1eebaff-44c2-41e0-bb99-4e6b217e15a56/PresetName=DNxHR LB 4K 29.97)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR LB 4K 29.97.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="103">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 50</FolderDisplayPath>
+			<PresetID>516e9603-0456-4ada-8bc0-2bbd2ae7b6d6</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/516e9603-0456-4ada-8bc0-2bbd2ae7b6d6/PresetName=DNxHR LB 4K 50)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR LB 4K 50.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="104">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 59.94</FolderDisplayPath>
+			<PresetID>037f74af-37b6-4224-aa8e-9122c6f21a9a</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/037f74af-37b6-4224-aa8e-9122c6f21a9a/PresetName=DNxHR LB 4K 59.94)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR LB 4K 59.94.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="105">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 23.976</FolderDisplayPath>
+			<PresetID>90bb9690-a031-4f12-a31f-dd301f7a09b9</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/90bb9690-a031-4f12-a31f-dd301f7a09b9/PresetName=DNxHR LB UHD 23.976)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR LB UHD 23.976.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="106">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 24</FolderDisplayPath>
+			<PresetID>773763ca-fc74-4fed-b73c-ca65ee472ba0</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/773763CA-FC74-4FED-B73C-CA65EE472BA0/PresetName=DNxHR LB UHD 24)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR LB UHD 24.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="107">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 25</FolderDisplayPath>
+			<PresetID>1afb9190-1e7f-4bbf-9e14-9795872b842a</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/1AFB9190-1E7F-4BBF-9E14-9795872B842A/PresetName=DNxHR LB UHD 25)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR LB UHD 25.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="108">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 29.97</FolderDisplayPath>
+			<PresetID>50ccd8ff-5324-4f78-b613-dade723874c5</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/50ccd8ff-5324-4f78-b613-dade723874c5/PresetName=DNxHR LB UHD 29.97)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR LB UHD 29.97.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="109">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 50</FolderDisplayPath>
+			<PresetID>ed3acf74-079e-46f4-ad7e-602b25469273</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/ed3acf74-079e-46f4-ad7e-602b25469273/PresetName=DNxHR LB UHD 50)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR LB UHD 50.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="110">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 59.94</FolderDisplayPath>
+			<PresetID>c2238887-4b8e-4588-8e26-55b017b915bd</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/c2238887-4b8e-4588-8e26-55b017b915bd/PresetName=DNxHR LB UHD 59.94)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR LB UHD 59.94.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="111">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 60</FolderDisplayPath>
+			<PresetID>d4589209-d756-44e0-9c7c-edc07fe6496a</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/d4589209-d756-44e0-9c7c-edc07fe6496a/PresetName=DNxHR LB UHD 60)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR LB UHD 60.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="112">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 23.976</FolderDisplayPath>
+			<PresetID>1a5b2eba-4252-4998-82de-dbdb513e4ab1</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/1a5b2eba-4252-4998-82de-dbdb513e4ab1/PresetName=DNxHR RGB 444 2K 23.976)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR RGB 444 2K 23.976.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="113">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 24</FolderDisplayPath>
+			<PresetID>b1e3bc30-a497-4193-bcbf-706635ea20c6</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/B1E3BC30-A497-4193-BCBF-706635EA20C6/PresetName=DNxHR RGB 444 2K 24)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR RGB 444 2K 24.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="114">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 25</FolderDisplayPath>
+			<PresetID>c112c612-ec22-424e-a2de-db4e88426d7c</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/c112c612-ec22-424e-a2de-db4e88426d7c/PresetName=DNxHR RGB 444 2K 25)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR RGB 444 2K 25.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="115">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 29.97</FolderDisplayPath>
+			<PresetID>b841344e-fb69-48db-a346-2acbbf63bf19</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/b841344e-fb69-48db-a346-2acbbf63bf19/PresetName=DNxHR RGB 444 2K 29.97)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR RGB 444 2K 29.97.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="116">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 48</FolderDisplayPath>
+			<PresetID>5461cc30-52f8-4bb5-baf2-dd15c5327480</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/5461cc30-52f8-4bb5-baf2-dd15c5327480/PresetName=DNxHR RGB 444 2K 48)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR RGB 444 2K 48.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="117">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 50</FolderDisplayPath>
+			<PresetID>c717daa2-1200-44a4-bc79-769aa6ca874f</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/c717daa2-1200-44a4-bc79-769aa6ca874f/PresetName=DNxHR RGB 444 2K 50)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR RGB 444 2K 50.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="118">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 59.94</FolderDisplayPath>
+			<PresetID>d4b1bc45-fdc8-4071-ad45-380dd0b8fcc1</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/d4b1bc45-fdc8-4071-ad45-380dd0b8fcc1/PresetName=DNxHR RGB 444 2K 59.94)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR RGB 444 2K 59.94.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="119">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 23.976</FolderDisplayPath>
+			<PresetID>ad33fd29-829b-410d-85f5-e11afb312d04</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/ad33fd29-829b-410d-85f5-e11afb312d04/PresetName=DNxHR RGB 444 4K 23.976)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR RGB 444 4K 23.976.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="120">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 24</FolderDisplayPath>
+			<PresetID>866eee30-9c63-470c-97e5-e2da381baaeb</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/866EEE30-9C63-470C-97E5-E2DA381BAAEB/PresetName=DNxHR RGB 444 4K 24)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR RGB 444 4K 24.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="121">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 25</FolderDisplayPath>
+			<PresetID>477a7446-72f8-4162-a947-47a3cf4c0b4b</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/477a7446-72f8-4162-a947-47a3cf4c0b4b/PresetName=DNxHR RGB 444 4K 25)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR RGB 444 4K 25.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="122">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 29.97</FolderDisplayPath>
+			<PresetID>17324884-53c6-49a7-8e5c-4b5cb3eea274</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/17324884-53c6-49a7-8e5c-4b5cb3eea274/PresetName=DNxHR RGB 444 4K 29.97)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR RGB 444 4K 29.97.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="123">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 50</FolderDisplayPath>
+			<PresetID>43ba3f4a-05a5-44bb-a45b-d3d4514d4043</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/43ba3f4a-05a5-44bb-a45b-d3d4514d4043/PresetName=DNxHR RGB 444 4K 50)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR RGB 444 4K 50.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="124">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 59.94</FolderDisplayPath>
+			<PresetID>8e39798f-acfc-4fa5-a354-61bf861f8d39</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/8e39798f-acfc-4fa5-a354-61bf861f8d39/PresetName=DNxHR RGB 444 4K 59.94)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR RGB 444 4K 59.94.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="125">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 23.976</FolderDisplayPath>
+			<PresetID>fe9e5056-ac96-4db9-b557-ba4829a5b469</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/fe9e5056-ac96-4db9-b557-ba4829a5b469/PresetName=DNxHR RGB 444 UHD 23.976)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR RGB 444 UHD 23.976.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="126">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 24</FolderDisplayPath>
+			<PresetID>43e7797e-3956-4c3a-b545-3a954036c4f0</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/43E7797E-3956-4C3A-B545-3A954036C4F0/PresetName=DNxHR RGB 444 UHD 24)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR RGB 444 UHD 24.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="127">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 25</FolderDisplayPath>
+			<PresetID>6da57800-8267-4aba-ae72-55ad87af400b</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/6DA57800-8267-4ABA-AE72-55AD87AF400B/PresetName=DNxHR RGB 444 UHD 25)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR RGB 444 UHD 25.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="128">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 29.97</FolderDisplayPath>
+			<PresetID>9e09282b-a08e-4162-b48a-815e3944ccbc</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/9e09282b-a08e-4162-b48a-815e3944ccbc/PresetName=DNxHR RGB 444 UHD 29.97)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR RGB 444 UHD 29.97.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="129">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 50</FolderDisplayPath>
+			<PresetID>f401af00-def1-49ee-ae0b-0fbee0c048d1</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/f401af00-def1-49ee-ae0b-0fbee0c048d1/PresetName=DNxHR RGB 444 UHD 50)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR RGB 444 UHD 50.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="130">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 59.94</FolderDisplayPath>
+			<PresetID>e6be5a1f-b0cf-486e-a802-106798f3a48d</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/e6be5a1f-b0cf-486e-a802-106798f3a48d/PresetName=DNxHR RGB 444 UHD 59.94)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR RGB 444 UHD 59.94.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="131">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 60</FolderDisplayPath>
+			<PresetID>c9df4a71-bcd7-4d60-862a-92723455bd2c</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/c9df4a71-bcd7-4d60-862a-92723455bd2c/PresetName=DNxHR RGB 444 UHD 60)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR RGB 444 UHD 60.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="132">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 23.976</FolderDisplayPath>
+			<PresetID>bc1a0ef3-e2a6-4241-817f-df668d249e05</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/bc1a0ef3-e2a6-4241-817f-df668d249e05/PresetName=DNxHR SQ 2K 23.976)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR SQ 2K 23.976.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="133">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 24</FolderDisplayPath>
+			<PresetID>c70e4f68-60a3-436d-a378-5f12369a1570</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/C70E4F68-60A3-436D-A378-5F12369A1570/PresetName=DNxHR SQ 2K 24)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR SQ 2K 24.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="134">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 25</FolderDisplayPath>
+			<PresetID>71acb2d3-29db-4ee5-bef6-fa6fbfe2b133</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/71acb2d3-29db-4ee5-bef6-fa6fbfe2b133/PresetName=DNxHR SQ 2K 25)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR SQ 2K 25.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="135">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 29.97</FolderDisplayPath>
+			<PresetID>969c3c00-7660-482b-83f4-ddadbc0fb5cf</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/969c3c00-7660-482b-83f4-ddadbc0fb5cf/PresetName=DNxHR SQ 2K 29.97)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR SQ 2K 29.97.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="136">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 48</FolderDisplayPath>
+			<PresetID>9bd83a9b-e2ff-4660-95b3-1d38239980f0</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/9bd83a9b-e2ff-4660-95b3-1d38239980f0/PresetName=DNxHR SQ 2K 48)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR SQ 2K 48.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="137">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 50</FolderDisplayPath>
+			<PresetID>a699f739-dae4-4374-ab53-bbaf7f28e8c2</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/a699f739-dae4-4374-ab53-bbaf7f28e8c2/PresetName=DNxHR SQ 2K 50)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR SQ 2K 50.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="138">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/2K 59.94</FolderDisplayPath>
+			<PresetID>78862af7-0bc5-4b6f-bc9f-5542752f9307</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/78862af7-0bc5-4b6f-bc9f-5542752f9307/PresetName=DNxHR SQ 2K 59.94)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR SQ 2K 59.94.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="139">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 23.976</FolderDisplayPath>
+			<PresetID>06fcb60c-81e0-4712-84e7-00d3416af8c8</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/06fcb60c-81e0-4712-84e7-00d3416af8c8/PresetName=DNxHR SQ 4K 23.976)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR SQ 4K 23.976.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="140">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 24</FolderDisplayPath>
+			<PresetID>921cf6db-2582-44ce-83ec-f4c2a134c47a</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/921CF6DB-2582-44CE-83EC-F4C2A134C47A/PresetName=DNxHR SQ 4K 24)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR SQ 4K 24.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="141">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 25</FolderDisplayPath>
+			<PresetID>be7233e6-0d8f-47a0-a6ab-6ab2424309a3</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/be7233e6-0d8f-47a0-a6ab-6ab2424309a3/PresetName=DNxHR SQ 4K 25)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR SQ 4K 25.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="142">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 29.97</FolderDisplayPath>
+			<PresetID>11a85ebe-aa25-469a-8a52-d4eadb1a99b4</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/11a85ebe-aa25-469a-8a52-d4eadb1a99b43/PresetName=DNxHR SQ 4K 29.97)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR SQ 4K 29.97.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="143">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 50</FolderDisplayPath>
+			<PresetID>715ff725-547d-4e3a-9459-7ab417ca205a</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/715ff725-547d-4e3a-9459-7ab417ca205a/PresetName=DNxHR SQ 4K 50)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR SQ 4K 50.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="144">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/4K 59.94</FolderDisplayPath>
+			<PresetID>ce4a061e-29ce-4afe-89ae-38e86e1dbc79</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/ce4a061e-29ce-4afe-89ae-38e86e1dbc79/PresetName=DNxHR SQ 4K 59.94)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR SQ 4K 59.94.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="145">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 23.976</FolderDisplayPath>
+			<PresetID>35b69975-fb60-45c8-a70d-f41f6821cc1c</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/35b69975-fb60-45c8-a70d-f41f6821cc1c/PresetName=DNxHR SQ UHD 23.976)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR SQ UHD 23.976.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="146">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 24</FolderDisplayPath>
+			<PresetID>edafb67a-ac7a-48b0-960d-db6a129a54dd</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/EDAFB67A-AC7A-48B0-960D-DB6A129A54DD/PresetName=DNxHR SQ UHD 24)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR SQ UHD 24.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="147">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 25</FolderDisplayPath>
+			<PresetID>099d959d-49fc-4f25-ad06-b68b37fe8387</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/099D959D-49FC-4F25-AD06-B68B37FE8387/PresetName=DNxHR SQ UHD 25)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR SQ UHD 25.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="148">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 29.97</FolderDisplayPath>
+			<PresetID>3a7d1206-244b-4081-8f90-895a736f4bc8</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/3a7d1206-244b-4081-8f90-895a736f4bc8/PresetName=DNxHR SQ UHD 29.97)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR SQ UHD 29.97.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="149">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 50</FolderDisplayPath>
+			<PresetID>4fb181e9-84d3-4d1c-ad26-01ed3b369488</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/4fb181e9-84d3-4d1c-ad26-01ed3b369488/PresetName=DNxHR SQ UHD 50)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR SQ UHD 50.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="150">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 59.94</FolderDisplayPath>
+			<PresetID>40e9a19e-8f2a-4728-88a7-6497df611d4e</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/40e9a19e-8f2a-4728-88a7-6497df611d4e/PresetName=DNxHR SQ UHD 59.94)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR SQ UHD 59.94.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+		<Key Version="3" Index="151">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/DNxHR MXF OP1a/UHD 60</FolderDisplayPath>
+			<PresetID>48b7eb20-1469-46ee-9c4b-b900c93632fd</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/48b7eb20-1469-46ee-9c4b-b900c93632fd/PresetName=DNxHR SQ UHD 60)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4D584620_444D5846\DNxHR SQ UHD 60.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1145919558</PresetFileType>
+			<PresetClassID>1297630752</PresetClassID>
+		</Key>
+	</Key>
+	<Key Version="1" Index="10">
+		<DirectoryPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_41414320</DirectoryPath>
+		<Key Version="3" Index="0">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Audio Only</FolderDisplayPath>
+			<PresetID>d2f3857d-22e3-4401-959c-8c856e2e74b1</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/d2f3857d-22e3-4401-959c-8c856e2e74b1/PresetName=Stereo AAC, 44.1 kHz 128 kbps)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_41414320\Stereo AAC, 44.1kHz 128kbps.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1094796064</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="1">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Audio Only</FolderDisplayPath>
+			<PresetID>82839e8a-a9f1-45d2-b21d-7811071cd26e</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/82839e8a-a9f1-45d2-b21d-7811071cd26e/PresetName=Stereo AAC, 48 kHz 256 kbps)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_41414320\Stereo AAC, 48kHz 256kbps.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1094796064</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+	</Key>
+	<Key Version="1" Index="11">
+		<DirectoryPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634</DirectoryPath>
+		<Key Version="3" Index="0">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/H.264</FolderDisplayPath>
+			<PresetID>9bb57b43-b3d1-448f-bdb0-4c5e3dcf9750</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/9bb57b43-b3d1-448f-bdb0-4c5e3dcf9750/PresetName=Match Source - High bitrate)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\00 - Match Source - High bitrate.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="1">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/H.264</FolderDisplayPath>
+			<PresetID>58dabc9d-08e7-4379-827b-942b57017e11</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/58dabc9d-08e7-4379-827b-942b57017e11/PresetName=Match Source - Medium bitrate)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\00 - Match Source - Medium bitrate.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="2">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/H.264</FolderDisplayPath>
+			<PresetID>9bb57b43-b3d1-448f-bdb0-4c5e3dcf9749</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/9bb57b43-b3d1-448f-bdb0-4c5e3dcf9749/PresetName=Match Source - Adaptive High Bitrate)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\01 - Match Source - High bitrate.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="3">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/H.264</FolderDisplayPath>
+			<PresetID>58dabc9d-08e7-4379-827b-942b57017e10</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/58dabc9d-08e7-4379-827b-942b57017e10/PresetName=Match Source - Adaptive Medium Bitrate)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\01 - Match Source - Medium bitrate.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="4">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/H.264</FolderDisplayPath>
+			<PresetID>0f23cfa2-9c5a-4217-9bc0-510cf80f507b</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/0f23cfa2-9c5a-4217-9bc0-510cf80f507b/PresetName=Match Source - Adaptive Low Bitrate)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\02 - Match Source - Low bitrate.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="5">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Devices/Mobile</FolderDisplayPath>
+			<PresetID>784f6002-4417-43bc-9493-0db4541c38c7</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/784f6002-4417-43bc-9493-0db4541c38c7/PresetName=3GPP 640x480 15 fps)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\3GPP 640 x 480 15fps.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="6">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Web Video/Social Media</FolderDisplayPath>
+			<PresetID>c6b1f319-972b-451a-8fff-e8010f0aa9f1</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/c6b1f319-972b-451a-8fff-e8010f0aa9f1/PresetName=Facebook 720p HD)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\Facebook 720p HD.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="7">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Web Video/Social Media</FolderDisplayPath>
+			<PresetID>dcdf8004-fb47-4160-8375-61985382a315</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/dcdf8004-fb47-4160-8375-61985382a315/PresetName=Facebook 1080p HD)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\Facebook 1080p HD.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="8">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/H.264</FolderDisplayPath>
+			<PresetID>e2e9e008-1823-46f0-bd93-8985294f25ef</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/e2e9e008-1823-46f0-bd93-8985294f25ef/PresetName=High Quality 480p SD Wide)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\High Quality 480 SD Wide.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="9">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/H.264</FolderDisplayPath>
+			<PresetID>b1dff5bc-f92f-43fe-be63-54560671d4a1</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/b1dff5bc-f92f-43fe-be63-54560671d4a1/PresetName=High Quality 480p SD)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\High Quality 480 SD.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="10">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/H.264</FolderDisplayPath>
+			<PresetID>174683ae-28a0-4a69-80b1-b08d2bf12d8c</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/c174683ae-28a0-4a69-80b1-b08d2bf12d8c/PresetName=High Quality 720p HD)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\High Quality 720 HD.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="11">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/H.264</FolderDisplayPath>
+			<PresetID>ec1f8725-618c-4cda-a4c6-1828b197d0fa</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/ec1f8725-618c-4cda-a4c6-1828b197d0fa/PresetName=High Quality 1080p HD)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\High Quality 1080 HD.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="12">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Broadcast/H.264</FolderDisplayPath>
+			<PresetID>aecd6599-e9af-4a90-9002-d0f98ecd7a5d</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/aecd6599-e9af-4a90-9002-d0f98ecd7a5d/PresetName=High Quality 2160p 4K)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\High Quality 2160 4K.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="13">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Devices/Mobile</FolderDisplayPath>
+			<PresetID>29dcb8b8-e0d7-4190-8dca-ec4d016bc677</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/29dcb8b8-e0d7-4190-8dca-ec4d016bc677/PresetName=Mobile Device 480p SD Wide)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\Mobile Device 480p SD Wide.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="14">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Devices/Mobile</FolderDisplayPath>
+			<PresetID>6377f2fa-1960-4014-91cb-7e8d034f7133</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/6377f2fa-1960-4014-91cb-7e8d034f7133/PresetName=Mobile Device 720p HD)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\Mobile Device 720p HD.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="15">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Devices/Mobile</FolderDisplayPath>
+			<PresetID>2a62f1b0-757c-4dc5-bcbb-8d4387592a0a</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/2a62f1b0-757c-4dc5-bcbb-8d4387592a0a/PresetName=Mobile Device 1080p HD)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\Mobile Device 1080p HD.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="16">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Devices/Mobile</FolderDisplayPath>
+			<PresetID>f76efe36-2ae1-4a91-ada4-594ae43a6323</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/f76efe36-2ae1-4a91-ada4-594ae43a6323/PresetName=Mobile Device 2160p 4K)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\Mobile Device 2160p 4k.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="17">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Web Video/Social Media</FolderDisplayPath>
+			<PresetID>12a10e13-ba24-4fe3-a1bf-b01f5efae0f6</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/12a10e13-ba24-4fe3-a1bf-b01f5efae0f6/PresetName=Twitter 640x640)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\Twitter 640x640.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="18">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Web Video/Social Media</FolderDisplayPath>
+			<PresetID>cf9bd649-7fa2-498c-8e60-6ffaaa5fbac8</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/cf9bd649-7fa2-498c-8e60-6ffaaa5fbac8/PresetName=Twitter 720p HD)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\Twitter 720p HD.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="19">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Web Video/Social Media</FolderDisplayPath>
+			<PresetID>8352dcc3-4c6d-4a27-9b0f-47c340d1160e</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/8352dcc3-4c6d-4a27-9b0f-47c340d1160e/PresetName=Vimeo 480p SD Wide)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\Vimeo 480p SD Wide.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="20">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Web Video/Social Media</FolderDisplayPath>
+			<PresetID>1cab96fe-90b1-4322-a20b-3f7ae45e64bf</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/1cab96fe-90b1-4322-a20b-3f7ae45e64bf/PresetName=Vimeo 480p SD)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\Vimeo 480p SD.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="21">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Web Video/Social Media</FolderDisplayPath>
+			<PresetID>d96c1ce2-b3b0-44d1-bbc2-b12886637d66</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/d96c1ce2-b3b0-44d1-bbc2-b12886637d66/PresetName=Vimeo 720p HD)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\Vimeo 720p HD.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="22">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Web Video/Social Media</FolderDisplayPath>
+			<PresetID>92349db9-558b-4474-97fb-ac4f1ff87d8f</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/92349db9-558b-4474-97fb-ac4f1ff87d8f/PresetName=Vimeo 1080p HD)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\Vimeo 1080p HD.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="23">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Web Video/Social Media</FolderDisplayPath>
+			<PresetID>8c632b58-fcc8-42c8-9641-91d5ad84100e</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/8c632b58-fcc8-42c8-9641-91d5ad84100e/PresetName=Vimeo 2160p 4K)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\Vimeo 2160p 4k.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="24">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/VR/H.264</FolderDisplayPath>
+			<PresetID>2e2c96d3-b8af-4e95-bdf2-98cea961704c</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/2e2c96d3-b8af-4e95-bdf2-98cea961704c/PresetName=VR Monoscopic Match Source Ambisonics)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\VR Monoscopic Match Source Ambisonics.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="25">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/VR/H.264</FolderDisplayPath>
+			<PresetID>f7e9db28-a693-4382-9e28-4f50f69aec54</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/f7e9db28-a693-4382-9e28-4f50f69aec54/PresetName=VR Monoscopic Match Source Stereo Audio)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\VR Monoscopic Match Source Stereo Audio.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="26">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/VR/H.264</FolderDisplayPath>
+			<PresetID>d20b4695-881f-41d1-860d-42f1db9c05ba</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/d20b4695-881f-41d1-860d-42f1db9c05ba/PresetName=VR Over-Under Match Source Ambisonics)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\VR Over-Under Match Source Ambisonics.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="27">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/VR/H.264</FolderDisplayPath>
+			<PresetID>48f79ab0-e413-4dba-ad94-4f3ba8872028</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/48f79ab0-e413-4dba-ad94-4f3ba8872028/PresetName=VR Over-Under Match Source Stereo Audio)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\VR Over-Under Match Source Stereo Audio.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="28">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Web Video/Social Media</FolderDisplayPath>
+			<PresetID>e634e862-deca-4cea-a032-a1c9fb78d931</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/e634e862-deca-4cea-a032-a1c9fb78d931/PresetName=YouTube 480p SD Wide)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\YouTube 480p SD Wide.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="29">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Web Video/Social Media</FolderDisplayPath>
+			<PresetID>d50983e1-a060-4537-b99d-fce1e4633b2c</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/d50983e1-a060-4537-b99d-fce1e4633b2c/PresetName=YouTube 480p SD)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\YouTube 480p SD.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="30">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Web Video/Social Media</FolderDisplayPath>
+			<PresetID>11a6343a-1ad9-4fa9-8b30-b85daae811d2</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/11a6343a-1ad9-4fa9-8b30-b85daae811d2/PresetName=YouTube 720p HD)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\YouTube 720p HD.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="31">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Web Video/Social Media</FolderDisplayPath>
+			<PresetID>4e57e0b0-630e-47b0-961b-b41c401f4582</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/4e57e0b0-630e-47b0-961b-b41c401f4582/PresetName=YouTube 1080p HD)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\YouTube 1080p HD.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="32">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/Web Video/Social Media</FolderDisplayPath>
+			<PresetID>bb651f24-b055-4e17-a4ab-4bc2af3bc851</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/bb651f24-b055-4e17-a4ab-4bc2af3bc851/PresetName=YouTube 2160p 4K)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323634\YouTube 2160p 4K.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250228</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+	</Key>
+	<Key Version="1" Index="12">
+		<DirectoryPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323642</DirectoryPath>
+		<Key Version="3" Index="0">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/DVD &amp; Blu-ray/Blu-ray</FolderDisplayPath>
+			<PresetID>df0d9587-7d53-42f5-ad05-2abccef616fa</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/df0d9587-7d53-42f5-ad05-2abccef616fa/PresetName=HD 720p 23.976)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323642\HD 720p 23.976.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250242</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="1">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/DVD &amp; Blu-ray/Blu-ray</FolderDisplayPath>
+			<PresetID>3f3c716f-f288-4f79-8396-4b3fd0315836</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/3f3c716f-f288-4f79-8396-4b3fd0315836/PresetName=HD 720p 50)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323642\HD 720p 50.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250242</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="2">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/DVD &amp; Blu-ray/Blu-ray</FolderDisplayPath>
+			<PresetID>24c65ba8-4872-4ae9-83ca-eab1a66728d9</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/24c65ba8-4872-4ae9-83ca-eab1a66728d9/PresetName=HD 720p 59.94)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323642\HD 720p 59.94.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250242</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="3">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/DVD &amp; Blu-ray/Blu-ray</FolderDisplayPath>
+			<PresetID>07382d33-851b-4317-a4a5-43ead9a46c49</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/07382d33-851b-4317-a4a5-43ead9a46c49/PresetName=HD 1080i 25 (1.33 PAR))</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323642\HD 1080i 25 (1.33 PAR).epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250242</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="4">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/DVD &amp; Blu-ray/Blu-ray</FolderDisplayPath>
+			<PresetID>e07f621a-83bc-4f86-8b0f-0b54cf68b337</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/e07f621a-83bc-4f86-8b0f-0b54cf68b337/PresetName=HD 1080i 25)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323642\HD 1080i 25.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250242</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="5">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/DVD &amp; Blu-ray/Blu-ray</FolderDisplayPath>
+			<PresetID>52b465e2-8b44-4b41-94c7-a3471251d2f1</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/52b465e2-8b44-4b41-94c7-a3471251d2f1/PresetName=HD 1080i 29.97 (1.33 PAR))</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323642\HD 1080i 29.97 (1.33 PAR).epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250242</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="6">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/DVD &amp; Blu-ray/Blu-ray</FolderDisplayPath>
+			<PresetID>8f363401-a1f1-4894-9277-21ae739249cd</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/8f363401-a1f1-4894-9277-21ae739249cd/PresetName=HD 1080i 29.97)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323642\HD 1080i 29.97.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250242</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="7">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/DVD &amp; Blu-ray/Blu-ray</FolderDisplayPath>
+			<PresetID>3752da40-585a-4cac-aec5-46920698daf2</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/3752da40-585a-4cac-aec5-46920698daf2/PresetName=HD 1080p 23.976 (1.33 PAR))</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323642\HD 1080p 23.976 (1.33 PAR).epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250242</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+		<Key Version="3" Index="8">
+			<IngestPreset>false</IngestPreset>
+			<FolderDisplayPath>System Presets/DVD &amp; Blu-ray/Blu-ray</FolderDisplayPath>
+			<PresetID>0a00efb9-7a7b-4eb7-99b2-f0336363ba8a</PresetID>
+			<PresetName>($$$/AME/EncoderHost/Presets/0a00efb9-7a7b-4eb7-99b2-f0336363ba8a/PresetName=HD 1080p 23.976)</PresetName>
+			<PresetPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\4E49434B_48323642\HD 1080p 23.976.epr</PresetPath>
+			<PresetModifiedTime>20180628T030436</PresetModifiedTime>
+			<PresetFileType>1211250242</PresetFileType>
+			<PresetClassID>1313424203</PresetClassID>
+		</Key>
+	</Key>
+	<Key Version="1" Index="13">
+		<DirectoryPath>C:\Program Files\Adobe\Adobe Media Encoder CC 2018\MediaIO\systempresets\55636D70_41564956</DirectoryPath>
+	</Key>
+</PremiereData>

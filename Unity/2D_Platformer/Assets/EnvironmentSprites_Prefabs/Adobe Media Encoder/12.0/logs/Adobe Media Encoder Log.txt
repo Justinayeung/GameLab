@@ -1,0 +1,21 @@
+Log file created: 11/18/2018 2:46:40 PM
+-----------------------------------------
+Ticks = 3265      <4200> <Wasapi initialization> <5> Time =  0.07514second
+Ticks = 10265      <4200> <DS> <5> GPUSniffer launching with test mask 254
+Ticks = 88422      <4200> <AMEApp> <0> Time taken to load MediaCore plugins: 68198.3 milliseconds.
+Ticks = 94406      <4200> <AMEApp> <1> Entering RunEventLoop
+Ticks = 203281      <10568> <LoadProject> <0> 0.0291916s
+Ticks = 209187      <4316> <PostProcessBaseUploader> <5> Page ID 
+Ticks = 209250      <4316> <PostProcessBaseUploader> <5> Page ID 
+Ticks = 209812      <18364> <ExporterHost::BeginThreadExport> <5> Exporter finished in : 0.116527 seconds. Result code: 0 Destination:C:\Users\yeung\OneDrive\Documents\Spikes.mp3
+Ticks = 286609      <4200> <AMEApp> <1> Exited RunEventLoop
+Ticks = 286828      <4200> <dvanet> <5> ProxyProcessor::DestroyVulcanClient resetting mVulcanClient
+Ticks = 286828      <4200> <dvanet> <5> ProxyProcessor::DestroyVulcanClient resetting mVulcanClient
+Ticks = 286828      <4200> <dvanet> <5> ProxyProcessor::DestroyVulcanClient resetting mVulcanClient
+Ticks = 286828      <4200> <dvanet> <5> ProxyProcessor::DestroyVulcanClient resetting mVulcanClient
+Ticks = 286828      <4200> <dvanet> <5> ProxyProcessor::DestroyVulcanClient resetting mVulcanClient
+Ticks = 286828      <4200> <dvanet> <5> ProxyProcessor::DestroyVulcanClient resetting mVulcanClient
+Ticks = 286828      <4200> <dvanet> <5> ProxyProcessor::DestroyVulcanClient resetting mVulcanClient
+------------------------------------------
+Log file closed: 11/18/2018 2:51:27 PM
+

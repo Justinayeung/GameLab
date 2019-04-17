@@ -8,13 +8,19 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+  - enabled: 0
+    path: 
     guid: 8226d78a0e99bf24787a51aaccb49531
+  - enabled: 1
+    path: Assets/Scenes/01MainMenu.unity
+    guid: 951e912cbbf2c4c45a082b01d272e488
   - enabled: 1
     path: Assets/Scenes/Forest.unity
     guid: 0b744d9f61638994f96109f33c2f7985
   - enabled: 1
     path: Assets/Scenes/Cave.unity
     guid: e52987edcaca53245b85a2e40ae9c402
+  - enabled: 1
+    path: Assets/Scenes/CaveExit.unity
+    guid: 6657cfbabff177f4195204097e9c5291
   m_configObjects: {}

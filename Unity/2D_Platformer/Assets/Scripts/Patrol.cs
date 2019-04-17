@@ -8,6 +8,11 @@ public class Patrol : MonoBehaviour
     public float rayDistance;
     private bool movingRight = true;
     public Transform groundDetection;
+    public Animator slugStun;
+    bool enter;
+    private int dir = 1;
+    public LayerMask Light;
+    private GameObject flash;
 
     void Update()
     {
@@ -26,5 +31,69 @@ public class Patrol : MonoBehaviour
                 movingRight = true;
             }
         }
+        Debug.Log(enter);
+
+        Collider2D other = Physics2D.OverlapCircle(transform.position + Vector3.right * dir, 1.2f, Light);
+        if (other)
+        {
+            flash = other.gameObject;
+        }
+        else
+        {
+            flash = null;
+        }
+
+        if (flash)
+        {
+            enter = true;
+            speed = 0;
+            slugStun.SetBool("Retract", true);
+        }
+        else
+        {
+            enter = false;
+            slugStun.SetBool("Retract", false);
+            speed = 5;
+        }
     }
+
+    //void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    if (other.gameObject.CompareTag("Light"))
+    //    {
+    //        enter = true;
+    //        slugBox.enabled = false;
+    //        slugCap.enabled = true;
+    //        speed = 0;
+    //        slugStun.SetBool("Retract", true);
+    //    }
+    //    else
+    //    {
+    //        enter = false;
+    //        slugStun.SetBool("Retract", false);
+    //        speed = 5;
+    //        slugBox.enabled = true;
+    //        slugCap.enabled = false;
+    //    }
+    //}
+
+    //void OnCollisionEnter2D(Collision2D other)
+    //{
+    //    if (other.gameObject.CompareTag("Light"))
+    //    {
+    //        enter = true;
+    //        slugBox.enabled = false;
+    //        slugCap.enabled = true;
+    //        speed = 0;
+    //        slugStun.SetBool("Retract", true);
+    //    }
+    //    else
+    //    {
+    //        enter = false;
+    //        slugStun.SetBool("Retract", false);
+    //        speed = 5;
+    //        slugBox.enabled = true;
+    //        slugCap.enabled = false;
+    //    }
+    //}
 }

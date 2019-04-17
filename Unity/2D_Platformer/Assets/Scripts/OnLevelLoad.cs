@@ -7,7 +7,7 @@ using UnityEngine;
 public class OnLevelLoad : MonoBehaviour
 {
     public Image black;
-
+    public Image anim;
     public GameObject introAnim;
     public GameObject introCam1;
     public GameObject introCam2;
@@ -34,35 +34,56 @@ public class OnLevelLoad : MonoBehaviour
     public GameObject click;
     public GameObject clunk;
     bool introFinished = false;
+    public GameObject finished;
+    public AudioSource caveIN;
 
     void Awake()
     {
+        anim.canvasRenderer.SetAlpha(0);
         black.canvasRenderer.SetAlpha(1);
         blackfade.canvasRenderer.SetAlpha(0);
     }
 
-    void OnEnable()
-    {
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
+    //void OnEnable()
+    //{
+    //    SceneManager.sceneLoaded += OnSceneLoaded;
+    //}
 
-    void OnSceneLoaded(Scene Cave, LoadSceneMode mode)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (introFinished == false)
+        if (other.gameObject.CompareTag("Player"))
         {
-            click.SetActive(false);
-            clunk.SetActive(false);
-            introCam1.SetActive(true);
-            introCam2.SetActive(false);
-            StartCoroutine(fadeIn());
-            introFinished = true;
+            if (introFinished == false)
+            {
+                clunk.transform.position = new Vector2(-51.73f, 0.74f);
+                click.transform.position = new Vector2(-48.6f, 0.28f);
+                click.SetActive(false);
+                clunk.SetActive(false);
+                introCam1.SetActive(true);
+                introCam2.SetActive(false);
+                StartCoroutine(fadeIn());
+                introFinished = true;
+            }
         }
     }
 
-    void OnDisable()
-    {
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-    }
+    //void OnSceneLoaded(Scene Cave, LoadSceneMode mode)
+    //{
+    //    if (introFinished == false)
+    //    {
+    //        click.SetActive(false);
+    //        clunk.SetActive(false);
+    //        introCam1.SetActive(true);
+    //        introCam2.SetActive(false);
+    //        StartCoroutine(fadeIn());
+    //        introFinished = true;
+    //    }
+    //}
+
+    //void OnDisable()
+    //{
+    //    SceneManager.sceneLoaded -= OnSceneLoaded;
+    //}
 
     public IEnumerator fadeIn()
     {
@@ -78,7 +99,8 @@ public class OnLevelLoad : MonoBehaviour
     IEnumerator intro()
     {
         cam.SetTrigger("Cam");
-        yield return new WaitForSeconds(1f);
+        caveIN.Play();
+        yield return new WaitForSeconds(0.5f);
         anim1.SetTrigger("Rock");
         anim2.SetTrigger("Rock");
         anim3.SetTrigger("Rock");
@@ -95,6 +117,7 @@ public class OnLevelLoad : MonoBehaviour
         anim14.SetTrigger("Rock");
         anim15.SetTrigger("Rock");
         anim16.SetTrigger("Rock");
+        yield return new WaitForSeconds(0.5f);
         black.CrossFadeAlpha(1, 2f, true);
         yield return new WaitForSeconds(2f);
         introCam1.SetActive(false);
@@ -104,5 +127,6 @@ public class OnLevelLoad : MonoBehaviour
         click.SetActive(true);
         clunk.SetActive(true);
         blackfade.CrossFadeAlpha(0, 1f, true);
+        finished.SetActive(false);
     }
 }

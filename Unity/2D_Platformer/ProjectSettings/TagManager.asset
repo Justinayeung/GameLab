@@ -13,6 +13,11 @@ TagManager:
   - RockThrowAnim
   - WallSmashAnim
   - SlugStunAnim
+  - Light
+  - Punch
+  - nightwake
+  - aperture
+  - blindsummit
   layers:
   - Default
   - TransparentFX
@@ -26,10 +31,10 @@ TagManager:
   - CanGrab
   - Cam
   - RockCollider
-  - 
-  - 
-  - 
-  - 
+  - Checkpoints
+  - WallHit
+  - Light
+  - Slug
   - 
   - 
   - 
@@ -49,4 +54,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Enemy
+    uniqueID: 3452716727
     locked: 0
