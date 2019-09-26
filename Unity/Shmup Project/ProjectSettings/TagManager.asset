@@ -46,6 +46,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 3114933547
+    locked: 0
   - name: Hive
     uniqueID: 4162871167
     locked: 0

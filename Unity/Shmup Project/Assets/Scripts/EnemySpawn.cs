@@ -10,7 +10,7 @@ public class EnemySpawn : MonoBehaviour
     int randSpawnPoint, randEnemy;
     public static bool spawnAllowed;
     public float startTimeBtwSpawns;
-    public float startTimeL2;
+    public float startTimeBtwSpawnsL2;
     public float timer;
     public bool Level2 = false;
 
@@ -82,7 +82,7 @@ public class EnemySpawn : MonoBehaviour
 
                 randSpawnPoint = Random.Range(0, spawnPoints2.Length - 1);
                 Instantiate(enemy[1], spawnPoints2[randSpawnPoint].position, Quaternion.Euler(0, 0, 180));
-                timeBtwSpawns2 = startTimeL2;
+                timeBtwSpawns2 = startTimeBtwSpawnsL2;
             }
             else
             {
