@@ -9,6 +9,23 @@ TagManager:
   - Enemy
   - Front
   - Spawn
+  - Collect
+  - Flower
+  - Melee
+  - Homing
+  - Button
+  - Swarm
+  - Button1
+  - Button2
+  - SpawnNectar
+  - Boss
+  - Queen
+  - Sonic
+  - Blop
+  - BlopLow
+  - SwarmPlayer
+  - MainGame
+  - WinMenu
   layers:
   - Default
   - TransparentFX
@@ -19,7 +36,7 @@ TagManager:
   - 
   - 
   - Post_Processing
-  - 
+  - Enemy
   - 
   - 
   - 

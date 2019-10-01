@@ -6,6 +6,6 @@ public class ParticleDie : MonoBehaviour
 {
     void Start()
     {
-        Destroy(gameObject, 1.3f);
+        Destroy(gameObject, 1.2f);
     }
 }

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6206683600467981491}
   - component: {fileID: 6206683600467981490}
   - component: {fileID: 6206683600467981493}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -101,9 +101,12 @@ MonoBehaviour:
   speed: 5
   rotationSpeed: 180
   spawnPoint: {fileID: 6206683601947357210}
-  bullet: {fileID: 5019514466420278224, guid: b27016d80b8639f4da0f132bbf41bb2d, type: 3}
+  bullet: {fileID: 8154493454094620109, guid: 64a6c290ed20c8842af3474aea910a34, type: 3}
   bulletSpeed: 300
   MainCam: {fileID: 0}
+  Hive: {fileID: 0}
+  HiveDestroyed: 0
+  hiveParticles: {fileID: 0}
 --- !u!50 &6206683600467981491
 Rigidbody2D:
   serializedVersion: 4
@@ -176,7 +179,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6206683601947357211}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: SpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
