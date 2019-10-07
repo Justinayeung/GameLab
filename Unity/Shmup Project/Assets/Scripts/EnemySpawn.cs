@@ -81,7 +81,7 @@ public class EnemySpawn : MonoBehaviour
         if (hive.HiveDestroyed == false)
         {
             timer++;
-            if (timer < 1000)
+            if (timer < 1400)
             {
                 currentState = States.L1;
                 if (!lvlParticle1)
@@ -94,7 +94,7 @@ public class EnemySpawn : MonoBehaviour
                     }
                 }
             }
-            else if (timer > 1000 && timer < 2000)
+            else if (timer > 1400 && timer < 2500)
             {
                 currentState = States.L2;
                 Level2 = true;
@@ -109,7 +109,7 @@ public class EnemySpawn : MonoBehaviour
                     NectarSpawn.canInstantiate = true;
                 }
             }
-            else if (timer > 2000 && timer < 3400)
+            else if (timer > 2500 && timer < 4000)
             {
                 currentState = States.L3;
                 Level3 = true;
@@ -123,7 +123,7 @@ public class EnemySpawn : MonoBehaviour
                     }
                 }
             }
-            else if (timer > 3400 && timer < 4800)
+            else if (timer > 4000 && timer < 5500)
             {
                 currentState = States.L4;
                 Level4 = true;
@@ -137,7 +137,7 @@ public class EnemySpawn : MonoBehaviour
                     }
                 }
             }
-            else if (timer > 4800)
+            else if (timer > 5500)
             {
                 currentState = States.L5;
                 Level5 = true;

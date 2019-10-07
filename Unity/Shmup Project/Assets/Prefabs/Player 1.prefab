@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6206683600467981490}
   - component: {fileID: 6206683600467981493}
   - component: {fileID: -8531713632576782606}
+  - component: {fileID: 2738476609718634629}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: SwarmPlayer
@@ -161,6 +162,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 815a26f9aebb0e14f8f4aae82201a714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2738476609718634629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6206683600467981492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb6772c231f4f7348a6871f1834d273e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  speed: 8
+  rotateSpeed: 10
+  bulletSpeed: 5
 --- !u!1 &6206683601947357210
 GameObject:
   m_ObjectHideFlags: 0

@@ -26,6 +26,7 @@ TagManager:
   - SwarmPlayer
   - MainGame
   - WinMenu
+  - Bee
   layers:
   - Default
   - TransparentFX

@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     public float speedV;
     public float rotationSpeed;
     public GameObject spawnPoint;
+    CircleCollider2D player;
 
     public Rigidbody2D bullet;
     public float bulletSpeed;
@@ -45,6 +46,7 @@ public class Player : MonoBehaviour
         hive = GameObject.FindGameObjectWithTag("Hive").GetComponent<Hive>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        player = GetComponent<CircleCollider2D>();
         //timer = 0;
     }
 
@@ -100,10 +102,12 @@ public class Player : MonoBehaviour
             if (Input.GetButton("Fire1"))
             {
                 whoosh.Play();
+                player.radius = 5.1f;
                 spin = true;
             }
             else
             {
+                player.radius = 0.5f;
                 spin = false;
             }
             anim.SetBool("Spin", spin);

@@ -13,7 +13,7 @@ public class EndManager : MonoBehaviour
     private GameObject enemies;
     private GameObject queen;
     private GameObject flowers;
-    Enemy4 enemy;
+    public Enemy4 enemy;
     public EnemySpawn spawn;
 
     void Update()
@@ -28,6 +28,9 @@ public class EndManager : MonoBehaviour
 
         if (hive == null)
         {
+            MainMenu.SetActive(false);
+            WinMenu.SetActive(false);
+            controlMenu.SetActive(false);
             StartCoroutine(death());
         }
 
@@ -39,20 +42,20 @@ public class EndManager : MonoBehaviour
 
         if (enemy.dead == true)
         {
-             StartCoroutine(win());
+            MainMenu.SetActive(false);
+            EndMenu.SetActive(false);
+            controlMenu.SetActive(false);
+            StartCoroutine(win());
         }
-
     }
 
     IEnumerator death()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.5f);
         Destroy(flowers);
         Destroy(enemies);
         EndMenu.SetActive(true);
-        MainMenu.SetActive(false);
         MainGame.SetActive(false);
-        controlMenu.SetActive(false);
     }
 
     IEnumerator win()
@@ -62,7 +65,5 @@ public class EndManager : MonoBehaviour
         Destroy(enemies);
         WinMenu.SetActive(true);
         MainGame.SetActive(false);
-        EndMenu.SetActive(false);
-        controlMenu.SetActive(false);
     }
 }

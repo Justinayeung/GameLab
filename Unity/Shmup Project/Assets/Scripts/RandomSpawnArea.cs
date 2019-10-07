@@ -16,6 +16,8 @@ public class RandomSpawnArea : MonoBehaviour
     public bool canInstantiate = false;
     public GameObject Nectar;
     public float startTimeBtwSpawns;
+    public EnemySpawn spawnNectar;
+    int prevSpawnIndex = -1;
     
     void Start()
     {
@@ -30,7 +32,13 @@ public class RandomSpawnArea : MonoBehaviour
         {
             if (canInstantiate)
             {
-                randSpawnPoint = Random.Range(0, spawnPoints1.Length - 1);
+                do
+                {
+                    randSpawnPoint = Random.Range(0, spawnPoints1.Length - 1);
+                }
+                while (prevSpawnIndex == randSpawnPoint && spawnPoints1.Length > 1);
+                prevSpawnIndex = randSpawnPoint;
+
                 Instantiate(Nectar, spawnPoints1[randSpawnPoint].position, Quaternion.identity);
                 timeBtwSpawns1 = startTimeBtwSpawns;
             }
@@ -38,6 +46,11 @@ public class RandomSpawnArea : MonoBehaviour
         else
         {
             timeBtwSpawns1 -= Time.deltaTime;
+        }
+
+        if(spawnNectar.Level3 == true)
+        {
+            startTimeBtwSpawns = 3f;
         }
     }
 }
