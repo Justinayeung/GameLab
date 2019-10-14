@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Button
+  - Bullet
+  - IcePlayer
+  - TrapPlayer
+  - ChainPlayer
+  - DirtPlayer
+  - Ground
   layers:
   - Default
   - TransparentFX
