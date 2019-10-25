@@ -4,5 +4,23 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main_Menu_Screen.unity
+    guid: 496b3fe966efb2c4fab4bb287676baa7
+  - enabled: 1
+    path: Assets/Scenes/Level_Select.unity
+    guid: a42c577ffeee71141b8e7fe0e039637d
+  - enabled: 1
+    path: Assets/Scenes/Player_Select.unity
+    guid: 7bc9346f13193624b9d02838953656b4
+  - enabled: 1
+    path: Assets/Scenes/Polluted_Arena.unity
+    guid: cc2b87f30f4042e45bbed1c55ea67136
+  - enabled: 1
+    path: Assets/Scenes/Water_Arena.unity
+    guid: ab97027fc0760164281b1617483a2559
+  - enabled: 1
+    path: Assets/Scenes/Drought_Arena.unity
+    guid: 715d24ddde565de45a03cd4b59b5fec5
   m_configObjects: {}

@@ -7,57 +7,43 @@ public class DecreaseWater : MonoBehaviour
     public IcePlayer icePlayer;
     public TrapPlayer trapPlayer;
     public ChainPlayer chainPlayer;
-    public DirtPlayer dirtPlayer;
-    public GameObject trapWater;
-    public GameObject chainWater;
-    public GameObject dirtWater;
-
-    void Start()
-    {
-        trapWater.SetActive(false);
-        chainWater.SetActive(false);
-        dirtWater.SetActive(false);
-    }
+    public GrassPlayer grassPlayer;
 
     void OnTriggerEnter(Collider other)
     {
-        if (icePlayer.ice_waterEmpty)
+        if (other.CompareTag("IcePlayer"))
         {
-            if (other.CompareTag("IcePlayer"))
+            if (icePlayer.ice_waterEmpty)
             {
-                transform.localScale -= new Vector3(0.001f, 0.001f, 0.001f);
-                icePlayer.iceWater.SetActive(true);
+                transform.localScale -= new Vector3(0.0015f, 0.0015f, 0.0015f);
                 icePlayer.ice_waterEmpty = false;
             }
         }
-
-        if (trapPlayer.trap_waterEmpty)
+        
+        if (other.CompareTag("TrapPlayer"))
         {
-            if (other.CompareTag("TrapPlayer"))
+            if (trapPlayer.trap_waterEmpty)
             {
-                transform.localScale -= new Vector3(0.001f, 0.001f, 0.001f);
-                trapWater.SetActive(true);
+                transform.localScale -= new Vector3(0.0015f, 0.0015f, 0.0015f);
                 trapPlayer.trap_waterEmpty = false;
             }
         }
 
-        if (chainPlayer.chain_waterEmpty)
+        if (other.CompareTag("ChainPlayer"))
         {
-            if (other.CompareTag("ChainPlayer"))
+            if (chainPlayer.chain_waterEmpty)
             {
-                transform.localScale -= new Vector3(0.001f, 0.001f, 0.001f);
-                chainWater.SetActive(true);
+                transform.localScale -= new Vector3(0.0015f, 0.0015f, 0.0015f);
                 chainPlayer.chain_waterEmpty = false;
             }
         }
 
-        if (dirtPlayer.dirt_waterEmpty)
+        if (other.CompareTag("GrassPlayer"))
         {
-            if (other.CompareTag("DirtPlayer"))
+            if (grassPlayer.grass_waterEmpty)
             {
-                transform.localScale -= new Vector3(0.001f, 0.001f, 0.001f);
-                dirtWater.SetActive(true);
-                dirtPlayer.dirt_waterEmpty = false;
+                transform.localScale -= new Vector3(0.0015f, 0.0015f, 0.0015f);
+                grassPlayer.grass_waterEmpty = false;
             }
         }
     }

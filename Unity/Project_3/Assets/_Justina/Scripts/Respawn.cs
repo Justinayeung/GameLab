@@ -7,7 +7,7 @@ public class Respawn : MonoBehaviour
     public Transform iceRespawn;
     public Transform trapRespawn;
     public Transform chainRespawn;
-    public Transform dirtRespawn;
+    public Transform grassRespawn;
 
     void OnCollisionEnter(Collision other)
     {
@@ -26,9 +26,14 @@ public class Respawn : MonoBehaviour
             other.transform.position = chainRespawn.position;
         }
 
-        if (other.gameObject.CompareTag("DirtPlayer"))
+        if (other.gameObject.CompareTag("GrassPlayer"))
         {
-            other.transform.position = dirtRespawn.position;
+            other.transform.position = grassRespawn.position;
+        }
+
+        if(other.gameObject.CompareTag("Trash"))
+        {
+            Destroy(other.gameObject);
         }
     }
 }

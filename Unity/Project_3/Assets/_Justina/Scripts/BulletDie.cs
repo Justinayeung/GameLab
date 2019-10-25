@@ -8,4 +8,12 @@ public class BulletDie : MonoBehaviour
     {
         Destroy(gameObject, 2f);
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Protection"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }

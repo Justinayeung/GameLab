@@ -7,103 +7,336 @@ public class ChainPlayer : MonoBehaviour
 {
     float speed = 10f;
     public int playerNum;
-    public GameObject bulletSpawnPoint;
+    public Transform bulletSpawn_Chain;
+    public Transform chainRespawn;
     public GameObject chainWater;
+    public GameObject chainWaterPosition;
+    public GameObject waterPickUp;
+    public GameObject trappedCage;
+    public GameObject SPChain;
+    public GameObject SPChainDirection;
+    public GameObject chainSpin1;
+    public GameObject chainSpin2;
+    public GameObject chainSpin3;
+    public GameObject freezeParticles;
     public Rigidbody bullet;
     public float bulletSpeed = 10f;
     public Image healthBar;
+    public Image spBar;
     public Material normalColor;
+    public Chain_WaterArray pool;
     public bool chain_waterEmpty = true;
     public bool onGround = false;
+    public bool living = true;
+    bool pickup = true;
+    bool moving = false;
+    bool treading = false;
+    bool treadOnce = false;
+    bool frozen = false;
+    bool spfill = false;
+    bool trapped = false;
+    bool slowed = false;
+    bool permaDead = false;
+    bool toOther = false;
+    bool spinning = false;
+
+    public AudioSource Death;
+    public AudioSource Respawn;
+    public AudioSource Shooting;
+    public AudioSource Dash;
+    public AudioSource SP;
+    public AudioSource Injured;
+    public AudioSource WaterPickup;
+    public AudioSource WaterPlace;
+    public AudioSource WaterTread;
+    public AudioSource Freeze;
 
     Color flickerColor = Color.red;
-    int hit = 4;
     int timer;
+    float radialfill;
     Renderer rend;
     Rigidbody rb;
+    private Transform target;
+    private CapsuleCollider cap;
+
+    //void Awake()
+    //{
+    //    print(playerNum + ", " + PublicVars.characters[playerNum - 1]);
+    //    //update the player number to they joystic number saved in the array
+    //    playerNum = PublicVars.characters[playerNum - 1];
+    //    if (playerNum == -1)
+    //    {
+    //        Destroy(gameObject); // Destroy any characters that were not picked and are not in the game
+    //    }
+
+    //}
 
     void Start()
     {
+        pickup = true;
+        moving = false;
+        treading = false;
+        treadOnce = false;
+        frozen = false;
+        permaDead = false;
+        trapped = false;
+        slowed = false;
+        spfill = false;
+        toOther = false;
+        living = true;
         chainWater.SetActive(false);
+        SPChain.SetActive(false);
+        SPChainDirection.SetActive(false);
+        trappedCage.SetActive(false);
+        chainSpin1.SetActive(false);
+        chainSpin2.SetActive(false);
+        chainSpin3.SetActive(false);
         healthBar.fillAmount = 1.0f;
+        spBar.fillAmount = 1.0f;
+        radialfill = 1f;
         rb = GetComponent<Rigidbody>();
         rend = GetComponent<Renderer>();
+        cap = GetComponent<CapsuleCollider>();
+        cap.enabled = false;
         rend.enabled = true;
     }
 
     void FixedUpdate()
     {
         //Moving using left joystick
-        if (onGround)
+        if (onGround && !frozen && !permaDead && !trapped && !toOther)
         {
             float moveHorizontal = Input.GetAxis("Horizontal" + playerNum);
             float moveVertical = Input.GetAxis("Vertical" + playerNum);
 
             Vector3 move = new Vector3(moveHorizontal, 0, moveVertical);
             rb.velocity = move * speed;
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(move), 0.15f);
+
+            //If using input then rotate towards direction
+            if (moveHorizontal != 0 && moveVertical != 0)
+            {
+                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(move), 0.15f);
+                moving = true;
+            }
+            else
+            {
+                moving = false;
+            }
         }
         else
         {
+            //Gravity
             rb.AddForce(Vector3.down * 50f, ForceMode.Impulse);
         }
     }
 
     void Update()
     {
+        //Shooting = knock back
         timer++;
         if (timer >= 10f)
         {
-            if (Input.GetButtonDown("Shoot" + playerNum))
+            if (Input.GetButtonDown("Shoot" + playerNum) && !frozen && !permaDead && !trapped)
             {
-                Rigidbody clone_Chain;
-                clone_Chain = Instantiate(bullet, bulletSpawnPoint.transform.position, transform.rotation);
-                clone_Chain.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed, ForceMode.Impulse);
-                timer = 0;
+                Shooting.Play();
+                StartCoroutine(ChainAttack());
             }
         }
 
-        if(Input.GetButtonDown("Dash" + playerNum))
+        if (spinning)
         {
-            speed = 50f;
+            Vector3 rotation = new Vector3(0, 1f, 0);
+            chainSpin1.SetActive(true);
+            chainSpin2.SetActive(true);
+            chainSpin3.SetActive(true);
+            chainSpin1.transform.RotateAround(transform.position, rotation, -30f);
+            chainSpin2.transform.RotateAround(transform.position, rotation, -30f);
+            chainSpin3.transform.RotateAround(transform.position, rotation, -30f);
         }
         else
         {
-            speed = 10f;
+            chainSpin1.SetActive(false);
+            chainSpin2.SetActive(false);
+            chainSpin3.SetActive(false);
         }
 
-        if (hit == 4)
+        //SP = grab others stun a bit and to go to them
+        if (Input.GetButton("SP" + playerNum) && !frozen && !trapped && !permaDead && !spfill)
         {
-            healthBar.fillAmount = 1f;
+            SPChainDirection.SetActive(true);
+            Vector3 rotation = new Vector3(0, 1f, 0);
+            //SPChainDirection.transform.RotateAround(transform.position, rotation, -5f);
         }
-        else if (hit == 3)
+        //If input is let go then show the chain grab
+        else if (Input.GetButtonUp("SP" + playerNum) && !frozen && !trapped && !permaDead && !spfill)
         {
-            healthBar.fillAmount = 0.75f;
+            SP.Play();
+            SPChainDirection.SetActive(false);
+            cap.enabled = true;
+            SPChain.SetActive(true);
+            radialfill = 0f;
+            spfill = true;
         }
-        else if (hit == 2)
+        else
         {
-            healthBar.fillAmount = 0.5f;
+            SP.Stop();
+            SPChainDirection.SetActive(false);
+            SPChain.SetActive(false);
+            cap.enabled = false;
         }
-        else if (hit == 1)
+
+        //If you landed the SP, move towards other player
+        if (toOther)
         {
-            healthBar.fillAmount = 0.25f;
+            float step = 15f * Time.deltaTime;
+            transform.position = Vector3.MoveTowards(transform.position, target.position, step);
+
+            if (Vector3.Distance(transform.position, target.transform.position) < 2.5f)
+            {
+                toOther = false;
+            }
         }
-        else if (hit == 0)
+
+        //SP timer
+        spBar.fillAmount = radialfill;
+        if (spfill)
         {
-            healthBar.fillAmount = 0f;
+            radialfill += 0.01f;
+        }
+        if (spBar.fillAmount >= 1f)
+        {
+            spfill = false;
+        }
+
+        //Check Speed
+        if (!frozen && !trapped && !permaDead && !toOther)
+        {
+            //Dash = switch positions with other character
+            if (Input.GetButtonDown("Dash" + playerNum) )
+            {
+                Dash.Play();
+                if (chain_waterEmpty)
+                {
+                    speed = 13f;
+                }
+                else
+                {
+                    speed = 10f;
+                }
+            }
+            else
+            {
+                if (slowed)
+                {
+                    speed = 3f;
+                }
+                else
+                {
+                    if (chain_waterEmpty)
+                    {
+                        speed = 7f;
+                    }
+                    else
+                    {
+                        speed = 5f;
+                    }
+                }
+            }
+
+            if (slowed)
+            {
+                speed = 3f;
+            }
+            else
+            {
+                if (chain_waterEmpty)
+                {
+                    speed = 7f;
+                }
+                else
+                {
+                    speed = 5f;
+                }
+            }
+        }
+        else
+        {
+            speed = 0f;
+        }
+
+        //Health
+        if (!permaDead)
+        {
+            if (pool.scale <= 0 && pool.noWater)
+            {
+                healthBar.fillAmount -= 0.005f;
+            }
+            if (!pool.noWater)
+            {
+                healthBar.fillAmount += 0.005f;
+                if (healthBar.fillAmount >= 1)
+                {
+                    healthBar.fillAmount = 1;
+                }
+            }
+        }
+
+        if (healthBar.fillAmount <= 0)
+        {
+            StartCoroutine(PermaDead());
+        }
+
+        //Checks if you have gotten water or not
+        if (!chain_waterEmpty)
+        {
+            pickup = false;
+            chainWater.SetActive(true);
+        }
+        else
+        {
+            pickup = true;
+            chainWater.SetActive(false);
+        }
+
+        //Check if you are moving in the water
+        if (treading)
+        {
+            if (!treadOnce)
+            {
+                WaterTread.Play();
+                treadOnce = true;
+            }
+        }
+        else
+        {
+            WaterTread.Stop();
+        }
+
+        if (!moving)
+        {
+            WaterTread.Stop();
+            treadOnce = false;
         }
     }
 
     void OnCollisionEnter(Collision other)
     {
+        //Check if you are on the ground
         if (other.gameObject.CompareTag("Ground"))
         {
             onGround = true;
+        }
+
+        //Respawning = loses water
+        if (other.gameObject.CompareTag("Respawn"))
+        {
+            chain_waterEmpty = true;
         }
     }
 
     void OnCollisionExit(Collision other)
     {
+        //Checks if you leave the ground
         if (other.gameObject.CompareTag("Ground"))
         {
             onGround = false;
@@ -112,11 +345,144 @@ public class ChainPlayer : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        //Checks if you get it by a bullet = drop water
         if (other.CompareTag("Bullet"))
         {
-            hit -= 1;
+            Destroy(other.gameObject);
             StartCoroutine(Flicker());
+            if (!chain_waterEmpty)
+            {
+                pickup = false;
+                Instantiate(waterPickUp, chainWaterPosition.transform.position, Quaternion.identity);
+                chain_waterEmpty = true;
+                StartCoroutine(TimePick());
+            }
         }
+
+        //Checks if you can pick up water 
+        if (other.CompareTag("WaterPickUp"))
+        {
+            if (chain_waterEmpty && pickup)
+            {
+                Destroy(other.gameObject);
+                chain_waterEmpty = false;
+                pickup = false;
+            }
+        }
+
+        //If you are colliding with water = treading
+        if (other.CompareTag("Water") && moving)
+        {
+            treadOnce = false;
+        }
+
+        //If you obtain water
+        if (other.CompareTag("WaterPlaceChain") && !chain_waterEmpty)
+        {
+            WaterPlace.Play();
+            chain_waterEmpty = true;
+        }
+
+        //if you collide with freeze shot
+        if (other.CompareTag("IceSP"))
+        {
+            frozen = true;
+            StartCoroutine(FrozenTime());
+        }
+
+        //If you collide with trap cage
+        if (other.CompareTag("TrapSP"))
+        {
+            Destroy(other.gameObject);
+            StartCoroutine(InTrap());
+        }
+
+        //If you collide with Grass slow
+        if (other.CompareTag("GrassSP"))
+        {
+            Destroy(other.gameObject);
+            StartCoroutine(GrassSlow());
+        }
+
+        //Checks if your SP hits other players
+        if(other.CompareTag("IcePlayer") || other.CompareTag("TrapPlayer") || other.CompareTag("GrassPlayer"))
+        {
+            target = other.transform;
+            target.transform.localScale = other.transform.localScale;
+            target.transform.position = other.transform.position;
+            toOther = true;
+        }
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        //If you stay in the water = treading
+        if (other.CompareTag("Water"))
+        {
+            if (moving)
+            {
+                treading = true;
+            }
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        //If you exit the water = no treading
+        if (other.CompareTag("Water"))
+        {
+            treading = false;
+            WaterTread.Stop();
+        }
+    }
+
+    IEnumerator ChainAttack()
+    {
+        spinning = true;
+        yield return new WaitForSeconds(1f);
+        spinning = false;
+    }
+
+    IEnumerator PermaDead()
+    {
+        //Instantiate death particle
+        Death.Play();
+        living = false;
+        yield return new WaitForSeconds(1f);
+        this.gameObject.SetActive(false);
+        yield return null;
+    }
+
+    IEnumerator GrassSlow()
+    {
+        slowed = true;
+        yield return new WaitForSeconds(6f);
+        slowed = false;
+    }
+
+    IEnumerator InTrap()
+    {
+        //Trap Noise
+        trapped = true;
+        trappedCage.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        trappedCage.SetActive(false);
+        trapped = false;
+    }
+
+    IEnumerator FrozenTime()
+    {
+        Freeze.Play();
+        Instantiate(freezeParticles, transform.position, transform.rotation);
+        yield return new WaitForSeconds(3f);
+        frozen = false;
+        Freeze.Stop();
+    }
+
+    IEnumerator TimePick()
+    {
+        yield return new WaitForSeconds(1f);
+        pickup = true;
     }
 
     IEnumerator Flicker()

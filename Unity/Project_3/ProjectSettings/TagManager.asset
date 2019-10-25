@@ -9,8 +9,23 @@ TagManager:
   - IcePlayer
   - TrapPlayer
   - ChainPlayer
-  - DirtPlayer
   - Ground
+  - WaterPickUp
+  - GrassPlayer
+  - WaterPlaceIce
+  - WaterPlaceTrap
+  - WaterPlaceChain
+  - WaterPlaceGrass
+  - IcePlatform
+  - Water
+  - IceSP
+  - TrapSP
+  - ChainSP
+  - GrassSP
+  - Protection
+  - WaterRising
+  - Trash
+  - ChainAttack
   layers:
   - Default
   - TransparentFX
