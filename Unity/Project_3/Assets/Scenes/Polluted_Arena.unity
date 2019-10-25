@@ -35671,7 +35671,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 92b365206b72b6e4f839972f7ffdaee0,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -9100749623222978235, guid: 92b365206b72b6e4f839972f7ffdaee0,
         type: 3}
@@ -74573,7 +74573,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!54 &1704348624
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -77900,12 +77900,12 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 0ffc9515cbead1044a31148de5cf1cc1,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 0ffc9515cbead1044a31148de5cf1cc1,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -6057140222963153312, guid: 0ffc9515cbead1044a31148de5cf1cc1,
         type: 3}
@@ -78112,7 +78112,7 @@ MonoBehaviour:
   trappedCage: {fileID: 402949372}
   freezeShot: {fileID: 5498361515021755460, guid: b5463698c22444b4ea05c0b1821c9424,
     type: 3}
-  bullet: {fileID: 5498361515021755460, guid: b5463698c22444b4ea05c0b1821c9424, type: 3}
+  bullet: {fileID: 6211962751969865202, guid: 99c4c466dd2e43c48b86e2115a54f12b, type: 3}
   bulletSpeed: 20
   healthBar: {fileID: 352429638}
   spBar: {fileID: 900638880}
