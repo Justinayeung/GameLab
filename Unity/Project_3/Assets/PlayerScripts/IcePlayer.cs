@@ -7,6 +7,7 @@ public class IcePlayer : MonoBehaviour
 {
     float speed = 10f;
     public int playerNum;
+    public float waterNum;
     public Transform bulletSpawn_Ice;
     public Transform iceRespawn;
     public GameObject iceWater;
@@ -23,57 +24,60 @@ public class IcePlayer : MonoBehaviour
     public Ice_WaterArray pool;
     public bool ice_waterEmpty = true;
     public bool onGround = false;
-    public bool living = true;
     bool pickup = true;
     bool moving = false;
     bool onice = false;
+    bool oniceAudio = false;
     bool treading = false;
     bool treadOnce = false;
     bool spfill = false;
     bool trapped = false;
     bool slowed = false;
-    bool permaDead = false;
+    public bool permaDead = false;
 
     public AudioSource Death;
     public AudioSource Respawn;
     public AudioSource iceShooting;
     public AudioSource onIce;
+    public AudioSource iceSP;
     public AudioSource Injured;
-    public AudioSource WaterPickup;
-    public AudioSource WaterPlace;
+    public AudioSource WaterPickup_Place;
     public AudioSource WaterTread;
+    public AudioSource Caged;
 
     Color flickerColor = Color.red;
-    int timer;
+    int timer1;
+    int timer2;
     float radialfill;
     Renderer rend;
     Rigidbody rb;
     public Animator anim;
+    public WinManager winManage;
 
-    //void Awake()
-    //{
-    //    print(playerNum + ", " + PublicVars.characters[playerNum - 1]);
-    //    //update the player number to they joystic number saved in the array
-    //    playerNum = PublicVars.characters[playerNum - 1];
-    //    if (playerNum == -1)
-    //    {
-    //        Destroy(gameObject); // Destroy any characters that were not picked and are not in the game
-    //    }
+    void Awake()
+    {
+        print(playerNum + ", " + PublicVars.characters[playerNum - 1]);
+        //update the player number to they joystic number saved in the array
+        playerNum = PublicVars.characters[playerNum - 1];
+        if (playerNum == -1)
+        {
+            Destroy(gameObject); // Destroy any characters that were not picked and are not in the game
+        }
 
-    //}
+    }
 
     void Start()
     {
         pickup = true;
         moving = false;
         onice = false;
+        oniceAudio = false;
         treading = false;
         treadOnce = false;
         spfill = false;
         trapped = false;
         slowed = false;
         permaDead = false;
-        living = true;
         iceWater.SetActive(false);
         trappedCage.SetActive(false);
         radialfill = 1f;
@@ -87,7 +91,7 @@ public class IcePlayer : MonoBehaviour
     void FixedUpdate()
     {
         //Moving using left joystick
-        if (onGround && !trapped && !permaDead)
+        if (onGround && !trapped && !permaDead && !winManage.won)
         {
             float moveHorizontal = Input.GetAxis("Horizontal" + playerNum);
             float moveVertical = Input.GetAxis("Vertical" + playerNum);
@@ -98,14 +102,20 @@ public class IcePlayer : MonoBehaviour
             //If using input then rotate towards direction
             if (moveHorizontal != 0 && moveVertical != 0)
             {
-                anim.SetBool("run", true);
-                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(move), 0.15f);
+                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(move), 0.1f);
                 moving = true;
+                anim.SetBool("isRunning", true);
             }
             else
             {
-                anim.SetBool("run", false);
                 moving = false;
+                anim.SetBool("isRunning", false);
+            }
+
+
+            if (Input.GetButtonDown("Select" + playerNum))
+            {
+                rb.AddForce(Vector3.up * 200f, ForceMode.Impulse);
             }
         }
         else
@@ -126,17 +136,17 @@ public class IcePlayer : MonoBehaviour
         //}
       
         //Shooting for ice player
-        timer++;
-        if (timer >= 10f)
+        timer1++;
+        if (timer1 >= 10f)
         {
-            if (Input.GetButtonDown("Shoot" + playerNum) && !trapped && !permaDead)
+            if (Input.GetButtonDown("Shoot" + playerNum) && !trapped && !permaDead && !winManage.won)
             {
                 anim.SetBool("shoot", true);
                 iceShooting.Play();
                 Rigidbody clone_Ice;
                 clone_Ice = Instantiate(bullet, bulletSpawn_Ice.position, transform.rotation);
                 clone_Ice.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed, ForceMode.Impulse);
-                timer = 0;
+                timer1 = 0;
             }
             else
             {
@@ -145,9 +155,14 @@ public class IcePlayer : MonoBehaviour
         }
 
         //Dashing = creating ice platforms
-        if (Input.GetButtonDown("Dash" + playerNum) && !trapped && !permaDead)
+        timer2++;
+        if (timer2 >= 30f)
         {
-            Instantiate(icePlatform, transform.position, transform.rotation);
+            if (Input.GetButtonDown("Dash" + playerNum) && !trapped && !permaDead && !winManage.won)
+            {
+                Instantiate(icePlatform, transform.position, transform.rotation);
+                timer2 = 0;
+            }
         }
 
         //Checking if player speed
@@ -155,6 +170,12 @@ public class IcePlayer : MonoBehaviour
         {
             if (onice)
             {
+                if (!oniceAudio)
+                {
+                    onIce.Play();
+                    oniceAudio = true;
+                }
+
                 speed = 10f;
                 if (slowed)
                 {
@@ -186,9 +207,10 @@ public class IcePlayer : MonoBehaviour
         }
 
         //Special Ability == freeze shot
-        if (Input.GetButtonDown("SP" + playerNum) && !trapped && !spfill && !permaDead)
+        if (Input.GetButtonDown("SP" + playerNum) && !trapped && !spfill && !permaDead && !winManage.won)
         {
             //anim.SetBool("shoot", true);
+            iceSP.Play();
             Rigidbody clone_Freeze;
             clone_Freeze = Instantiate(freezeShot, bulletSpawn_Ice.position, transform.rotation);
             clone_Freeze.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed, ForceMode.Impulse);
@@ -216,11 +238,12 @@ public class IcePlayer : MonoBehaviour
         {
             if (pool.scale <= 0 && pool.noWater)
             {
-                healthBar.fillAmount -= 0.005f;
+                Injured.Play();
+                healthBar.fillAmount -= waterNum;
             }
             if (!pool.noWater)
             {
-                healthBar.fillAmount += 0.005f;
+                healthBar.fillAmount += waterNum;
                 if (healthBar.fillAmount >= 1)
                 {
                     healthBar.fillAmount = 1;
@@ -301,6 +324,7 @@ public class IcePlayer : MonoBehaviour
             StartCoroutine(Flicker());
             if (!ice_waterEmpty)
             {
+                WaterPickup_Place.Play();
                 pickup = false;
                 Instantiate(waterPickUp, iceWaterPosition.transform.position, Quaternion.identity);
                 ice_waterEmpty = true;
@@ -313,6 +337,7 @@ public class IcePlayer : MonoBehaviour
             StartCoroutine(Flicker());
             if (!ice_waterEmpty)
             {
+                WaterPickup_Place.Play();
                 pickup = false;
                 Instantiate(waterPickUp, iceWaterPosition.transform.position, Quaternion.identity);
                 ice_waterEmpty = true;
@@ -325,7 +350,7 @@ public class IcePlayer : MonoBehaviour
         {
             if (ice_waterEmpty && pickup)
             {
-                WaterPickup.Play();
+                WaterPickup_Place.Play();
                 Destroy(other.gameObject);
                 ice_waterEmpty = false;
                 pickup = false;
@@ -335,7 +360,7 @@ public class IcePlayer : MonoBehaviour
         //Placing water into pool
         if (other.CompareTag("WaterPlaceIce") && !ice_waterEmpty)
         {
-            WaterPlace.Play();
+            WaterPickup_Place.Play();
             ice_waterEmpty = true;
         }
 
@@ -365,8 +390,11 @@ public class IcePlayer : MonoBehaviour
         //Checking if you are on ice
         if (other.CompareTag("IcePlatform"))
         {
-            onIce.Play();
             onice = true;
+        }
+        else
+        {
+            oniceAudio = false;
         }
 
         //Checking if you are in water = treading
@@ -381,6 +409,7 @@ public class IcePlayer : MonoBehaviour
         //Checking if you leave ice
         if (other.CompareTag("IcePlatform"))
         {
+            oniceAudio = false;
             onIce.Stop();
             onice = false;
         }
@@ -402,8 +431,13 @@ public class IcePlayer : MonoBehaviour
     IEnumerator PermaDead()
     {
         //Instantiate death particle
-        Death.Play();
-        living = false;
+        bool deathOnce = true;
+        if (deathOnce)
+        {
+            Death.Play();
+            deathOnce = false;
+        }
+        permaDead = true;
         yield return new WaitForSeconds(1f);
         this.gameObject.SetActive(false);
         yield return null;
@@ -418,7 +452,7 @@ public class IcePlayer : MonoBehaviour
 
     IEnumerator InTrap()
     {
-        //trap noise
+        Caged.Play();
         trapped = true;
         trappedCage.SetActive(true);
         yield return new WaitForSeconds(3f);

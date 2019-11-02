@@ -165,20 +165,14 @@ public class PollutedManager : MonoBehaviour
         }
         if (timer > 490)
         {
+            float step = 1f;
+            directionalLight.color = Color.Lerp(orignalDirectionalColor, directionalColor, step * Time.smoothDeltaTime);
+            spotLight.color = Color.Lerp(originalSpotColor, spotColor, step * Time.smoothDeltaTime);
             smokeStack2 = true;
         }
         if (timer > 1000)
         {
             rand.canInstantiate = true;
-        }
-    }
-
-    void FixedUpdate()
-    {
-        if (timer > 450)
-        {
-            directionalLight.color = Color.Lerp(orignalDirectionalColor, directionalColor, 10f * Time.deltaTime);
-            spotLight.color = Color.Lerp(originalSpotColor, spotColor, 10f * Time.deltaTime);
         }
     }
 }

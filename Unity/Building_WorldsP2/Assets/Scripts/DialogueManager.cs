@@ -8,8 +8,6 @@ public class DialogueManager : MonoBehaviour
     public Text nameText;
     public Text dialogueText;
 
-    public Animator anim;
-
     private Queue<string> sentences;
 
     void Start()
@@ -19,29 +17,38 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        anim.SetBool("IsOpen", true);
+        //anim.SetBool("IsOpen", true);
         nameText.text = dialogue.name;
         sentences.Clear();
 
         foreach (string sentence in dialogue.sentences)
         {
+            Debug.Log("Start");
             sentences.Enqueue(sentence);
         }
 
         DisplayNextSentence();
     }
 
+    void Update()
+    {
+        DisplayNextSentence();
+    }
+
     public void DisplayNextSentence()
     {
-        if(sentences.Count == 0)
+        if (Input.GetKeyDown("space"))
         {
-            EndDialogue();
-            return;
-        }
+            if (sentences.Count == 0)
+            {
+                EndDialogue();
+                return;
+            }
 
-        string sentence = sentences.Dequeue();
-        StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
+            string sentence = sentences.Dequeue();
+            StopAllCoroutines();
+            StartCoroutine(TypeSentence(sentence));
+        }
     }
 
     IEnumerator TypeSentence(string sentence)
@@ -57,6 +64,6 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
-        anim.SetBool("IsOpen", false);
+        sentences.Clear();
     }
 }

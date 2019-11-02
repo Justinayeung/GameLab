@@ -7,6 +7,7 @@ public class ChainPlayer : MonoBehaviour
 {
     float speed = 10f;
     public int playerNum;
+    public float waterNum;
     public Transform bulletSpawn_Chain;
     public Transform chainRespawn;
     public GameObject chainWater;
@@ -27,7 +28,6 @@ public class ChainPlayer : MonoBehaviour
     public Chain_WaterArray pool;
     public bool chain_waterEmpty = true;
     public bool onGround = false;
-    public bool living = true;
     bool pickup = true;
     bool moving = false;
     bool treading = false;
@@ -36,7 +36,7 @@ public class ChainPlayer : MonoBehaviour
     bool spfill = false;
     bool trapped = false;
     bool slowed = false;
-    bool permaDead = false;
+    public bool permaDead = false;
     bool toOther = false;
     bool spinning = false;
 
@@ -46,10 +46,10 @@ public class ChainPlayer : MonoBehaviour
     public AudioSource Dash;
     public AudioSource SP;
     public AudioSource Injured;
-    public AudioSource WaterPickup;
-    public AudioSource WaterPlace;
+    public AudioSource WaterPickup_Place;
     public AudioSource WaterTread;
     public AudioSource Freeze;
+    public AudioSource Caged;
 
     Color flickerColor = Color.red;
     int timer;
@@ -58,18 +58,19 @@ public class ChainPlayer : MonoBehaviour
     Rigidbody rb;
     private Transform target;
     private CapsuleCollider cap;
+    public WinManager winManage;
 
-    //void Awake()
-    //{
-    //    print(playerNum + ", " + PublicVars.characters[playerNum - 1]);
-    //    //update the player number to they joystic number saved in the array
-    //    playerNum = PublicVars.characters[playerNum - 1];
-    //    if (playerNum == -1)
-    //    {
-    //        Destroy(gameObject); // Destroy any characters that were not picked and are not in the game
-    //    }
+    void Awake()
+    {
+        print(playerNum + ", " + PublicVars.characters[playerNum - 1]);
+        //update the player number to they joystic number saved in the array
+        playerNum = PublicVars.characters[playerNum - 1];
+        if (playerNum == -1)
+        {
+            Destroy(gameObject); // Destroy any characters that were not picked and are not in the game
+        }
 
-    //}
+    }
 
     void Start()
     {
@@ -83,7 +84,6 @@ public class ChainPlayer : MonoBehaviour
         slowed = false;
         spfill = false;
         toOther = false;
-        living = true;
         chainWater.SetActive(false);
         SPChain.SetActive(false);
         SPChainDirection.SetActive(false);
@@ -104,7 +104,7 @@ public class ChainPlayer : MonoBehaviour
     void FixedUpdate()
     {
         //Moving using left joystick
-        if (onGround && !frozen && !permaDead && !trapped && !toOther)
+        if (onGround && !frozen && !permaDead && !trapped && !toOther && !winManage.won)
         {
             float moveHorizontal = Input.GetAxis("Horizontal" + playerNum);
             float moveVertical = Input.GetAxis("Vertical" + playerNum);
@@ -115,18 +115,23 @@ public class ChainPlayer : MonoBehaviour
             //If using input then rotate towards direction
             if (moveHorizontal != 0 && moveVertical != 0)
             {
-                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(move), 0.15f);
+                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(move), 0.1f);
                 moving = true;
             }
             else
             {
                 moving = false;
             }
+
+            if (Input.GetButtonDown("Select" + playerNum))
+            {
+                rb.AddForce(Vector3.up * 25f, ForceMode.Impulse);
+            }
         }
         else
         {
             //Gravity
-            rb.AddForce(Vector3.down * 50f, ForceMode.Impulse);
+            rb.AddForce(Vector3.down * 10f, ForceMode.Impulse);
         }
     }
 
@@ -136,7 +141,7 @@ public class ChainPlayer : MonoBehaviour
         timer++;
         if (timer >= 10f)
         {
-            if (Input.GetButtonDown("Shoot" + playerNum) && !frozen && !permaDead && !trapped)
+            if (Input.GetButtonDown("Shoot" + playerNum) && !frozen && !permaDead && !trapped && !winManage.won)
             {
                 Shooting.Play();
                 StartCoroutine(ChainAttack());
@@ -161,14 +166,14 @@ public class ChainPlayer : MonoBehaviour
         }
 
         //SP = grab others stun a bit and to go to them
-        if (Input.GetButton("SP" + playerNum) && !frozen && !trapped && !permaDead && !spfill)
+        if (Input.GetButton("SP" + playerNum) && !frozen && !trapped && !permaDead && !spfill && !winManage.won)
         {
             SPChainDirection.SetActive(true);
-            Vector3 rotation = new Vector3(0, 1f, 0);
+            //Vector3 rotation = new Vector3(0, 1f, 0);
             //SPChainDirection.transform.RotateAround(transform.position, rotation, -5f);
         }
         //If input is let go then show the chain grab
-        else if (Input.GetButtonUp("SP" + playerNum) && !frozen && !trapped && !permaDead && !spfill)
+        else if (Input.GetButtonUp("SP" + playerNum) && !frozen && !trapped && !permaDead && !spfill && !winManage.won)
         {
             SP.Play();
             SPChainDirection.SetActive(false);
@@ -189,7 +194,9 @@ public class ChainPlayer : MonoBehaviour
         if (toOther)
         {
             float step = 15f * Time.deltaTime;
-            transform.position = Vector3.MoveTowards(transform.position, target.position, step);
+            Vector3 moveDirection = Vector3.MoveTowards(transform.position, target.position, step);
+            transform.position = moveDirection;
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(moveDirection), 0.15f);
 
             if (Vector3.Distance(transform.position, target.transform.position) < 2.5f)
             {
@@ -209,7 +216,7 @@ public class ChainPlayer : MonoBehaviour
         }
 
         //Check Speed
-        if (!frozen && !trapped && !permaDead && !toOther)
+        if (!frozen && !trapped && !permaDead && !toOther && !winManage.won)
         {
             //Dash = switch positions with other character
             if (Input.GetButtonDown("Dash" + playerNum) )
@@ -217,7 +224,7 @@ public class ChainPlayer : MonoBehaviour
                 Dash.Play();
                 if (chain_waterEmpty)
                 {
-                    speed = 13f;
+                    speed = 15f;
                 }
                 else
                 {
@@ -269,11 +276,12 @@ public class ChainPlayer : MonoBehaviour
         {
             if (pool.scale <= 0 && pool.noWater)
             {
-                healthBar.fillAmount -= 0.005f;
+                Injured.Play();
+                healthBar.fillAmount -= waterNum;
             }
             if (!pool.noWater)
             {
-                healthBar.fillAmount += 0.005f;
+                healthBar.fillAmount += waterNum;
                 if (healthBar.fillAmount >= 1)
                 {
                     healthBar.fillAmount = 1;
@@ -352,6 +360,7 @@ public class ChainPlayer : MonoBehaviour
             StartCoroutine(Flicker());
             if (!chain_waterEmpty)
             {
+                WaterPickup_Place.Play();
                 pickup = false;
                 Instantiate(waterPickUp, chainWaterPosition.transform.position, Quaternion.identity);
                 chain_waterEmpty = true;
@@ -364,6 +373,7 @@ public class ChainPlayer : MonoBehaviour
         {
             if (chain_waterEmpty && pickup)
             {
+                WaterPickup_Place.Play();
                 Destroy(other.gameObject);
                 chain_waterEmpty = false;
                 pickup = false;
@@ -379,7 +389,7 @@ public class ChainPlayer : MonoBehaviour
         //If you obtain water
         if (other.CompareTag("WaterPlaceChain") && !chain_waterEmpty)
         {
-            WaterPlace.Play();
+            WaterPickup_Place.Play();
             chain_waterEmpty = true;
         }
 
@@ -446,8 +456,13 @@ public class ChainPlayer : MonoBehaviour
     IEnumerator PermaDead()
     {
         //Instantiate death particle
-        Death.Play();
-        living = false;
+        bool deathOnce = true;
+        if (deathOnce)
+        {
+            Death.Play();
+            deathOnce = false;
+        }
+        permaDead = true;
         yield return new WaitForSeconds(1f);
         this.gameObject.SetActive(false);
         yield return null;
@@ -462,7 +477,7 @@ public class ChainPlayer : MonoBehaviour
 
     IEnumerator InTrap()
     {
-        //Trap Noise
+        Caged.Play();
         trapped = true;
         trappedCage.SetActive(true);
         yield return new WaitForSeconds(3f);

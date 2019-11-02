@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class WinManager : MonoBehaviour
 {
+    public GameObject winCanvas;
     public Text winText;
     public GameObject icePanel;
     public GameObject trapPanel;
@@ -12,43 +13,81 @@ public class WinManager : MonoBehaviour
     public GameObject grassPanel;
     public GameObject buttons;
 
-    public IcePlayer ice;
-    public TrapPlayer trap;
-    public ChainPlayer chain;
-    public GrassPlayer grass;
+    public GameObject ice;
+    public GameObject trap;
+    public GameObject chain;
+    public GameObject grass;
+    public bool won;
+
+    void Start()
+    {
+        won = false;
+    }
 
     void Update()
     {
         //If ice player is the last one living
-        if (ice.living && !trap.living && !chain.living && !grass.living)
+        if (ice.activeInHierarchy)
         {
-            icePanel.SetActive(true);
-            buttons.SetActive(true);
-            winText.text = "ICE PLAYER WINS";
+            if (!trap.activeInHierarchy && !chain.activeInHierarchy && !grass.activeInHierarchy)
+            {
+                won = true;
+                winCanvas.SetActive(true);
+                icePanel.SetActive(true);
+                trapPanel.SetActive(false);
+                chainPanel.SetActive(false);
+                grassPanel.SetActive(false);
+                buttons.SetActive(true);
+                winText.text = "ICE PLAYER WINS";
+            }
         }
 
         //If trap player is the last one living
-        if (trap.living && !ice.living && !chain.living && !grass.living)
+        if (trap.activeInHierarchy)
         {
-            trapPanel.SetActive(true);
-            buttons.SetActive(true);
-            winText.text = "TRAP PLAYER WINS";
+            if (!ice.activeInHierarchy && !chain.activeInHierarchy && !grass.activeInHierarchy)
+            {
+                won = true;
+                winCanvas.SetActive(true);
+                trapPanel.SetActive(true);
+                icePanel.SetActive(false);
+                chainPanel.SetActive(false);
+                grassPanel.SetActive(false);
+                buttons.SetActive(true);
+                winText.text = "TRAP PLAYER WINS";
+            }
         }
 
         //If chain player is the last one living
-        if (chain.living && !ice.living && !trap.living && !grass.living)
+        if (chain.activeInHierarchy)
         {
-            chainPanel.SetActive(true);
-            buttons.SetActive(true);
-            winText.text = "CHAIN PLAYER WINS";
+            if (!ice.activeInHierarchy && !trap.activeInHierarchy && !grass.activeInHierarchy)
+            {
+                won = true;
+                winCanvas.SetActive(true);
+                chainPanel.SetActive(true);
+                icePanel.SetActive(false);
+                trapPanel.SetActive(false);
+                grassPanel.SetActive(false);
+                buttons.SetActive(true);
+                winText.text = "CHAIN PLAYER WINS";
+            }
         }
 
         //If grass player is the last one living
-        if (grass.living && !ice.living && !trap.living && !chain.living)
+        if (grass.activeInHierarchy)
         {
-            grassPanel.SetActive(true);
-            buttons.SetActive(true);
-            winText.text = "GRASS PLAYER WINS";
+            if (!ice.activeInHierarchy && !trap.activeInHierarchy && !chain.activeInHierarchy)
+            {
+                won = true;
+                winCanvas.SetActive(true);
+                grassPanel.SetActive(true);
+                icePanel.SetActive(false);
+                trapPanel.SetActive(false);
+                chainPanel.SetActive(false);
+                buttons.SetActive(true);
+                winText.text = "GRASS PLAYER WINS";
+            }
         }
     }
 }

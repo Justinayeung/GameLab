@@ -111,7 +111,7 @@ public class SelectMove : MonoBehaviour
         //if at least 2 players are selected and the start button is hit then start the game
         //otherwise do nothing - Not enough players
         //if all 4 players are selected, start the game automatically
-        if (playerCount > 3 || (Input.GetButtonDown("Submit") && playerCount > 2))
+        if (playerCount > 3)
         {
             if (Level_MenuButton.pollutedLevel)
             {

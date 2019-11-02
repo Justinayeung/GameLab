@@ -7,6 +7,7 @@ public class TrapPlayer : MonoBehaviour
 {
     float speed;
     public int playerNum;
+    public float waterNum;
     public Transform bulletSpawn_Trap;
     public Transform trapSpawn;
     public Transform trapRespawn;
@@ -24,7 +25,6 @@ public class TrapPlayer : MonoBehaviour
     public Trap_WaterArray pool;
     public bool trap_waterEmpty = true;
     public bool onGround = false;
-    public bool living = true;
     bool pickup = true;
     bool moving = false;
     bool treading = false;
@@ -33,15 +33,15 @@ public class TrapPlayer : MonoBehaviour
     bool spfill = false;
     bool cageProtected = false;
     bool slowed = false;
-    bool permaDead = false;
+    public bool permaDead = false;
 
     public AudioSource Death;
     public AudioSource Respawn;
     public AudioSource Shooting;
     public AudioSource Dash;
+    public AudioSource SP;
     public AudioSource Injured;
-    public AudioSource WaterPickup;
-    public AudioSource WaterPlace;
+    public AudioSource WaterPickup_Place;
     public AudioSource WaterTread;
     public AudioSource Freeze;
 
@@ -51,18 +51,19 @@ public class TrapPlayer : MonoBehaviour
     Renderer rend;
     Rigidbody rb;
     public Animator anim;
+    public WinManager winManage;
 
-    //void Awake()
-    //{
-    //    print(playerNum + ", " + PublicVars.characters[playerNum - 1]);
-    //    //update the player number to they joystic number saved in the array
-    //    playerNum = PublicVars.characters[playerNum - 1];
-    //    if (playerNum == -1)
-    //    {
-    //        Destroy(gameObject); // Destroy any characters that were not picked and are not in the game
-    //    }
+    void Awake()
+    {
+        print(playerNum + ", " + PublicVars.characters[playerNum - 1]);
+        //update the player number to they joystic number saved in the array
+        playerNum = PublicVars.characters[playerNum - 1];
+        if (playerNum == -1)
+        {
+            Destroy(gameObject); // Destroy any characters that were not picked and are not in the game
+        }
 
-    //}
+    }
 
     void Start()
     {
@@ -75,7 +76,6 @@ public class TrapPlayer : MonoBehaviour
         cageProtected = false;
         slowed = false;
         permaDead = false;
-        living = true;
         trapWater.SetActive(false);
         radialfill = 1f;
         spBar.fillAmount = 1f;
@@ -89,7 +89,7 @@ public class TrapPlayer : MonoBehaviour
     void FixedUpdate()
     {
         //Moving using left joystick
-        if (onGround && !frozen && !permaDead)
+        if (onGround && !frozen && !permaDead && !winManage.won)
         {
             float moveHorizontal = Input.GetAxis("Horizontal" + playerNum);
             float moveVertical = Input.GetAxis("Vertical" + playerNum);
@@ -100,21 +100,19 @@ public class TrapPlayer : MonoBehaviour
             //If using input then rotate towards direction
             if (moveHorizontal != 0 && moveVertical != 0)
             {
-                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(move), 0.15f);
+                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(move), 0.1f);
                 moving = true;
+                anim.SetBool("isRunning", true);
             }
             else
             {
                 moving = false;
+                anim.SetBool("isRunning", false);
             }
 
-            if (moving)
+            if (Input.GetButtonDown("Select" + playerNum))
             {
-                anim.SetBool("run", true);
-            }
-            else
-            {
-                anim.SetBool("run", false);
+                rb.AddForce(Vector3.up * 200f, ForceMode.Impulse);
             }
         }
         else
@@ -130,7 +128,7 @@ public class TrapPlayer : MonoBehaviour
         timer++;
         if (timer >= 10f)
         {
-            if (Input.GetButtonDown("Shoot" + playerNum) && !frozen && !permaDead)
+            if (Input.GetButtonDown("Shoot" + playerNum) && !frozen && !permaDead && !winManage.won)
             {
                 anim.SetBool("Shoot", true);
                 Shooting.Play();
@@ -146,8 +144,9 @@ public class TrapPlayer : MonoBehaviour
         }
 
         //SP placing traps
-        if (Input.GetButtonDown("SP" + playerNum) && !spfill && !permaDead)
+        if (Input.GetButtonDown("SP" + playerNum) && !spfill && !permaDead && !winManage.won)
         {
+            SP.Play();
             anim.SetBool("stamp", true);
             Instantiate(placeTrap, trapSpawn.position, transform.rotation);
             radialfill = 0f;
@@ -170,10 +169,11 @@ public class TrapPlayer : MonoBehaviour
         }
 
         //Dash == cage protect and not frozen
-        if (!frozen && !permaDead)
+        if (!frozen && !permaDead && !winManage.won)
         {
             if (Input.GetButton("Dash" + playerNum))
             {
+                Dash.Play();
                 speed = 0f;
                 cage.SetActive(true);
                 cageProtected = true;
@@ -213,11 +213,12 @@ public class TrapPlayer : MonoBehaviour
         {
             if (pool.scale <= 0 && pool.noWater)
             {
-                healthBar.fillAmount -= 0.005f;
+                Injured.Play();
+                healthBar.fillAmount -= waterNum;
             }
             if (!pool.noWater)
             {
-                healthBar.fillAmount += 0.005f;
+                healthBar.fillAmount += waterNum;
                 if (healthBar.fillAmount >= 1)
                 {
                     healthBar.fillAmount = 1;
@@ -298,6 +299,7 @@ public class TrapPlayer : MonoBehaviour
             StartCoroutine(Flicker());
             if (!trap_waterEmpty)
             {
+                WaterPickup_Place.Play();
                 pickup = false;
                 Instantiate(waterPickUp, trapWaterPosition.transform.position, Quaternion.identity);
                 trap_waterEmpty = true;
@@ -310,6 +312,7 @@ public class TrapPlayer : MonoBehaviour
             StartCoroutine(Flicker());
             if (!trap_waterEmpty)
             {
+                WaterPickup_Place.Play();
                 pickup = false;
                 Instantiate(waterPickUp, trapWaterPosition.transform.position, Quaternion.identity);
                 trap_waterEmpty = true;
@@ -322,7 +325,7 @@ public class TrapPlayer : MonoBehaviour
         {
             if (trap_waterEmpty && pickup)
             {
-                WaterPickup.Play();
+                WaterPickup_Place.Play();
                 Destroy(other.gameObject);
                 trap_waterEmpty = false;
                 pickup = false;
@@ -338,7 +341,7 @@ public class TrapPlayer : MonoBehaviour
         //Checking if you are placing water down
         if (other.CompareTag("WaterPlaceTrap") && !trap_waterEmpty)
         {
-            WaterPlace.Play();
+            WaterPickup_Place.Play();
             trap_waterEmpty = true;
         }
 
@@ -379,8 +382,13 @@ public class TrapPlayer : MonoBehaviour
     IEnumerator PermaDead()
     {
         //Instantiate death particle
-        Death.Play();
-        living = false;
+        bool deathOnce = true;
+        if (deathOnce)
+        {
+            Death.Play();
+            deathOnce = false;
+        }
+        permaDead = true;
         yield return new WaitForSeconds(1f);
         this.gameObject.SetActive(false);
         yield return null;

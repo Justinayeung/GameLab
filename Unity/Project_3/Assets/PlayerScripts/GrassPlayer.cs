@@ -7,6 +7,7 @@ public class GrassPlayer : MonoBehaviour
 {
     float speed = 10f;
     public int playerNum;
+    public float waterNum;
     public Transform bulletSpawn_Grass;
     public Transform grassRespawn;
     public GameObject grassWater;
@@ -24,7 +25,6 @@ public class GrassPlayer : MonoBehaviour
     public Grass_WaterArray pool;
     public bool grass_waterEmpty = true;
     public bool onGround = false;
-    public bool living = true;
     bool pickup = true;
     bool moving = false;
     bool treading = false;
@@ -33,36 +33,40 @@ public class GrassPlayer : MonoBehaviour
     bool trapped = false;
     bool spfill = false;
     bool under = false;
-    bool permaDead = false;
+    bool underTimer = false;
+    public bool permaDead = false;
 
     public AudioSource Death;
     public AudioSource Respawn;
     public AudioSource Shooting;
     public AudioSource Dash;
+    public AudioSource SP;
     public AudioSource Injured;
-    public AudioSource WaterPickup;
-    public AudioSource WaterPlace;
+    public AudioSource WaterPickup_Place;
     public AudioSource WaterTread;
     public AudioSource Freeze;
+    public AudioSource Caged;
 
     Color flickerColor = Color.red;
     int timer;
     float radialfill;
-    Renderer rend;
+    public GameObject rend;
     Rigidbody rb;
     BoxCollider boxC;
+    public Animator anim;
+    public WinManager winManage;
 
-    //void Awake()
-    //{
-    //    print(playerNum + ", " + PublicVars.characters[playerNum - 1]);
-    //    //update the player number to they joystic number saved in the array
-    //    playerNum = PublicVars.characters[playerNum - 1];
-    //    if (playerNum == -1)
-    //    {
-    //        Destroy(gameObject); // Destroy any characters that were not picked and are not in the game
-    //    }
+    void Awake()
+    {
+        print(playerNum + ", " + PublicVars.characters[playerNum - 1]);
+        //update the player number to they joystic number saved in the array
+        playerNum = PublicVars.characters[playerNum - 1];
+        if (playerNum == -1)
+        {
+            Destroy(gameObject); // Destroy any characters that were not picked and are not in the game
+        }
 
-    //}
+    }
 
     void Start()
     {
@@ -74,23 +78,21 @@ public class GrassPlayer : MonoBehaviour
         trapped = false;
         under = false;
         permaDead = false;
-        living = true;
         trappedCage.SetActive(false);
         grassWater.SetActive(false);
         spfill = false;
         radialfill = 1f;
         healthBar.fillAmount = 1.0f;
-        rend = GetComponent<Renderer>();
+        rend.SetActive(true);
         rb = GetComponent<Rigidbody>();
         boxC = GetComponent<BoxCollider>();
-        rend.enabled = true;
         underParticles.SetActive(false);
     }
 
     void FixedUpdate()
     {
         //Moving using left joystick
-        if (onGround && !frozen && !trapped && !permaDead)
+        if (onGround && !frozen && !trapped && !permaDead && !winManage.won)
         {
             float moveHorizontal = Input.GetAxis("Horizontal" + playerNum);
             float moveVertical = Input.GetAxis("Vertical" + playerNum);
@@ -101,12 +103,19 @@ public class GrassPlayer : MonoBehaviour
             //If using input then rotate towards direction
             if (moveHorizontal != 0 && moveVertical != 0)
             {
-                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(move), 0.15f);
+                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(move), 0.1f);
                 moving = true;
+                anim.SetBool("isRunning", true);
             }
             else
             {
                 moving = false;
+                anim.SetBool("isRunning", false);
+            }
+
+            if (Input.GetButtonDown("Select" + playerNum))
+            {
+                rb.AddForce(Vector3.up * 200f, ForceMode.Impulse);
             }
         }
         else
@@ -122,19 +131,25 @@ public class GrassPlayer : MonoBehaviour
         timer++;
         if (timer >= 10f)
         {
-            if (Input.GetButtonDown("Shoot" + playerNum) && !frozen && !trapped && !permaDead)
+            if (Input.GetButtonDown("Shoot" + playerNum) && !frozen && !trapped && !permaDead && !winManage.won)
             {
+                anim.SetBool("shoot", true);
                 Shooting.Play();
                 Rigidbody clone_Dirt;
-                clone_Dirt = Instantiate(bullet, bulletSpawn_Grass.position, transform.rotation);
+                clone_Dirt = Instantiate(bullet, bulletSpawn_Grass.position, bulletSpawn_Grass.rotation);
                 clone_Dirt.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed, ForceMode.Impulse);
                 timer = 0;
+            }
+            else
+            {
+                anim.SetBool("shoot", false);
             }
         }
 
         //SP = slow down others
-        if (Input.GetButtonDown("SP" + playerNum) && !spfill && !permaDead)
+        if (Input.GetButtonDown("SP" + playerNum) && !spfill && !permaDead && !winManage.won)
         {
+            SP.Play();
             Instantiate(grassSlow, transform.position, transform.rotation);
             radialfill = 0f;
             spfill = true;
@@ -152,10 +167,11 @@ public class GrassPlayer : MonoBehaviour
         }
 
         //Dash go underground
-        if (!frozen && !trapped && !permaDead)
+        if (!frozen && !trapped && !permaDead && !underTimer && !winManage.won)
         {
             if (Input.GetButtonDown("Dash" + playerNum))
             {
+                underTimer = true;
                 Dash.Play();
                 StartCoroutine(Underground());
             }
@@ -193,11 +209,12 @@ public class GrassPlayer : MonoBehaviour
         {
             if (pool.scale <= 0 && pool.noWater)
             {
-                healthBar.fillAmount -= 0.005f;
+                Injured.Play();
+                healthBar.fillAmount -= waterNum;
             }
             if (!pool.noWater)
             {
-                healthBar.fillAmount += 0.005f;
+                healthBar.fillAmount += waterNum;
                 if (healthBar.fillAmount >= 1)
                 {
                     healthBar.fillAmount = 1;
@@ -274,9 +291,10 @@ public class GrassPlayer : MonoBehaviour
         if (other.CompareTag("Bullet"))
         {
             Destroy(other.gameObject);
-            StartCoroutine(Flicker());
+            //StartCoroutine(Flicker());
             if (!grass_waterEmpty)
             {
+                WaterPickup_Place.Play();
                 pickup = false;
                 Instantiate(waterPickUp, grassWaterPosition.transform.position, Quaternion.identity);
                 grass_waterEmpty = true;
@@ -286,9 +304,10 @@ public class GrassPlayer : MonoBehaviour
 
         if (other.CompareTag("ChainAttack"))
         {
-            StartCoroutine(Flicker());
+            //StartCoroutine(Flicker());
             if (!grass_waterEmpty)
             {
+                WaterPickup_Place.Play();
                 pickup = false;
                 Instantiate(waterPickUp, grassWaterPosition.transform.position, Quaternion.identity);
                 grass_waterEmpty = true;
@@ -301,6 +320,7 @@ public class GrassPlayer : MonoBehaviour
         {
             if (grass_waterEmpty && pickup)
             {
+                WaterPickup_Place.Play();
                 Destroy(other.gameObject);
                 grass_waterEmpty = false;
                 pickup = false;
@@ -316,7 +336,7 @@ public class GrassPlayer : MonoBehaviour
         //Checking if placing water down
         if (other.CompareTag("WaterPlaceGrass") && !grass_waterEmpty)
         {
-            WaterPlace.Play();
+            WaterPickup_Place.Play();
             grass_waterEmpty = true;
         }
 
@@ -360,8 +380,13 @@ public class GrassPlayer : MonoBehaviour
     IEnumerator PermaDead()
     {
         //Instantiate death particle
-        Death.Play();
-        living = false;
+        bool deathOnce = true;
+        if (deathOnce)
+        {
+            Death.Play();
+            deathOnce = false;
+        }
+        permaDead = true;
         yield return new WaitForSeconds(1f);
         this.gameObject.SetActive(false);
         yield return null;
@@ -372,17 +397,19 @@ public class GrassPlayer : MonoBehaviour
         underParticles.SetActive(true);
         boxC.enabled = false;
         under = true;
-        rend.enabled = false;
+        rend.SetActive(false);
         yield return new WaitForSeconds(2f);
         underParticles.SetActive(false);
-        rend.enabled = true;
+        rend.SetActive(true);
         under = false;
         boxC.enabled = true;
+        yield return new WaitForSeconds(2f);
+        underTimer = false;
     }
 
     IEnumerator InTrap()
     {
-        //Trap Noise
+        Caged.Play();
         trapped = true;
         trappedCage.SetActive(true);
         yield return new WaitForSeconds(3f);
@@ -405,10 +432,10 @@ public class GrassPlayer : MonoBehaviour
         pickup = true;
     }
 
-    IEnumerator Flicker()
-    {
-        rend.material.color = flickerColor;
-        yield return new WaitForSeconds(0.05f);
-        rend.material = normalColor;
-    }
+    //IEnumerator Flicker()
+    //{
+    //    rend.material.color = flickerColor;
+    //    yield return new WaitForSeconds(0.05f);
+    //    rend.material = normalColor;
+    //}
 }

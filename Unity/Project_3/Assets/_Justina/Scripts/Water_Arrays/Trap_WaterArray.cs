@@ -20,13 +20,14 @@ public class Trap_WaterArray : MonoBehaviour
     public bool noWater;
     float timer;
     public PollutedManager manager;
+    public float waterScaleWin;
+    public float waterScaleChange;
 
     void Start()
     {
         poolFilled = false;
         panelTrap.SetActive(false);
         buttons.SetActive(false);
-        scale = 0.01f;
     }
 
     void Update()
@@ -40,7 +41,7 @@ public class Trap_WaterArray : MonoBehaviour
 
         if (manager.treeGroup1)
         {
-            scale -= 0.00004f;
+            scale -= 0.000001f;
         }
 
         if (scale <= 0)
@@ -62,7 +63,7 @@ public class Trap_WaterArray : MonoBehaviour
             noWater = false;
         }
 
-        if (scale >= 0.033f)
+        if (scale >= waterScaleWin)
         {
             poolFilled = true;
         }
@@ -81,7 +82,7 @@ public class Trap_WaterArray : MonoBehaviour
         {
             if (!trapPlayer.trap_waterEmpty)
             {
-                scale += 0.00825f;
+                scale += waterScaleChange;
                 trapPlayer.trap_waterEmpty = true;
             }
         }
@@ -90,7 +91,7 @@ public class Trap_WaterArray : MonoBehaviour
         {
             if (icePlayer.ice_waterEmpty)
             {
-                scale -= 0.00825f;
+                scale -= waterScaleChange;
                 icePlayer.ice_waterEmpty = false;
             }
         }
@@ -99,7 +100,7 @@ public class Trap_WaterArray : MonoBehaviour
         {
             if (chainPlayer.chain_waterEmpty)
             {
-                scale -= 0.00825f;
+                scale -= waterScaleChange;
                 chainPlayer.chain_waterEmpty = false;
             }
         }
@@ -109,7 +110,7 @@ public class Trap_WaterArray : MonoBehaviour
 
             if (grassPlayer.grass_waterEmpty)
             {
-                scale -= 0.00825f;
+                scale -= waterScaleChange;
                 grassPlayer.grass_waterEmpty = false;
             }
         }

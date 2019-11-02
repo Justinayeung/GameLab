@@ -15,7 +15,7 @@ public class DecreaseWater : MonoBehaviour
         {
             if (icePlayer.ice_waterEmpty)
             {
-                transform.localScale -= new Vector3(0.0015f, 0.0015f, 0.0015f);
+                transform.localScale -= new Vector3(0.002f, 0.002f, 0.002f);
                 icePlayer.ice_waterEmpty = false;
             }
         }
@@ -24,7 +24,7 @@ public class DecreaseWater : MonoBehaviour
         {
             if (trapPlayer.trap_waterEmpty)
             {
-                transform.localScale -= new Vector3(0.0015f, 0.0015f, 0.0015f);
+                transform.localScale -= new Vector3(0.002f, 0.002f, 0.002f);
                 trapPlayer.trap_waterEmpty = false;
             }
         }
@@ -33,7 +33,7 @@ public class DecreaseWater : MonoBehaviour
         {
             if (chainPlayer.chain_waterEmpty)
             {
-                transform.localScale -= new Vector3(0.0015f, 0.0015f, 0.0015f);
+                transform.localScale -= new Vector3(0.002f, 0.002f, 0.002f);
                 chainPlayer.chain_waterEmpty = false;
             }
         }
@@ -42,7 +42,7 @@ public class DecreaseWater : MonoBehaviour
         {
             if (grassPlayer.grass_waterEmpty)
             {
-                transform.localScale -= new Vector3(0.0015f, 0.0015f, 0.0015f);
+                transform.localScale -= new Vector3(0.002f, 0.002f, 0.002f);
                 grassPlayer.grass_waterEmpty = false;
             }
         }
