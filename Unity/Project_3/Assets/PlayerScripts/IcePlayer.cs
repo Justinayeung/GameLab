@@ -54,17 +54,17 @@ public class IcePlayer : MonoBehaviour
     public Animator anim;
     public WinManager winManage;
 
-    void Awake()
-    {
-        print(playerNum + ", " + PublicVars.characters[playerNum - 1]);
-        //update the player number to they joystic number saved in the array
-        playerNum = PublicVars.characters[playerNum - 1];
-        if (playerNum == -1)
-        {
-            Destroy(gameObject); // Destroy any characters that were not picked and are not in the game
-        }
+    //void Awake()
+    //{
+    //    print(playerNum + ", " + PublicVars.characters[playerNum - 1]);
+    //    //update the player number to they joystic number saved in the array
+    //    playerNum = PublicVars.characters[playerNum - 1];
+    //    if (playerNum == -1)
+    //    {
+    //        Destroy(gameObject); // Destroy any characters that were not picked and are not in the game
+    //    }
 
-    }
+    //}
 
     void Start()
     {
