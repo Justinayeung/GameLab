@@ -6,17 +6,17 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     Image timer;
-    public float maxTime = 10.0f;
-    private float timerLeft;
+    private float maxTime = 10.0f;
+    public float timerLeft;
 
     void Start()
     {
-        timer = GetComponent<Image>();
         timerLeft = maxTime;
     }
 
     void Update()
     {
+        timer = GetComponent<Image>();
         if (timerLeft > 0)
         {
             timerLeft -= Time.deltaTime;
@@ -24,7 +24,7 @@ public class Timer : MonoBehaviour
         }
         else
         {
-            Time.timeScale = 0;
+            timer.fillAmount = 0;
         }
     }
 }
